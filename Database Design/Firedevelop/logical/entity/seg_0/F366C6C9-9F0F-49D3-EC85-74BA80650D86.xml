@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F366C6C9-9F0F-49D3-EC85-74BA80650D86" name="SHELTER">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:57:29 UTC</createdTime>
+<notes><![CDATA[Abrigo/refúgio onde pessoas e brigadistas podem se reunir em segurança, com capacidade e vagas disponíveis.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>SHL</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_USR" id="D3498385-D499-6CE1-0046-828C95BD745D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:23:31 UTC</createdTime>
+<generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<referedAttribute>7655F53D-9DCF-CF9C-4022-260498E98498</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_SHL_NAME" id="6FC1F985-6D6C-3715-45FA-ADB4CEFCB540">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:26:37 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT_SHL_CAPACITY" id="EFC84651-66D9-CFDB-5980-F89C83B9C248">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:26:42 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT_SHL_AVAILABLE" id="8E51C4FA-411B-8603-2C2D-6B9A29B505EA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:31:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de vagas livres.
+
+]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_SHL" id="1CDB8F3A-3063-AF53-37E3-7A93DF686C67">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:32:23 UTC</createdTime>
+<generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_LOC" id="DCAA49F5-6A8A-E5F6-516D-BD7D3646F9D3">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:19:50 UTC</createdTime>
+<generatorID>B64C380F-0B10-AC24-B07F-15CDA3E65A82</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8084E6B6-241D-BC55-3708-9F6F61A27A37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FEE95AF6-F112-5E0A-2ACC-4DC24DA90FFD" name="SHELTER PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:32:30 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1CDB8F3A-3063-AF53-37E3-7A93DF686C67</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

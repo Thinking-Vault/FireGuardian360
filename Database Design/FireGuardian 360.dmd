@@ -12,5 +12,8 @@
 <designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4EB906DD-ADC1-EC53-2728-29BBEFE79A0C">
 <designStoragePath>D:\test</designStoragePath>
 </designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="123FC5A8-7F1C-8D04-7530-781F7391CD4F">
+<designStoragePath>D:\comentarios</designStoragePath>
+</designDescr>
 </usedDesignStorageDescriptors>
 </OSDM_Design>

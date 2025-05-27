@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6F21D92-41E3-4B41-DB89-6FDD65199639" name="ALERT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade ALT: registra alertas gerados pelos usuários.]]></commentInRDBMS>
+<generatorID>60F765CA-BFA7-0CEF-203F-3DA084462E82</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ALT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID ALT" id="0D713ADB-1405-FC7E-60AF-39466A01A38F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do alerta.]]></commentInRDBMS>
+<generatorID>81CA0323-9DFB-1BB8-0EA8-1F6050C19CB0</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USR" id="2AE99D0D-B29C-81D7-86D7-DA977EFE4C5F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → USR.ID_USR_USER: usuário que gerou o alerta.]]></commentInRDBMS>
+<generatorID>8A2C10BD-AD82-0EFC-8B68-832AAF4F384A</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<referedAttribute>3402BB29-89EC-F3BE-DAA1-E1CA164B2A84</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP ALT" id="4E1803F2-6F61-FF4A-8924-5B1B7D5B03A8">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do alerta (ex.: CHUVA, FOGO).]]></commentInRDBMS>
+<generatorID>0FFDD9D2-B9CF-9B49-E900-D7FB0321CB63</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC279139-37F9-785A-5EB2-DCACDD4EC5E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR ALT LEVEL" id="E0635BF6-4DD1-E13F-481C-0C339BF20E0A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível de gravidade do alerta.]]></commentInRDBMS>
+<generatorID>2A665A3F-E21F-BED7-B7C8-1E8B584E8604</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH ALT CREATED AT" id="B2C6E79C-B662-A3FD-2383-A60C90116744">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que o alerta foi criado.]]></commentInRDBMS>
+<generatorID>9B554AF0-3652-CFB0-0DB0-1BFC759CD77D</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MD ALT LAT" id="A7BDDF8A-E325-56AD-6A62-3CAC780B8903">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude do ponto do alerta.]]></commentInRDBMS>
+<generatorID>CD8D6C97-0783-E74C-FE4C-D298B240C6E4</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MD ALT LNG" id="A36B9895-021B-1D07-4349-BFFA53C84AB9">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude do ponto do alerta.]]></commentInRDBMS>
+<generatorID>60C6D617-FA97-5DBD-7B81-7E623145A380</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SENSOR ID" id="857DE4AF-A82D-67C5-9F1A-1F05FA2EFD09">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:31:45 UTC</createdTime>
+<generatorID>311A7832-3B6D-011A-4B46-0D4970684487</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<referedAttribute>C4951B74-7CE1-0662-18CF-E22B4AA8FC12</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COLLECTED AT" id="4DFFDC1D-3040-7DBD-3380-A5AB8DC8BC4A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:31:45 UTC</createdTime>
+<generatorID>311A7832-3B6D-011A-4B46-0D4970684487</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<referedAttribute>A2AC4C61-A5E9-50A2-DE83-5AE6EB473BAE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7A26DB2B-020C-E6AE-88C3-E14B1725C75F" name="PK ALT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<generatorID>15780547-8628-5009-63D2-7FC88C243681</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D713ADB-1405-FC7E-60AF-39466A01A38F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

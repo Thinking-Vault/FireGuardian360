@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="23E2BABC-53D2-6ACA-039C-CD5FA370640D" name="CHECKLIST_ITEM">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:57:36 UTC</createdTime>
+<notes><![CDATA[Item de preparo (máscara, água, ferramenta) que o usuário marca como “pronto” para ação emergencial.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CKI</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_USR" id="15680A33-8126-91AB-53C2-9F850DAC241C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:23:31 UTC</createdTime>
+<generatorID>84C958C2-331D-3A59-8670-A3C2A644724B</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<referedAttribute>7655F53D-9DCF-CF9C-4022-260498E98498</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CKI_ITEM" id="E13F9731-4BF4-7AF7-C83C-8813A6FF423A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:26:51 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CKI_LABEL" id="9369B96D-E9A3-F479-32BB-FEE468F3B485">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:26:51 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_CKI_STATUS" id="C9D8278D-9438-EC83-2B8A-A9ED7716E757">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:26:52 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_ALT_ALERT_3" id="3C4EA615-4854-FF91-C91F-957E4BC2512D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:26:52 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E1867AE-685C-A937-E557-30EE34FD46BC" name="CHECKLIST_ITEM PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:32:56 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E13F9731-4BF4-7AF7-C83C-8813A6FF423A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

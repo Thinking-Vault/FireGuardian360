@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D5CA9D9-E7D6-9430-98FF-0DED9DCB318F" name="CHECKLIST_ITEM">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>23E2BABC-53D2-6ACA-039C-CD5FA370640D</generatorID>
+<notes><![CDATA[Item de preparo (máscara, água, ferramenta) que o usuário marca como “pronto” para ação emergencial.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>CKI</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_USR_ID" id="35CA0F81-DE6A-B728-7673-6AAB88C92F80">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USR" id="752CAF78-C5E2-10FE-78ED-459633BF1FAC">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>15680A33-8126-91AB-53C2-9F850DAC241C</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A76232B-DC6F-90B9-5AA2-FB06317845E5" referredColumn="00E2C006-AEF3-A3A1-37BF-01F1145870D5"/>
+</associations>
+</Column>
+<Column name="ID_CKI_ITEM" id="A2113128-31A8-A7EA-3730-CC3AE72DD005">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>E13F9731-4BF4-7AF7-C83C-8813A6FF423A</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CKI_LABEL" id="03B990F2-A69A-6148-16F8-B6ACDF2CEB6D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>9369B96D-E9A3-F479-32BB-FEE468F3B485</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_CKI_STATUS" id="F3844AB6-8133-9A56-9062-54D6400A1361">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>C9D8278D-9438-EC83-2B8A-A9ED7716E757</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ALT_ALERT_3" id="81947B99-EF91-E99E-E90A-1629D3ADA736">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>3C4EA615-4854-FF91-C91F-957E4BC2512D</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2DEE0BC-1FD8-5829-030D-2EFF2C0443BA" name="CHECKLIST_ITEM_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>0E1867AE-685C-A937-E557-30EE34FD46BC</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2113128-31A8-A7EA-3730-CC3AE72DD005"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9B33182-A4F9-707F-DF36-D414B53A67A2" name="CHECKLIST_ITEM_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>84C958C2-331D-3A59-8670-A3C2A644724B</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="752CAF78-C5E2-10FE-78ED-459633BF1FAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A11D2DF-75A5-2AB9-FB06-4BD91AEEE9E1" name="CHAT_SESSION">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade CSS: sessões de chat iniciadas pelos usuários.]]></commentInRDBMS>
+<generatorID>A5068C95-B685-34DB-5D0D-D636C83C82B7</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CSS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CSS SESSION" id="F4531BAB-4FB2-54C7-2D1B-40800875F1DC">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único da sessão de chat.]]></commentInRDBMS>
+<generatorID>E48A5A5C-75B0-0BD3-CB9B-FB4A90C48B10</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USR" id="0EC2C016-EAD3-3483-3A23-EE3FFDDF0304">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → USR.ID_USR_USER: usuário participante.]]></commentInRDBMS>
+<generatorID>8359A385-E0A5-A414-C119-E2B656B153EB</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<referedAttribute>3402BB29-89EC-F3BE-DAA1-E1CA164B2A84</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH CSS STARTED AT" id="14863750-97CD-D6E7-798D-08E535902242">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de início da sessão.]]></commentInRDBMS>
+<generatorID>3F2B52F7-9058-3EB9-F755-1ECF954BA9F9</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH CSS ENDED AT" id="28B33A68-4908-B01E-0983-656FB2B97F03">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de término da sessão.]]></commentInRDBMS>
+<generatorID>787CF64D-BEDC-C11D-2365-0C732A895F7C</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A2844262-F6B5-523C-EF99-BAE186859408" name="PK CSS">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<generatorID>7F3E97EC-397F-F015-4B5E-1CC1040AD495</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F4531BAB-4FB2-54C7-2D1B-40800875F1DC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

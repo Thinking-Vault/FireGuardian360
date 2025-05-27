@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="710B4EF3-63F4-A49B-2DCC-ACCF49BD6D77" name="SENSOR">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:56:12 UTC</createdTime>
+<notes><![CDATA[Dispositivo (estação ou drone) que capta medições de campo.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>SNS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_SNS_SENSOR" id="1FD8C081-40C5-B46A-A341-7A3BD7AAF54F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:04:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do sensor]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_SNS_MODEL" id="753A72F3-58DF-5C02-A361-7A2384A2A9E7">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:04:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Modelo do sensor
+]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_SNS_TYPE" id="F6C04A37-EF44-C3EF-5097-53F198441B0F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:05:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de sensor (térmico, óptico etc.)
+]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_SNS_STATUS" id="C83D95E8-3092-8804-09C7-8520BA68F415">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:05:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status (ativo/inativo)]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2055F863-6F73-744F-6EF3-DCB222DC93AF" name="SENSOR PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:04:37 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1FD8C081-40C5-B46A-A341-7A3BD7AAF54F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

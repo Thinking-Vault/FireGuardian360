@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDB8A54F-8155-B7E4-8DE2-14BD5E52CC5C" name="VEGETATION">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>B81DCD45-D706-C5E8-4438-79CA3F15FD90</generatorID>
+<notes><![CDATA[Tipo de cobertura vegetal (cerrado, mata seca…) com inflamabilidade e taxa de propagação.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>VGT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VGT_ID" id="6F225479-B38B-B7E5-1FED-99E48D720A0F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="ID_VGT" id="6E26A4B6-7D1A-A878-1BF6-8E195BF16B66">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do tipo de vegetação]]></commentInRDBMS>
+<generatorID>CB7462E7-87FE-0F92-26C6-F8F5F1E5C4F4</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_VGT_NAME" id="A0493E78-D225-BFCC-D301-41DB70A0C77F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo (cerrado, floresta etc.)
+]]></commentInRDBMS>
+<generatorID>2D767128-BB4E-C20E-645A-5929E83B0BD6</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_VGT_FLAMMABILITY" id="0900FF35-F732-4260-060E-81ACAEA8723E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>B2358BAA-E9C6-50C8-B950-980E73E986FF</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_VGT_CARACTERISTICA" id="47ED1D7C-29EE-16C3-2567-4A4B20FCF7EF">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição geral do tipo de vegetação
+
+]]></commentInRDBMS>
+<generatorID>8A7E2424-F7F9-8011-A1F7-4405F63FDC72</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2586D7D9-B3DC-628C-518C-94AC1553E8A0" name="VEGETATION_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>C0EC3842-050F-DC62-083E-93C33C5FCE56</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E26A4B6-7D1A-A878-1BF6-8E195BF16B66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A54E4A7E-AD81-278C-08AB-E2A61E8D495B" name="VGT_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="6F225479-B38B-B7E5-1FED-99E48D720A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
