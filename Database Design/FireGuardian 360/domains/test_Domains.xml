@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="test_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_255" id="5BB3DA1C-05B4-796F-68AC-888784A0BE15">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>255</dataTypeSize>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="TIMESTAMP WITH TIME ZONE_6_0_0" id="6D16C64C-A186-F64D-5D75-E6165E71BB80">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT046</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="A6896E74-91C1-2305-EBC2-C6E837B3C72F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="CC279139-37F9-785A-5EB2-DCACDD4EC5E2">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_1" id="DC4D11C1-1EDF-9F59-CFA5-CAA10ED66EBB">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_150" id="DE0CA264-9C78-A170-214F-FCE6054B1C96">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>150</dataTypeSize>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="DEAF5770-DAEB-F39B-74AF-71E32B9B4B15">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CLOB_0_0_0" id="FB329EE5-1136-8E87-5BCA-0345C7691B7B">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="FB6210C1-2486-5238-45F3-765AB527CC8D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>test_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

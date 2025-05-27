@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B7A38C4B-A1F2-101E-61F7-77B4DF2A5B61" name="ALERT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:10:47 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ALERT_ID" id="7323A019-635D-4577-F217-3C4810ACB0EB">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:25:54 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED_AT" id="A4FDF9E5-902C-F05F-403E-01A1EA36014E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:26:23 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USER_ID" id="3C6409D7-894F-6419-51A1-5F4108326B1D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:25:58 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TYPE" id="93F140C3-A130-A0BA-57CA-E4B7F304AECE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:26:02 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LEVEL" id="9271A077-D3C8-40F2-6B84-DC781538E178">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:26:06 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAT" id="09681726-529E-9CA0-45A9-394C742FC85C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:26:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LNG" id="55EEA365-7871-6A0C-4B6F-4954242449AD">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:26:38 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

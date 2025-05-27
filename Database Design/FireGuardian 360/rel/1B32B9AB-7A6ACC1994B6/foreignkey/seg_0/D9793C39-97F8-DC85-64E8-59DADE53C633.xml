@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D9793C39-97F8-DC85-64E8-59DADE53C633" containerWithKeyObject="60F765CA-BFA7-0CEF-203F-3DA084462E82" localFKIndex="6FA944C7-B933-97BC-34BF-26AB3EF873EE" name="FK_ALT_USR">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>60349460-EA7C-D734-F297-8772E6A0D88F</importedID>
+<referredTableLongName>USR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3C902F3B-DF32-E3E0-30CA-B3EB8B6B1DC2</referredTableID>
+<keyObject>74B5DDF6-C133-5359-6ECC-6770E3FA7637</keyObject>
+<referredKeyID>74B5DDF6-C133-5359-6ECC-6770E3FA7637</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_USR_USER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

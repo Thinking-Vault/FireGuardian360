@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25A8D258-6DC5-7C73-D6B2-3659743E0972" name="CMT">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade CMT: mensagens trocadas em cada sessão de chat.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>AE1D7643-248D-693F-59F0-C801D5653EC8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CMT_MESSAGE" id="8BBA9F04-9EF2-3A5D-EDDD-ED718863BD29">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único da mensagem.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>589DC3E6-526F-D9A2-53E2-C07503E2C855</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CSS_SESSION" id="9F6F4694-673E-1160-BEB3-66126D16A0BA">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → CSS.ID_CSS_SESSION: sessão a que a mensagem pertence.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>791E61C3-4CC0-DBA6-32A3-8E02659D9E49</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E54A809-9A6B-7E05-9A64-2A6898033261" referredColumn="E48A5A5C-75B0-0BD3-CB9B-FB4A90C48B10"/>
+</associations>
+</Column>
+<Column name="TP_CMT_SENDER" id="D63AC320-702A-DE44-1BD1-267D776B1B35">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem da mensagem (USER, BOT, PSY).]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>CA258C48-768D-6CA3-0D8F-19652ED9E44E</importedID>
+<constraintName>CK_CMT_SENDER</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A6896E74-91C1-2305-EBC2-C6E837B3C72F</domain>
+<listOfValues>
+<valueDef value="BOT" description=""/>
+<valueDef value="PSY" description=""/>
+<valueDef value="USER" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TX_CMT_TEXT" id="4B282213-34FC-C6B4-F573-5C8142C90FE3">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Conteúdo textual da mensagem.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>8012AE2B-2591-A0D3-FA5B-FC27E3B7FA8B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>FB329EE5-1136-8E87-5BCA-0345C7691B7B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_CMT_SENT_AT" id="2815CB74-5B98-235D-EC71-FEED9920416C">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que a mensagem foi enviada.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>0F4C08B8-A045-482F-190E-C2B17D3A2C70</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5D3B624-C999-7075-8F96-F41718E1F823" name="PK_CMT">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>B1B05E30-14FA-46F0-8001-D378BB29CCA3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BBA9F04-9EF2-3A5D-EDDD-ED718863BD29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="470C2D9A-25C7-D7D3-B122-53D0E24921B1" name="FK_CMT_CSS">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F6F4694-673E-1160-BEB3-66126D16A0BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

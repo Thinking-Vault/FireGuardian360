@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2036893-7EB0-B80C-A0D3-263EF387A2C2" name="CMT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade CMT: mensagens trocadas em cada sessão de chat.]]></commentInRDBMS>
+<generatorID>25A8D258-6DC5-7C73-D6B2-3659743E0972</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CMT MESSAGE" id="A30A8003-9D73-2F1F-4AD6-A05A63968965">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único da mensagem.]]></commentInRDBMS>
+<generatorID>8BBA9F04-9EF2-3A5D-EDDD-ED718863BD29</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CSS SESSION" id="103F1493-EF5C-E453-F59A-EEA26FF41485">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → CSS.ID_CSS_SESSION: sessão a que a mensagem pertence.]]></commentInRDBMS>
+<generatorID>8D0D26D0-4F9B-2D3D-21E0-392992640E36</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<referedAttribute>1F9A130C-849C-6BAC-B4AC-BC8DD6D53434</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP CMT SENDER" id="6B3EC2EB-A156-025F-6767-AD99DC0CF7DD">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem da mensagem (USER, BOT, PSY).]]></commentInRDBMS>
+<generatorID>D63AC320-702A-DE44-1BD1-267D776B1B35</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<constraintName>CK_CMT_SENDER</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A6896E74-91C1-2305-EBC2-C6E837B3C72F</domain>
+<listOfValues>
+<valueDef value="BOT" description=""/>
+<valueDef value="PSY" description=""/>
+<valueDef value="USER" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TX CMT TEXT" id="06389377-BD16-6C9D-D855-3345B6E97010">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Conteúdo textual da mensagem.]]></commentInRDBMS>
+<generatorID>4B282213-34FC-C6B4-F573-5C8142C90FE3</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>FB329EE5-1136-8E87-5BCA-0345C7691B7B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH CMT SENT AT" id="56921FA3-B632-78DD-F89F-E759BCC32966">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que a mensagem foi enviada.]]></commentInRDBMS>
+<generatorID>2815CB74-5B98-235D-EC71-FEED9920416C</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33D570A0-45A0-AD71-2E87-1A47CF49FBB8" name="PK CMT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<generatorID>D5D3B624-C999-7075-8F96-F41718E1F823</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A30A8003-9D73-2F1F-4AD6-A05A63968965</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
