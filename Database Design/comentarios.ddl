@@ -48,3 +48,41 @@ COMMENT ON COLUMN CMT.ID_CSS_SESSION       IS 'FK → CSS.ID_CSS_SESSION: sessã
 COMMENT ON COLUMN CMT.TP_CMT_SENDER        IS 'Origem da mensagem (USER, BOT, PSY).';
 COMMENT ON COLUMN CMT.TX_CMT_TEXT          IS 'Conteúdo textual da mensagem.';
 COMMENT ON COLUMN CMT.DH_CMT_SENT_AT       IS 'Data e hora em que a mensagem foi enviada.';
+
+-- Comentários adicionais e correções nas tabelas e colunas ausentes
+
+-- FIRE_HISTORY
+COMMENT ON TABLE FIRE_HISTORY IS 'Entidade FIRE_HISTORY: histórico de ocorrências de incêndio associadas a tipos de vegetação.';
+COMMENT ON COLUMN FIRE_HISTORY.VEGETATION_VEGETATION_ID IS 'FK → VEGETATION.VEGETATION_ID: identifica o tipo de vegetação afetado pelo incêndio.';
+
+-- SENSOR_DATA
+COMMENT ON TABLE SENSOR_DATA IS 'Entidade SENSOR_DATA: representa os dados coletados por sensores ambientais.';
+COMMENT ON COLUMN SENSOR_DATA.SENSOR_ID IS 'PK: identificador do sensor.';
+COMMENT ON COLUMN SENSOR_DATA.COLLECTED_AT IS 'PK: data e hora da coleta.';
+COMMENT ON COLUMN SENSOR_DATA.MEASURE_TYPE IS 'Tipo de medida capturada (ex.: temperatura, umidade).';
+COMMENT ON COLUMN SENSOR_DATA.VALUE IS 'Valor numérico da medição.';
+COMMENT ON COLUMN SENSOR_DATA.LAT IS 'Latitude onde o sensor coletou os dados.';
+COMMENT ON COLUMN SENSOR_DATA.LNG IS 'Longitude onde o sensor coletou os dados.';
+COMMENT ON COLUMN SENSOR_DATA.VEGETATION_VEGETATION_ID IS 'FK → VEGETATION.VEGETATION_ID: tipo de vegetação presente no local da medição.';
+
+-- VEGETATION
+COMMENT ON TABLE VEGETATION IS 'Entidade VEGETATION: tipos de vegetação cadastrados no sistema.';
+COMMENT ON COLUMN VEGETATION.VEGETATION_ID IS 'PK: identificador único do tipo de vegetação.';
+
+-- Correções na tabela USER (tamanho da coluna NM_USR_NAME)
+ALTER TABLE "USER" MODIFY (NM_USR_NAME VARCHAR2(100));
+COMMENT ON COLUMN "USER".NM_USR_NAME IS 'Nome completo do usuário.';
+
+-- Correção dos tipos desconhecidos em SENSOR_DATA
+-- ATENÇÃO: Os campos estavam como UNKNOWN, escolha sugerida abaixo:
+-- MEASURE_TYPE → VARCHAR2(50)
+-- VALUE → NUMBER
+-- LAT, LNG → NUMBER
+ALTER TABLE SENSOR_DATA MODIFY (
+  MEASURE_TYPE VARCHAR2(50),
+  VALUE NUMBER,
+  LAT NUMBER,
+  LNG NUMBER
+);
+
+-- Fim dos comentários e correções.

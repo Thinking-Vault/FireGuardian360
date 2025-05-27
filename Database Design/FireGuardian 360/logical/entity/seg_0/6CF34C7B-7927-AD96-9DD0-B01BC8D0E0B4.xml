@@ -7,7 +7,9 @@
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -27,7 +29,9 @@
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -42,7 +46,9 @@
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -58,7 +64,9 @@
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -73,7 +81,9 @@
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -88,7 +98,9 @@
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -104,7 +116,9 @@
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -114,14 +128,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="585B954E-773F-64C1-EEAD-056CBF041FE9" name="PK SHL">
+<identifier id="585B954E-773F-64C1-EEAD-056CBF041FE9" name="SHELTER_PK">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 12:20:51 UTC</createdTime>
 <generatorID>EBE9B6AE-A2B0-BD34-3707-3592355F00AC</generatorID>
 <ownerDesignName>FireGuardian 360</ownerDesignName>
 <engineerTo>
 <item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
 <item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
