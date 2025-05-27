@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7DDF37D9-80FA-07E2-FAE2-B562CD032289" name="USR">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade USR: armazena os usuários do sistema.]]></commentInRDBMS>
+<generatorID>3C902F3B-DF32-E3E0-30CA-B3EB8B6B1DC2</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID USR USER" id="12973046-374B-5E40-B28F-17ACE4736220">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do usuário.]]></commentInRDBMS>
+<generatorID>2827DF4F-9679-E82A-18CE-A5C56DF628D5</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD USR EMAIL" id="A76AF120-0D2B-B666-B90E-683AB4F288F4">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail do usuário (único, obrigatório).]]></commentInRDBMS>
+<generatorID>EE48CCE0-0706-3349-2C6B-E12ADC461A03</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5BB3DA1C-05B4-796F-68AC-888784A0BE15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TX USR PASSWORD HASH" id="957892F3-E446-8F24-F322-2F152065E051">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hash da senha do usuário.]]></commentInRDBMS>
+<generatorID>6E0EC4F9-A0EF-BBCC-078F-C611BFD2484E</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5BB3DA1C-05B4-796F-68AC-888784A0BE15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH USR CREATED AT" id="915E5666-9B4A-268E-E77C-133FA35E7928">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de criação do registro.]]></commentInRDBMS>
+<generatorID>8506A7EB-0379-8848-F4C9-ABBFCE391E2E</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C2E42763-D0B0-3349-35F9-9901C526AB5C" name="PK USR">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<generatorID>74B5DDF6-C133-5359-6ECC-6770E3FA7637</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>12973046-374B-5E40-B28F-17ACE4736220</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E65AC581-D388-EF43-B217-656B05B62F97" name="UK USR EMAIL">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<generatorID>3B79E107-2E56-CBFE-3D8E-F15C7815EBE7</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>A76AF120-0D2B-B666-B90E-683AB4F288F4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

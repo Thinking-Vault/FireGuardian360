@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="FireGuardian 360" id="5D85E61C-099F-A12A-DFB4-E3098EC27217" version="3.5">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:07:43 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5D85E61C-099F-A12A-DFB4-E3098EC27217</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C97EDDC5-D082-6D9E-01C2-4566B871395F">
+<designStoragePath>D:\test</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4EB906DD-ADC1-EC53-2728-29BBEFE79A0C">
+<designStoragePath>D:\test</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
