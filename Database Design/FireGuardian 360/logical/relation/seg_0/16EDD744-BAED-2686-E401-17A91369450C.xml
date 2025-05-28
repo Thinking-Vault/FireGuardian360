@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FIRE HISTORY VEGETATION FK" directorySegmentName="seg_0" id="16EDD744-BAED-2686-E401-17A91369450C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:19:07 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>608B5F2C-0838-915F-BE8C-2784B14F1421</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4ADC7BA8-8985-52BE-89EA-5883D4F9CE17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CC668616-134C-3C89-8B75-18E5716472FA" containerWithKeyObject="8234C3F8-E2EB-BAE7-8515-502F9B146CB0" localFKIndex="2D4EDA9E-82F8-41A6-29B5-B64CC0DC3979" name="CHAT_MESSAGE_CHAT_SESSION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>F788818B-0023-3F70-FD69-C528F79494E0</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<referredTableLongName>CHAT_SESSION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA738B22-FF2E-04C0-2A18-CB4BA7373C6F</referredTableID>
+<keyObject>8DCDC78D-FB90-1FAB-4CDC-2B7868FFAC63</keyObject>
+<referredKeyID>8DCDC78D-FB90-1FAB-4CDC-2B7868FFAC63</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CSS_SESSION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

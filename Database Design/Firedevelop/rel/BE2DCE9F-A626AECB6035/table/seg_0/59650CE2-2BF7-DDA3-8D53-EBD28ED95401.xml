@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59650CE2-2BF7-DDA3-8D53-EBD28ED95401" name="ALERT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>22719D40-7F71-314D-67A0-CB45C87966F0</generatorID>
+<notes><![CDATA[Evento crítico (chuva excessiva ou foco de calor) que dispara notificação.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>ALT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SENSOR_DATA_SND_ID" id="6A69D3A9-9660-C491-7F9E-F29C9C9B0D3E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUEIMADA_QMD_ID" id="CAAB64BC-8930-003F-D603-DB1900139A3B">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_USR_ID" id="5300713E-50A2-B96A-9D01-20E3369D10D8">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USR" id="69DA9605-E20C-D17D-C57D-25A495143456">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>C3964450-AFCD-0A6F-0B7A-10224E907F76</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3D6CDD7-57DA-5F47-CC97-CC35A94C2545" referredColumn="00E2C006-AEF3-A3A1-37BF-01F1145870D5"/>
+</associations>
+</Column>
+<Column name="ID_ALT_ALERT" id="7076A693-4A9D-3267-5A9E-702F5809E890">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>BC38367B-6AF2-19FE-2571-EECF5668CD6F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ALT_TYPE" id="F2D8909B-8665-45BD-251E-B21AE9D72956">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>E8D352B3-8DE3-21EE-47E5-01504B0F7D55</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ALT_LEVEL" id="2FD6AFA9-D73D-D081-5371-900DF55CD239">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>1E976192-77CE-71F8-360C-EE3983C87139</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,2,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_ALT_CREATED_AT" id="602E21C0-5449-5601-5FCB-9CC41088DD33">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>83155EAA-A158-556E-ACDE-02FEEE6F80DB</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ALT_LNG" id="54AEE360-8697-286A-D39C-96E97B9A37CB">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>DE3ED4B5-B88E-74FB-236C-4E17B29A209F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ALT_ALERT_5" id="F1EDF25F-0B7F-CC2C-DEA8-C9D5D9121DAA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>1891EA1A-F35C-6756-0845-12B3CE606F45</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_QMD" id="C6A28724-99EB-6F9C-8FD1-C5CC96F520ED">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<generatorID>E55EED6D-7299-5B0C-767C-A8157F10225C</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBEE6260-34F2-CE2A-80C8-9668DD133FB6" referredColumn="F7ADD735-E097-E2BD-FE72-55104E6E45C3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8251B916-461C-1594-2F1E-5594D2CFB73C" name="ALERT_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:31:34 UTC</createdTime>
+<generatorID>73C308F6-9F6D-1144-22A8-7961B9BA5199</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7076A693-4A9D-3267-5A9E-702F5809E890"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50941432-A942-0ED3-79CC-148248715A72" name="ALERT_QUEIMADA_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>642D83A0-5587-DB44-8798-FEC9FC53AD66</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6A28724-99EB-6F9C-8FD1-C5CC96F520ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77B2D5EA-DF3E-A938-4650-8BEEEB5B85DE" name="ALERT_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>6001E860-4191-B8A5-97BE-63DB96F1D55F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69DA9605-E20C-D17D-C57D-25A495143456"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

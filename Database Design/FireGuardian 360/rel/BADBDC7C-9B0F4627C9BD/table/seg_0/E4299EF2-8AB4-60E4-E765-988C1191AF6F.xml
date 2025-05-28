@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4299EF2-8AB4-60E4-E765-988C1191AF6F" name="VEGETACAO">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade VEGETACAO: tipos de vegetação cadastrados no sistema.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>B38BFEFC-B247-13D2-2AAC-CBBB1EDE0E29</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_VGT" id="3728101E-6A8E-2E0A-FC8F-8B124A4313D2">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do tipo de vegetação.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>A63867B5-085B-DADC-A2D5-0469D8CC0353</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SQ_VEGETACAO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_VEGETACAO_ID</autoIncrementTriggerName>
+</Column>
+<Column name="NM_VGT_TIPO" id="C220C4BC-B698-7301-76EF-D78A6A797EA1">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de vegetação (cerrado, floresta etc.).]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>E54306C4-3FA1-9D37-47EE-2E3BDFA3079C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DEAF5770-DAEB-F39B-74AF-71E32B9B4B15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_VGT_DESC" id="BA9729AC-DCFD-CA48-978B-70E97085B35F">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição geral do tipo de vegetação.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>41692C99-3691-57EE-41DD-37565EEBEEFF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC3C1DB4-6778-13DE-BEFC-8AB64A011137</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_VGT_RISCO" id="1734A546-C28A-9D9B-2411-6923C8409546">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Probabilidade média de risco de queimada.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>CB9B7237-C9E9-3C4F-CFFC-F3C0CBFA66AB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B8EA6178-8F60-9DAF-43AC-7771CC581974</domain>
+<defaultValue>0.00</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0BBA8B6-D67F-C835-9430-CBF9E94E371B" name="PK_VEGETACAO">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>11BD2D6B-ACD9-2CCE-426F-EEF41F78BA6E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3728101E-6A8E-2E0A-FC8F-8B124A4313D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

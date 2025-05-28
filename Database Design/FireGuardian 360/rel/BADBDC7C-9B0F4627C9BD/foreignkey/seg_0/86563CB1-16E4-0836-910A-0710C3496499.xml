@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="86563CB1-16E4-0836-910A-0710C3496499" containerWithKeyObject="5ABD96E5-01E3-85DC-9D7E-5C930F87AE31" localFKIndex="C9140CE7-E838-7334-DCCF-7F3041275DE1" name="FK_ALT_SNS">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>12968970-19F3-BBDA-0080-F0D02823E9AE</importedID>
+<referredTableLongName>SNS_DATA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>33F1E8C5-EB2C-6827-6C77-64B05C536373</referredTableID>
+<keyObject>38E7ABDC-2001-FC05-7737-990D800F7C1D</keyObject>
+<referredKeyID>38E7ABDC-2001-FC05-7737-990D800F7C1D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SNS_ID,DH_SNS_COLETED</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

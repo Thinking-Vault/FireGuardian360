@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28E988BF-B594-0596-FE49-58E2EEFF80DC" name="USER">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade USR: armazena os usuários do sistema.]]></commentInRDBMS>
+<generatorID>3C902F3B-DF32-E3E0-30CA-B3EB8B6B1DC2</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>USR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID USR" id="3402BB29-89EC-F3BE-DAA1-E1CA164B2A84">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do usuário.]]></commentInRDBMS>
+<generatorID>2827DF4F-9679-E82A-18CE-A5C56DF628D5</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS USR EMAIL" id="E2404400-B01A-9F66-02C9-F478C1A2E816">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail do usuário (único, obrigatório).]]></commentInRDBMS>
+<generatorID>EE48CCE0-0706-3349-2C6B-E12ADC461A03</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5BB3DA1C-05B4-796F-68AC-888784A0BE15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TX USR PASSWORD HASH" id="CEB21DD4-006E-FDB8-4AC6-1F3EC3CDBFB9">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hash da senha do usuário.]]></commentInRDBMS>
+<generatorID>6E0EC4F9-A0EF-BBCC-078F-C611BFD2484E</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5BB3DA1C-05B4-796F-68AC-888784A0BE15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH USR CREATED AT" id="E4EC13AB-318F-6A34-BE0E-5D52C7A703A6">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de criação do registro.]]></commentInRDBMS>
+<generatorID>8506A7EB-0379-8848-F4C9-ABBFCE391E2E</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM USR NAME" id="CC475543-2074-1AB4-F025-A4E7D33430EB">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:27:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do usuário.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FA291130-7CA1-48AF-6519-18434716C2BE" name="USER_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<generatorID>74B5DDF6-C133-5359-6ECC-6770E3FA7637</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3402BB29-89EC-F3BE-DAA1-E1CA164B2A84</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="763160D6-3D8D-08AE-C8A2-151414E85425" name="USER_DS_USR_EMAIL_UN">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<generatorID>3B79E107-2E56-CBFE-3D8E-F15C7815EBE7</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>E2404400-B01A-9F66-02C9-F478C1A2E816</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

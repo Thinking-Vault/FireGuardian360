@@ -84,7 +84,6 @@ public class ChecklistController {
      * Recupera a lista de itens pendentes da checklist para um usuário específico.
      *
      * @param userId o ID do usuário cujos itens pendentes da checklist devem ser recuperados
-     * @return uma lista de objetos {@link ChecklistItem} que estão pendentes para o usuário especificado
      */
     @GetMapping("/user/{userId}/pending")
     public List<ChecklistItem> getPending(@PathVariable Long userId) {
