@@ -6,18 +6,40 @@ import com.fireguardian.fireguardian360.shelter.domain.model.Shelter;
 
 import java.util.Scanner;
 
+/**
+ * A classe MainApp.
+ */
 public class MainApp {
+    /**
+     * Ponto de entrada da aplicação.
+     *
+     * @param args os argumentos de entrada
+     */
+    /**
+     * Ponto de entrada da aplicação FireGuardian360.
+     * <p>
+     * Este método demonstra o uso das classes Alert, Shelter e ChecklistItem.
+     * Ele interage com o usuário via console para:
+     * <ul>
+     *   <li>Receber e definir o nível de alerta, exibindo se é de alto risco.</li>
+     *   <li>Receber informações do abrigo (nome, capacidade, disponibilidade) e exibir a taxa de ocupação.</li>
+     *   <li>Criar um item da checklist, definir seu rótulo e status, e exibir se está pendente.</li>
+     * </ul>
+     * O método utiliza um {@link Scanner} para entrada do usuário e o fecha antes de sair.
+     *
+     * @param args Argumentos de linha de comando (não utilizados).
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Criar e testar Alert
+        
         System.out.print("Nível do alerta: ");
         int level = sc.nextInt();
         Alert a = new Alert();
         a.setLevel(level);
         System.out.println("HighRisk? " + a.isHighRisk());
 
-        // Criar e testar Shelter
+        
         System.out.print("Nome do abrigo: ");
         sc.nextLine();
         String name = sc.nextLine();
@@ -31,7 +53,7 @@ public class MainApp {
         s.setAvailable(avail);
         System.out.printf("Ocupação: %.2f%%\n", s.getOccupancyRate());
 
-        // Criar e testar ChecklistItem
+        
         ChecklistItem item = new ChecklistItem();
         item.setLabel("Máscara");
         item.setStatus('P');
