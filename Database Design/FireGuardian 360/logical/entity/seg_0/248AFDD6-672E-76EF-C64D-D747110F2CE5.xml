@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="248AFDD6-672E-76EF-C64D-D747110F2CE5" name="CLI">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade CLI: itens de checklist de cada usuário.]]></commentInRDBMS>
+<generatorID>BFF3F13A-C4CB-5FDB-9487-35BEFD854919</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CLI ITEM" id="34B33B01-2A6F-6E4B-E06A-3F3C62E9DD1C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do item de checklist.]]></commentInRDBMS>
+<generatorID>4AA4F969-F2BE-1751-E2FB-567B2EC6BC1E</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID USR USER" id="1AB94810-F73A-F469-DA92-89411FD5D3E7">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → USR.ID_USR_USER: usuário dono do item.]]></commentInRDBMS>
+<generatorID>0CC83215-0737-E081-2A1C-E29C65B50390</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<referedAttribute>12973046-374B-5E40-B28F-17ACE4736220</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM CLI LABEL" id="E2D9179A-811A-86B3-B865-0845218A7B48">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do item de checklist.]]></commentInRDBMS>
+<generatorID>1988CFCD-7889-B77F-22A4-B8D63F7D15CF</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DEAF5770-DAEB-F39B-74AF-71E32B9B4B15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST CLI STATUS" id="1940B706-0065-53D9-E8FB-5C90C2859976">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do item (P=pendente, C=concluído).]]></commentInRDBMS>
+<generatorID>2D227427-7A5D-8149-2A18-B3E866329550</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<constraintName>CK_CLI_STATUS</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DC4D11C1-1EDF-9F59-CFA5-CAA10ED66EBB</domain>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="P" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH CLI UPDATED AT" id="7F89970A-84D7-80BE-C904-4AE58C87FD95">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da última atualização do status.]]></commentInRDBMS>
+<generatorID>855466EC-7F28-C559-B753-DFD5E548073B</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7AE7B893-1240-B6B0-EA04-EB9B544275E5" name="PK CLI">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<generatorID>84D7BAC9-11D0-0DE4-16CD-92C1DBFD26C9</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>34B33B01-2A6F-6E4B-E06A-3F3C62E9DD1C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

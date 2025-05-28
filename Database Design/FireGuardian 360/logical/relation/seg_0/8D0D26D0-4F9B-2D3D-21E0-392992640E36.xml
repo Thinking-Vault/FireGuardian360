@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CMT_CSS" directorySegmentName="seg_0" id="8D0D26D0-4F9B-2D3D-21E0-392992640E36">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:24:23 UTC</createdTime>
+<generatorID>5E54A809-9A6B-7E05-9A64-2A6898033261</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+</engineerTo>
+<sourcePk>6FB813A5-AB62-A968-2749-10AE6062E93F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C67346C0-B1EC-31D8-F933-EED8B34EF91C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E2036893-7EB0-B80C-A0D3-263EF387A2C2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
