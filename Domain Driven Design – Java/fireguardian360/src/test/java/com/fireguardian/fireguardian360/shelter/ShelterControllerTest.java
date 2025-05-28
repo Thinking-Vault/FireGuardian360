@@ -1,5 +1,6 @@
 package com.fireguardian.fireguardian360.shelter;
 
+import com.fireguardian.fireguardian360.config.TestSecurityConfig;
 import com.fireguardian.fireguardian360.shelter.application.ShelterService;
 import com.fireguardian.fireguardian360.shelter.domain.model.Shelter;
 import com.fireguardian.fireguardian360.shelter.infrastructure.ShelterController;
@@ -7,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -16,6 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(ShelterController.class)
+@Import(TestSecurityConfig.class)
 class ShelterControllerTest {
     @Autowired
     MockMvc mvc;
