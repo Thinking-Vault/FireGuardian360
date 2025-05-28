@@ -18,4 +18,18 @@ public class ChecklistItem {
     private String label;
     private char status; // 'P' = pending, 'C' = completed
     private ZonedDateTime updatedAt = ZonedDateTime.now();
+
+    /**
+     * Retorna true se o item continua pendente.
+     *
+     * @return boolean indicando pendência.
+     */
+    public boolean isPending() {
+        return this.status == 'P';
+    }
+
+    @Override
+    public String toString() {
+        return label + " (" + (status == 'P' ? "pendente" : "concluído") + ")";
+    }
 }
