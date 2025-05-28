@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ALERT SENSOR DATA FK" directorySegmentName="seg_0" id="311A7832-3B6D-011A-4B46-0D4970684487">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:19:58 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<sourcePk>82B22678-5FED-F6ED-3961-4EDF7683BD86</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C44C4613-205F-91BA-7E95-242A1A7569E3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F6F21D92-41E3-4B41-DB89-6FDD65199639</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

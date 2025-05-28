@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="553EB892-65C3-EF1C-13DB-E55F0488ECF6" containerWithKeyObject="6D372C68-2E20-FA78-BFA4-730E014347AE" localFKIndex="0821D0FE-4F6B-F236-40C4-D3BC092D6072" name="FK_ALERTA_SENSOR_DATA">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>D86CFAEE-520A-7233-4CC2-61F37912EF1E</importedID>
+<referredTableLongName>SENSOR_DATA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA64C050-78D7-8D20-4C86-3FD361FFB641</referredTableID>
+<keyObject>9219FFEE-CEF9-5B7B-4280-769E8437AB64</keyObject>
+<referredKeyID>9219FFEE-CEF9-5B7B-4280-769E8437AB64</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SNS,DH_SNS_COLETADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

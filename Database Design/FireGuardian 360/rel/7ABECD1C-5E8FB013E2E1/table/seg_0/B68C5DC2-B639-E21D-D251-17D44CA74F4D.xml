@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B68C5DC2-B639-E21D-D251-17D44CA74F4D" name="ALERT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade ALT: registra alertas gerados pelos usuários.]]></commentInRDBMS>
+<generatorID>F6F21D92-41E3-4B41-DB89-6FDD65199639</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<abbreviation>ALT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ALT" id="12762C7E-AA0A-75ED-B51C-C7E488F531EE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do alerta.]]></commentInRDBMS>
+<generatorID>0D713ADB-1405-FC7E-60AF-39466A01A38F</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID_USR" id="D1ED74E6-8DFA-C504-EE7A-D13A3EF37D95">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → USR.ID_USR_USER: usuário que gerou o alerta.]]></commentInRDBMS>
+<generatorID>2AE99D0D-B29C-81D7-86D7-DA977EFE4C5F</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="018F7C3C-80C0-E918-E180-DA989E5813F9" referredColumn="4D82035E-A36C-DA2C-76EF-F00B7F36B6D8"/>
+</associations>
+</Column>
+<Column name="TP_ALT" id="D26D3AAC-2E8C-3211-1693-1F83829528B9">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do alerta (ex.: CHUVA, FOGO).]]></commentInRDBMS>
+<generatorID>4E1803F2-6F61-FF4A-8924-5B1B7D5B03A8</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC279139-37F9-785A-5EB2-DCACDD4EC5E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ALT_LEVEL" id="6C4F67E2-914D-D6A9-830D-D65EB180899F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível de gravidade do alerta.]]></commentInRDBMS>
+<generatorID>E0635BF6-4DD1-E13F-481C-0C339BF20E0A</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_ALT_CREATED_AT" id="D3FEEC60-B191-1098-EDB5-CA199AB68E4C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que o alerta foi criado.]]></commentInRDBMS>
+<generatorID>B2C6E79C-B662-A3FD-2383-A60C90116744</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_ALT_LAT" id="9DE676D9-D814-60E0-EDE3-93EF6856E195">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude do ponto do alerta.]]></commentInRDBMS>
+<generatorID>A7BDDF8A-E325-56AD-6A62-3CAC780B8903</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_ALT_LNG" id="D9C4A075-1C16-F786-7DE8-1844363B98EA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude do ponto do alerta.]]></commentInRDBMS>
+<generatorID>A36B9895-021B-1D07-4349-BFFA53C84AB9</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SENSOR_DATA_SENSOR_ID" id="009E54CA-8CEA-8E03-27C3-BB3F8066BDFC">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>857DE4AF-A82D-67C5-9F1A-1F05FA2EFD09</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFACC731-941A-FFB3-D249-D88B5FE5AD0F" referredColumn="6ECDA9AE-95EF-9917-8A18-FDF16517A4EF"/>
+</associations>
+</Column>
+<Column name="SENSOR_DATA_COLLECTED_AT" id="BB5B8D7F-496F-BDA6-EAAB-D8CFD42C0F3D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>4DFFDC1D-3040-7DBD-3380-A5AB8DC8BC4A</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFACC731-941A-FFB3-D249-D88B5FE5AD0F" referredColumn="34DADA7A-AC6D-74B6-7CB2-A731588B001B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28C4C261-BD9E-D89E-4ED0-CF09F9A487D6" name="ALERT_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>7A26DB2B-020C-E6AE-88C3-E14B1725C75F</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12762C7E-AA0A-75ED-B51C-C7E488F531EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BC4424B-9A9E-7C44-2018-9B0594DF9700" name="ALERT_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>8A2C10BD-AD82-0EFC-8B68-832AAF4F384A</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1ED74E6-8DFA-C504-EE7A-D13A3EF37D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64992D72-5601-51E0-0F3A-E2C74A6401B2" name="ALERT_SENSOR_DATA_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>311A7832-3B6D-011A-4B46-0D4970684487</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="009E54CA-8CEA-8E03-27C3-BB3F8066BDFC"/>
+<colUsage columnID="BB5B8D7F-496F-BDA6-EAAB-D8CFD42C0F3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

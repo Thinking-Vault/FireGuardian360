@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F9F4BDD1-F2EC-FE14-7016-89C0870DB057" containerWithKeyObject="181C5353-291B-BFFE-55D4-1B5E434ADD86" localFKIndex="7E85B5E8-60E6-2623-9879-9DD51C0CF5AE" name="SENSOR_DATA_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>DA03E94D-0AFA-9A7A-02D3-B2FAFB9898F2</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<referredTableLongName>VEGETATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B62485D-9258-8059-8921-2A9E27A3CC73</referredTableID>
+<keyObject>82D061D0-6818-E5F4-9288-376177197959</keyObject>
+<referredKeyID>82D061D0-6818-E5F4-9288-376177197959</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>VEGETATION_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

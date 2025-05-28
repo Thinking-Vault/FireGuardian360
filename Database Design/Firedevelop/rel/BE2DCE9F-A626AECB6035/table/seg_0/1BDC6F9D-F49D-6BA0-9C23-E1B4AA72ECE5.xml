@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BDC6F9D-F49D-6BA0-9C23-E1B4AA72ECE5" name="SHELTER">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>F366C6C9-9F0F-49D3-EC85-74BA80650D86</generatorID>
+<notes><![CDATA[Abrigo/refúgio onde pessoas e brigadistas podem se reunir em segurança, com capacidade e vagas disponíveis.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>SHL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_USR_ID" id="C2909881-9F93-F793-6A7A-4BB3452872F2">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USR" id="A8EDB255-C544-07F9-3554-ACD28CF6E332">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>D3498385-D499-6CE1-0046-828C95BD745D</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85ADF85E-8BCC-4434-CC02-258B0564E790" referredColumn="00E2C006-AEF3-A3A1-37BF-01F1145870D5"/>
+</associations>
+</Column>
+<Column name="NM_SHL_NAME" id="DF42C1C4-A08F-1E6F-4586-DFF86CCD190C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>6FC1F985-6D6C-3715-45FA-ADB4CEFCB540</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SHL_LAT" id="5A280F01-BB8B-05BF-BD9D-0CB9B43B2639">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>FC15F939-FF5A-A786-39BE-02149C3AF9ED</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SHL_LNG" id="209F72E4-A42D-8F19-E72C-FA4DE42D13E7">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>54CDC52E-2C7A-1AA4-0BC1-E1369FC5709D</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_SHL_CAPACITY" id="02C6D89C-46FD-5F25-B5A8-D9D0A94746A7">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>EFC84651-66D9-CFDB-5980-F89C83B9C248</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_SHL_AVAILABLE" id="1E562FC1-1D52-3745-1D47-0DBD11E51C73">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de vagas livres.
+
+]]></commentInRDBMS>
+<generatorID>8E51C4FA-411B-8603-2C2D-6B9A29B505EA</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_SHL" id="BF54A778-763E-B15F-56FC-C35E3588BC60">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>1CDB8F3A-3063-AF53-37E3-7A93DF686C67</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCALIZAÇÃO_ID_LOC" id="33B2F3FF-CE75-DED6-461F-3336F5ACD372">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<generatorID>DCAA49F5-6A8A-E5F6-516D-BD7D3646F9D3</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E3AC73A-E63F-38CB-874F-90969A22F08D" referredColumn="AD4AD863-411E-51FA-8EBD-41C3C8A071E1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="121D20C9-F1FA-A071-C428-742CA3CF4A83" name="SHELTER_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>FEE95AF6-F112-5E0A-2ACC-4DC24DA90FFD</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF54A778-763E-B15F-56FC-C35E3588BC60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B08A22D7-9C3D-BBF2-C529-F98765C995EC" name="SHELTER_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8EDB255-C544-07F9-3554-ACD28CF6E332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3E0553F-032F-7DEA-32F9-085C3B6FFC15" name="SHELTER_LOCALIZAÇÃO_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<generatorID>B64C380F-0B10-AC24-B07F-15CDA3E65A82</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33B2F3FF-CE75-DED6-461F-3336F5ACD372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

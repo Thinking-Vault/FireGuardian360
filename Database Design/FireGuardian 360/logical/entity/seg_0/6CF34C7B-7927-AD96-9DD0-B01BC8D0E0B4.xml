@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CF34C7B-7927-AD96-9DD0-B01BC8D0E0B4" name="SHELTER">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade SHL: armazena informações de abrigos disponíveis.]]></commentInRDBMS>
+<generatorID>4C9FE68B-B9DE-C361-980B-7D0C46418F0D</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>SHL</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID SHL SHELTER" id="4A07248A-A6F4-EE77-DCEE-1ED3D29CD230">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do abrigo.]]></commentInRDBMS>
+<generatorID>7882CDE0-AB05-DB39-DB94-AD0014740963</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM SHL NAME" id="C38B78A7-0914-0373-46F3-606FC3D979E1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do abrigo.]]></commentInRDBMS>
+<generatorID>7CF48417-54AB-125C-27F0-F481B6D25F56</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DE0CA264-9C78-A170-214F-FCE6054B1C96</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MD SHL LAT" id="5436AD13-04BE-B1A6-6A46-7303CBAF81A4">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude do abrigo.]]></commentInRDBMS>
+<generatorID>0C8C7AD8-2F5E-BC82-3463-A8A03BA14994</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MD SHL LNG" id="3CCE8CC4-1734-B48E-6BA2-3CF8CCB33C9A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude do abrigo.]]></commentInRDBMS>
+<generatorID>D22E3602-E24B-1FC8-B786-F4A9279E52FB</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT SHL CAPACITY" id="E0631C79-CA44-A242-1627-D7482F1F473E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Capacidade total do abrigo.]]></commentInRDBMS>
+<generatorID>CFAE40C0-85D4-CFC2-82A4-9045C346C985</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT SHL AVAILABLE" id="1959C22D-8ECA-C379-C71D-00CC63C1E433">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de vagas disponíveis atualmente.]]></commentInRDBMS>
+<generatorID>4E84A043-3A32-977B-3425-55D9BDA8071B</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="585B954E-773F-64C1-EEAD-056CBF041FE9" name="SHELTER_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:20:51 UTC</createdTime>
+<generatorID>EBE9B6AE-A2B0-BD34-3707-3592355F00AC</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A07248A-A6F4-EE77-DCEE-1ED3D29CD230</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="USUARIO" directorySegmentName="seg_0" id="5F2B7877-123F-0CD9-DA6E-8FDCB92DD386">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SG_USR_ROLE" id="01E16923-DA37-3939-FDE8-99B8AF9C482A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<defaultValue>&apos;USER&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_USR" id="1D281491-B4BC-45A5-B068-5B9CA7A9BA4F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TX_USR_PSW_HASH" id="3584C00F-79F3-32DC-EADA-5ED6C770CCB1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_USR_EMAIL" id="665B5ABD-2403-AFC1-78C7-BF61E3E91743">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DH_USR_CREATED_AT" id="CFBBB064-7EF6-71B8-D009-07F3584400E5">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NM_USR_NAME" id="CFC34123-2486-3139-EB91-A2532CB6E1D1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_USUARIO" id="216D605F-8335-8C15-D2B6-1E66D907D566">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_USUARIO_EMAIL" id="870A7A3B-1A33-F002-B872-847906E68ED1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

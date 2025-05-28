@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ALT" directorySegmentName="seg_0" id="CEDB0C78-54E3-7289-EFA0-7389F9F08757">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MD_ALT_LNG" id="0BD3AC49-C90D-EB0B-43A6-A7909FB7C43B">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DH_ALT_CREATED" id="0EA2DAB8-D458-3648-4B48-542200F3B4AE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NR_ALT_LEVEL" id="214DED20-B5F8-5AA0-AB19-6EDF1F018F37">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_ALT_ALT" id="52FAFE46-F8BC-1C80-1A71-ACD95A085074">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MD_ALT_LAT" id="5A8C8A7C-870A-7A08-340E-CB050A905E21">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TP_ALT_TYPE" id="A795DEB9-1AE1-93C3-20DF-4208B09DED20">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_USR_USR" id="BE6BE876-86BC-9D40-AF87-EB7204E97502">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_SNS_ID" id="C29F4757-9508-530F-441F-57FF7018EDA2">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DH_SNS_COLETED" id="DA386DD8-267B-3625-13FD-6E46E27F4E76">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ALT_SNS" id="1722A530-068A-9424-15C7-84D2E4AB3F9D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ALT_USR" id="FDD37099-8375-9857-1574-86216B36DDC7">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ALT" id="2DF987E3-45A2-420B-CDD3-35E085C72FA8">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

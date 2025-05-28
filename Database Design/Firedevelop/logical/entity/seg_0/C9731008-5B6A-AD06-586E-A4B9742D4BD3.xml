@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C9731008-5B6A-AD06-586E-A4B9742D4BD3" name="AÇÃO_COMBATE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:57:17 UTC</createdTime>
+<notes><![CDATA[Ação executada pelas autoridades num foco de queimada (aérea, terrestre, etc.), com data e resultado.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ACB</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_QMD" id="8158F649-F31E-CACB-B6DD-68D8D764A8C1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:12:54 UTC</createdTime>
+<generatorID>4B2DE6EB-C4E0-15AD-FE04-950CFBA4516C</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<referedAttribute>48D7C792-D574-15D2-D4C7-06BC93E890DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ACB_EXECUCAO" id="8095C9C4-6C4C-98A4-8CB0-1885CD6B8B5A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:15:11 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_ACB_TIPO" id="6678E545-1478-5009-AE25-FECE5F12B858">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:15:16 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ACB_RESULTADO" id="29C91253-3DA2-BC72-263C-6EC4D2E8AFF1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:15:23 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

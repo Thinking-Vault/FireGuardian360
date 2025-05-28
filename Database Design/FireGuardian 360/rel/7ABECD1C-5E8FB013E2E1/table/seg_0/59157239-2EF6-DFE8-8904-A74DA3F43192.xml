@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59157239-2EF6-DFE8-8904-A74DA3F43192" name="CHECKLIST_ITEM">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade CLI: itens de checklist de cada usuário.]]></commentInRDBMS>
+<generatorID>1B276691-D45B-9EA0-E96B-9D3B6C5F2609</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<abbreviation>CLI</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CLI_ITEM" id="1F2031BA-F25E-A532-867C-AE679F1A8D19">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do item de checklist.]]></commentInRDBMS>
+<generatorID>98770E25-213D-9920-F621-6650E92CB6C1</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID_USR" id="A2A9D584-B8E4-5816-C365-88E07720C017">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → USR.ID_USR_USER: usuário dono do item.]]></commentInRDBMS>
+<generatorID>89C61D0C-6D81-3FDE-D362-57A1201F5294</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A972AD10-5924-665C-D880-42D67FEB8DF6" referredColumn="4D82035E-A36C-DA2C-76EF-F00B7F36B6D8"/>
+</associations>
+</Column>
+<Column name="NM_CLI_LABEL" id="1AF70EC8-2E14-A34F-C7FB-772E203CAB99">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do item de checklist.]]></commentInRDBMS>
+<generatorID>940F0827-F4F4-23CD-A96B-2760BB1F8347</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DEAF5770-DAEB-F39B-74AF-71E32B9B4B15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_CLI_STATUS" id="89367766-154F-2CB6-8BD0-80CFB9F45ED1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do item (P=pendente, C=concluído).]]></commentInRDBMS>
+<generatorID>DF20E0F5-5678-A026-4706-46F249BF5049</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<constraintName>CK_CLI_STATUS</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DC4D11C1-1EDF-9F59-CFA5-CAA10ED66EBB</domain>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="P" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_CLI_UPDATED_AT" id="1934835B-0995-8455-72DD-86ED0909B5C0">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da última atualização do status.]]></commentInRDBMS>
+<generatorID>43DC3B75-BA91-962E-D73A-E4489B032190</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A5BB024-8A58-0EC5-904D-F2AFA8E29665" name="CHECKLIST_ITEM_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>C6E09D5E-C7A4-D2FF-CCE8-B7176AA84388</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F2031BA-F25E-A532-867C-AE679F1A8D19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EC6AF6B-A696-A00A-ECBE-6D9C07F31891" name="CHECKLIST_ITEM_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>676599F4-ADCE-B14D-464D-20E167C8188E</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2A9D584-B8E4-5816-C365-88E07720C017"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
