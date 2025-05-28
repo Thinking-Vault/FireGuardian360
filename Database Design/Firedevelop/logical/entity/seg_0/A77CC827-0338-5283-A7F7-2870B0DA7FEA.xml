@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A77CC827-0338-5283-A7F7-2870B0DA7FEA" name="CHAT_MESSAGE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:57:55 UTC</createdTime>
+<notes><![CDATA[Mensagem trocada dentro de uma sessão de chat.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CTM</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CTM_MESSAGE" id="F829F2E7-6310-11D6-CAB7-B12A1561EBD3">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:27:29 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CTS_SESSION" id="A5427A29-8983-8AA0-9B81-5A90732929D4">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:34:24 UTC</createdTime>
+<generatorID>5F2520A1-8CA8-D62C-2BDD-E72B26DE0188</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<referedAttribute>6A8247FC-4A37-2249-AA16-4C698096CE58</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USR" id="B31F0971-20F0-2B1C-BE01-BA17096E4689">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:50:39 UTC</createdTime>
+<generatorID>5F2520A1-8CA8-D62C-2BDD-E72B26DE0188</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<referedAttribute>9AFD06F4-81C8-6C05-1E7F-24C41AA9DC61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TX_CTM_CONTENT_1" id="2F444EF8-B1E3-1E57-EAC7-C44736DC4803">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TX_CTM_CONTENT" id="2E96AA50-B8B1-6CEF-D673-DBE1CF6E9A4E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:27:29 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B26233DB-ABFF-39FD-A03A-8CA29D0B9292" name="CHAT_MESSAGE PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:25:34 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F829F2E7-6310-11D6-CAB7-B12A1561EBD3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

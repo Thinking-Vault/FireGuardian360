@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="181C5353-291B-BFFE-55D4-1B5E434ADD86" name="SENSOR_DATA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade SENSOR_DATA: representa os dados coletados por sensores ambientais.]]></commentInRDBMS>
+<generatorID>C44C4613-205F-91BA-7E95-242A1A7569E3</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SENSOR_ID" id="6ECDA9AE-95EF-9917-8A18-FDF16517A4EF">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador do sensor.]]></commentInRDBMS>
+<generatorID>C4951B74-7CE1-0662-18CF-E22B4AA8FC12</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLLECTED_AT" id="34DADA7A-AC6D-74B6-7CB2-A731588B001B">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: data e hora da coleta.]]></commentInRDBMS>
+<generatorID>A2AC4C61-A5E9-50A2-DE83-5AE6EB473BAE</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEASURE_TYPE" id="7864B3A4-C123-39E0-ED75-19ED97002C52">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de medida capturada (ex.: temperatura, umidade).]]></commentInRDBMS>
+<generatorID>F3667E07-EA80-9AD1-B079-3BD37A928B24</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALUE" id="1C01EAA4-DD6E-9B61-89DD-AFFF9933D493">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor numérico da medição.]]></commentInRDBMS>
+<generatorID>5A231DB7-3FDE-63E1-6D19-6C25EA37F065</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAT" id="0AD1F939-9319-30A4-C4FA-3802FADCA105">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude onde o sensor coletou os dados.]]></commentInRDBMS>
+<generatorID>71992AEF-B23F-9AFB-AA36-FD7F2DD872A2</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LNG" id="54CD3446-7A10-4D92-BD53-6CCA34E4C68F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude onde o sensor coletou os dados.]]></commentInRDBMS>
+<generatorID>06F7CC45-AE72-97C4-EBF5-E0D4DF7A3FC1</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEGETATION_VEGETATION_ID" id="24C5F3FE-1A6F-B70A-438B-0DF8AFF10464">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → VEGETATION.VEGETATION_ID: tipo de vegetação presente no local da medição.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9F4BDD1-F2EC-FE14-7016-89C0870DB057" referredColumn="5A77BE88-3CAA-0369-8AE8-33E9D779ABCF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="511F8F8E-D1D7-27B7-BF06-653EDA4FD14C" name="SENSOR_DATA_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>82B22678-5FED-F6ED-3961-4EDF7683BD86</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECDA9AE-95EF-9917-8A18-FDF16517A4EF"/>
+<colUsage columnID="34DADA7A-AC6D-74B6-7CB2-A731588B001B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E85B5E8-60E6-2623-9879-9DD51C0CF5AE" name="SENSOR_DATA_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>DA03E94D-0AFA-9A7A-02D3-B2FAFB9898F2</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24C5F3FE-1A6F-B70A-438B-0DF8AFF10464"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

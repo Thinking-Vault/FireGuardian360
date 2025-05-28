@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_2" id="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" mainViewID="75A48B95-F599-AED1-8D64-FE39894CADA9">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:45 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>comentarios.ddl</fileName>
+<pathName>D:\Abner\Downloads\360\FireGuardian360\Database Design</pathName>
+<dbType>9</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E91876D4-7B1C-4B2D-7C04-D58B8BAE2D6A" name="USER">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade USER: armazena os usuários do sistema.]]></commentInRDBMS>
+<generatorID>1B1266BF-7D76-31DC-3587-AC7F521F90B6</generatorID>
+<notes><![CDATA[Pessoa (morador, brigadista, inspetor) que interage com o sistema.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>USR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USR_ID" id="88463470-226E-8912-87BB-1D4E04A6572E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="ID_USR" id="00E2C006-AEF3-A3A1-37BF-01F1145870D5">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do usuário (PK)]]></commentInRDBMS>
+<generatorID>7655F53D-9DCF-CF9C-4022-260498E98498</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_USR_NAME" id="4909E8D9-FD3A-2A03-75DA-C54C0CFAC53E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do usuário]]></commentInRDBMS>
+<generatorID>6662E9ED-6B3F-7C69-0C14-27D349749462</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EM_USR_EMAIL" id="BE633DC0-950E-26FA-D17B-085AC34FC2A4">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail do usuário (único, obrigatório).]]></commentInRDBMS>
+<generatorID>87286F29-CE0F-DB0D-E196-5217453F7BE0</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_USR_ROLE" id="CF17ECF9-798E-81B0-240C-3D509895C416">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do perfil/permissão do usuário]]></commentInRDBMS>
+<generatorID>30CDFE23-D26E-4974-F279-BF8D88553033</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_USR_CREATED_AT" id="374F8DE8-5177-2751-25E9-F84F8086C3CA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de criação do registro]]></commentInRDBMS>
+<generatorID>60DCA254-0C7B-8ECE-580D-583FAA22BF0B</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_USR_TELEFONE" id="E930780D-1B3E-E805-8AFB-6765406B2A28">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone de contato]]></commentInRDBMS>
+<generatorID>3F9EEAF8-52BD-D297-2DDA-94391A19B108</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7CA44C2-F557-B42C-F3B8-A3BEF1282B7B" name="USER_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:42:32 UTC</createdTime>
+<generatorID>69046019-6602-1CEC-BAAE-E6FB856477B6</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00E2C006-AEF3-A3A1-37BF-01F1145870D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CA3F293-6C33-7B88-777F-79366E41EC7A" name="USR_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="88463470-226E-8912-87BB-1D4E04A6572E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

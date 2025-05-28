@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SHELTER" directorySegmentName="seg_0" id="9DD7AE03-73E2-F247-3F05-9A74DC4CBB59">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MD_SHL_LNG" id="1A5E459B-F282-A129-FF65-59A5FCE810C7">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_SHL_NAME" id="24E99EF1-2063-3701-FF68-BEEB59179D63">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QT_SHL_AVAILABLE" id="366ABA0A-7FDC-4CEC-9ACD-8E8D3728EA72">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QT_SHL_CAPACITY" id="5C4213C6-F9D3-39F4-475A-7EB027628E8B">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_SHL_SHELTER" id="8DF6E802-5901-5522-91B1-6051F877E13E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MD_SHL_LAT" id="CBA63449-43DD-47A9-D7F8-F3046BFD8EAD">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SHELTER_PK" id="64A81A5A-4369-315C-162F-B995580DDE07">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:35:04 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

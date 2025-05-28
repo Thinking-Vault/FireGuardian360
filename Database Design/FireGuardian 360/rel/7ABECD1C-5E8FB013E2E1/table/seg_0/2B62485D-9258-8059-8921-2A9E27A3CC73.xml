@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B62485D-9258-8059-8921-2A9E27A3CC73" name="VEGETATION">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade VEGETATION: tipos de vegetação cadastrados no sistema.]]></commentInRDBMS>
+<generatorID>608B5F2C-0838-915F-BE8C-2784B14F1421</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VEGETATION_ID" id="5A77BE88-3CAA-0369-8AE8-33E9D779ABCF">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do tipo de vegetação.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82D061D0-6818-E5F4-9288-376177197959" name="VEGETATION_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="5A77BE88-3CAA-0369-8AE8-33E9D779ABCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

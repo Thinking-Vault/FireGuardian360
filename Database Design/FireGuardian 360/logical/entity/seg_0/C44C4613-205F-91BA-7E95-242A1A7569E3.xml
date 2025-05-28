@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C44C4613-205F-91BA-7E95-242A1A7569E3" name="SENSOR DATA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade SENSOR_DATA: representa os dados coletados por sensores ambientais.]]></commentInRDBMS>
+<generatorID>DAEC61A2-2ADA-9F08-E642-15E4701259C2</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SENSOR ID" id="C4951B74-7CE1-0662-18CF-E22B4AA8FC12">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador do sensor.]]></commentInRDBMS>
+<generatorID>A59E7AD8-ADF0-7398-B7A3-35EF3CC716F3</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COLLECTED AT" id="A2AC4C61-A5E9-50A2-DE83-5AE6EB473BAE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: data e hora da coleta.]]></commentInRDBMS>
+<generatorID>57A6DD05-B0A4-0F8E-1BAB-99BAB03FD642</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEASURE TYPE" id="F3667E07-EA80-9AD1-B079-3BD37A928B24">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de medida capturada (ex.: temperatura, umidade).]]></commentInRDBMS>
+<generatorID>79D9FF68-C312-8166-32CF-7B95BF5FFC43</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VALUE" id="5A231DB7-3FDE-63E1-6D19-6C25EA37F065">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor numérico da medição.]]></commentInRDBMS>
+<generatorID>0CF1F527-3D32-5476-D7B1-FE76AF69B1A9</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAT" id="71992AEF-B23F-9AFB-AA36-FD7F2DD872A2">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude onde o sensor coletou os dados.]]></commentInRDBMS>
+<generatorID>D433B244-372C-90F9-7FAF-980CE48EB88F</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LNG" id="06F7CC45-AE72-97C4-EBF5-E0D4DF7A3FC1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude onde o sensor coletou os dados.]]></commentInRDBMS>
+<generatorID>70D0A0E2-8087-E648-3045-3DA022B845B2</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="82B22678-5FED-F6ED-3961-4EDF7683BD86" name="SENSOR DATA PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:17:52 UTC</createdTime>
+<generatorID>0B1605A2-74BF-33DB-A1AB-BE10EEFB49A7</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<engineerTo>
+<item key="1B32B9AB-9458-2A52-EB40-7A6ACC1994B6" value="true"/>
+<item key="D9846FF0-F076-C122-1E55-AAFE7565BB5D" value="true"/>
+<item key="7ABECD1C-4E8A-CD6C-6521-5E8FB013E2E1" value="true"/>
+<item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C4951B74-7CE1-0662-18CF-E22B4AA8FC12</attributeRef>
+<attributeRef>A2AC4C61-A5E9-50A2-DE83-5AE6EB473BAE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4454C8F5-1038-2A57-EBC7-B037BF43AE98" name="VGT">
+<sourceDDLFile>t2.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade VGT: tipos de vegetação cadastrados no sistema.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>25D2A1F8-CEC0-7011-E7D4-CB5843230104</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_VGT_VGT" id="3EBA8367-3347-A50F-FF89-0B205E831C59">
+<sourceDDLFile>t2.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do tipo de vegetação.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>FD679606-39EE-087F-83EC-E9126465D0E7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SQ_VGT</autoIncrementSequenceName>
+<autoIncrementTriggerName>TR_VGT_ID</autoIncrementTriggerName>
+</Column>
+<Column name="NM_VGT_TIPO" id="12395108-C007-27CF-B122-480BD8E932B0">
+<sourceDDLFile>t2.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de vegetação (cerrado, floresta etc.).]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>895DDEF7-6F53-550B-1E37-87F886B739E8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DEAF5770-DAEB-F39B-74AF-71E32B9B4B15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_VGT_DESC" id="D4AF5F22-FC0B-5B2F-B7F0-6C9740ED5C60">
+<sourceDDLFile>t2.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição geral do tipo de vegetação.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>ED1C45B3-0C06-769F-70BD-180D5E1848D4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC3C1DB4-6778-13DE-BEFC-8AB64A011137</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_VGT_RISCO" id="F406FA93-92F4-4074-5D21-09BF300D71B4">
+<sourceDDLFile>t2.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Probabilidade média de risco de queimada.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>D7549706-1C52-B76E-7C89-23B4AC20FEB4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B8EA6178-8F60-9DAF-43AC-7771CC581974</domain>
+<defaultValue>0.00</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FE213BA-ED9A-0BFD-6020-14E8579A13FD" name="PK_VGT">
+<sourceDDLFile>t2.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:50:33 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>39AC97D6-EBB6-614A-4EDA-DEE648F08AAF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EBA8367-3347-A50F-FF89-0B205E831C59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

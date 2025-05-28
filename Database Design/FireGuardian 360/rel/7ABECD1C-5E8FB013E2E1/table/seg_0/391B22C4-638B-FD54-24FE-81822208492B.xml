@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="391B22C4-638B-FD54-24FE-81822208492B" name="FIRE_HISTORY">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade FIRE_HISTORY: histórico de ocorrências de incêndio associadas a tipos de vegetação.]]></commentInRDBMS>
+<generatorID>4ADC7BA8-8985-52BE-89EA-5883D4F9CE17</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VEGETATION_VEGETATION_ID" id="2051C308-39C3-65C0-D142-F3F15203D855">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → VEGETATION.VEGETATION_ID: identifica o tipo de vegetação afetado pelo incêndio.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A990A901-5E0D-3D17-40FA-A4E0A4076A11" referredColumn="5A77BE88-3CAA-0369-8AE8-33E9D779ABCF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8DBDE28-DBF2-BB4A-F38C-9CDF0A718B07" name="FIRE_HISTORY_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:34:51 UTC</createdTime>
+<generatorID>16EDD744-BAED-2686-E401-17A91369450C</generatorID>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2051C308-39C3-65C0-D142-F3F15203D855"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

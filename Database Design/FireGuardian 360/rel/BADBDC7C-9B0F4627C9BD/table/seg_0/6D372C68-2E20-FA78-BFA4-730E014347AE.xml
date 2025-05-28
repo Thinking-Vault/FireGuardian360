@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D372C68-2E20-FA78-BFA4-730E014347AE" name="ALERTA">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade ALERTA: registra alertas gerados pelos usuários.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>B1DFA0DF-2742-100B-4D9F-9861DF69EF62</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ALT" id="122862C4-A720-1F07-8336-64B717318E87">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK: identificador único do alerta.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>608B2D0F-D21E-E6CA-DF1D-B522192F80CB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USR" id="607D4504-E30B-1F46-4D10-751301AACC49">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → USUARIO.ID_USR: usuário que gerou o alerta.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>E2D4EA06-FCDA-E1F3-3FA1-A14E0221DA08</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FB6210C1-2486-5238-45F3-765AB527CC8D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D341951-E961-2F8A-E01C-6893657038EE" referredColumn="1D281491-B4BC-45A5-B068-5B9CA7A9BA4F"/>
+</associations>
+</Column>
+<Column name="TP_ALT" id="C9819B1A-FA64-4F51-A508-A7272E221E5B">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do alerta (ex.: CHUVA, FOGO).]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>3153C989-17FD-D5BE-8E48-1D06F6E21A22</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC279139-37F9-785A-5EB2-DCACDD4EC5E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ALT_LEVEL" id="F7FFCD67-1DFC-2E13-41C4-473D49F63282">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível de gravidade do alerta.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>9B2A8596-7D3C-9B1A-9411-4790ABD7FE8B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A53338BE-6B1B-F81C-9F8E-ED9085F2C4AF</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_ALT_CREATED" id="7F3CD296-3B8C-13D4-CAFD-0D6A07600871">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que o alerta foi criado.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>FC2133D5-B7EB-CD74-E3E1-9979D9231DD4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>6D16C64C-A186-F64D-5D75-E6165E71BB80</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_ALT_LAT" id="D179E93F-BDCA-E8E7-011F-EA10207FCFF2">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude do ponto do alerta.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>BF644F2F-69B7-77F5-4F3D-7F42ECF8E5DB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>876D480A-343C-B74F-1E79-4B57519A2D21</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_ALT_LNG" id="FE3C67A6-C633-4943-7199-9990C4694084">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude do ponto do alerta.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>80313129-201B-7174-3856-8A027E3B09FD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>876D480A-343C-B74F-1E79-4B57519A2D21</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_SNS" id="EB3A630D-C24E-53C7-ED70-2F5F168D6C2E">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → SENSOR_DATA.ID_SNS: sensor que detectou.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>AE9B92CD-807A-3A5E-6C0E-4C6C3D2AAADC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>529E4886-F6FC-B962-9688-58E036F01684</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="553EB892-65C3-EF1C-13DB-E55F0488ECF6" referredColumn="4620BF71-3BC7-6435-F4DA-362720702755"/>
+</associations>
+</Column>
+<Column name="DH_SNS_COLETADO" id="428D8E85-2051-50A9-F8DA-CB433674A232">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK → SENSOR_DATA.DH_SNS_COLETADO: timestamp da coleta do sensor.]]></commentInRDBMS>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>A5072A23-B138-A655-AC17-4446F61C8980</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>8ED34FDA-B2B8-EC1A-9ACE-9907532B213D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="553EB892-65C3-EF1C-13DB-E55F0488ECF6" referredColumn="A4B6D685-B40E-01FE-1BF1-BCB197CC250A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66779E2E-056A-83E9-7440-2A6BDDB42167" name="PK_ALERTA">
+<sourceDDLFile>t3.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>D9EB1543-7094-6E51-C77F-45EDF0343F15</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="122862C4-A720-1F07-8336-64B717318E87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0821D0FE-4F6B-F236-40C4-D3BC092D6072" name="FK_ALERTA_SENSOR_DATA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB3A630D-C24E-53C7-ED70-2F5F168D6C2E"/>
+<colUsage columnID="428D8E85-2051-50A9-F8DA-CB433674A232"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F69CD0A-0860-0C9D-0EF5-B45C89FE2096" name="FK_ALERTA_USUARIO">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 12:51:55 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="607D4504-E30B-1F46-4D10-751301AACC49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
