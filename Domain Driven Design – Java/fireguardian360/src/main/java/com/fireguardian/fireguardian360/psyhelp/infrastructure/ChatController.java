@@ -4,8 +4,6 @@ import com.fireguardian.fireguardian360.psyhelp.application.PsyHelpService;
 import com.fireguardian.fireguardian360.psyhelp.domain.model.ChatMessage;
 import com.fireguardian.fireguardian360.psyhelp.domain.model.ChatSession;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,9 +23,4 @@ public class ChatController {
         return service.getMessages(id);
     }
 
-    @MessageMapping("/chat.send")
-    @SendTo("/topic/messages")
-    public ChatMessage send(ChatMessage message) throws Exception {
-        return service.sendMessage(message);
-    }
 }

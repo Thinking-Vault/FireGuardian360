@@ -13,3 +13,7 @@ spring:
     console:
       enabled: true
       path: /h2-console
+logging:
+  level:
+    org.springframework.web.socket.messaging: DEBUG
+    org.springframework.messaging.simp: DEBUG
