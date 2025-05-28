@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5E54A809-9A6B-7E05-9A64-2A6898033261" containerWithKeyObject="25A8D258-6DC5-7C73-D6B2-3659743E0972" localFKIndex="470C2D9A-25C7-D7D3-B122-53D0E24921B1" name="FK_CMT_CSS">
+<sourceDDLFile>test.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 03:20:03 UTC</createdTime>
+<ownerDesignName>FireGuardian 360</ownerDesignName>
+<importedID>088E2A4D-953D-7F8C-D854-B4AB3ADCE6F4</importedID>
+<referredTableLongName>CSS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A5068C95-B685-34DB-5D0D-D636C83C82B7</referredTableID>
+<keyObject>7F3E97EC-397F-F015-4B5E-1CC1040AD495</keyObject>
+<referredKeyID>7F3E97EC-397F-F015-4B5E-1CC1040AD495</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CSS_SESSION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
