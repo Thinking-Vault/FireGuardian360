@@ -11,11 +11,6 @@ import java.util.Scanner;
  */
 public class MainApp {
     /**
-     * Ponto de entrada da aplicação.
-     *
-     * @param args os argumentos de entrada
-     */
-    /**
      * Ponto de entrada da aplicação FireGuardian360.
      * <p>
      * Este método demonstra o uso das classes Alert, Shelter e ChecklistItem.
