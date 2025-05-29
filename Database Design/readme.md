@@ -139,3 +139,9 @@ O projeto visa estruturar um banco de dados relacional para apoiar o monitoramen
 * **Significado:** Representa a ação tomada para um foco de queimada específico.
 * **Cardinalidade:** Uma queimada pode ter várias ações de combate (1\:N).
 * **FK:** `FK_ACB_QMD`
+
+## Diagramas
+
+![Relacional](./Relational.png)
+
+![Lógico](./Logical.png)
