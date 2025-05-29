@@ -1,4 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
+<<<<<<<< HEAD:Database Design/Firedevelop/logical/relation/seg_0/DA03E94D-0AFA-9A7A-02D3-B2FAFB9898F2.xml
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SENSOR DATA VEGETATION FK" directorySegmentName="seg_0" id="DA03E94D-0AFA-9A7A-02D3-B2FAFB9898F2">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 12:18:29 UTC</createdTime>
@@ -10,13 +11,29 @@
 <item key="BADBDC7C-DA5A-945E-9155-9B0F4627C9BD" value="true"/>
 </engineerTo>
 <useSurrogateKey>true</useSurrogateKey>
+========
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_9" directorySegmentName="seg_0" id="1755E81F-0D9E-2409-019E-8BBEF07EE0EF">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:02:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<sourcePk>C0EC3842-050F-DC62-083E-93C33C5FCE56</sourcePk>
+>>>>>>>> feature/Database-Design:Database Design/Firedevelop/logical/relation/seg_0/1755E81F-0D9E-2409-019E-8BBEF07EE0EF.xml
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
+<<<<<<<< HEAD:Database Design/Firedevelop/logical/relation/seg_0/DA03E94D-0AFA-9A7A-02D3-B2FAFB9898F2.xml
 <sourceEntity>608B5F2C-0838-915F-BE8C-2784B14F1421</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>C44C4613-205F-91BA-7E95-242A1A7569E3</targetEntity>
+========
+<sourceEntity>B81DCD45-D706-C5E8-4438-79CA3F15FD90</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DDB2D712-0112-D555-A3BB-2F6E525FB2D6</targetEntity>
+>>>>>>>> feature/Database-Design:Database Design/Firedevelop/logical/relation/seg_0/1755E81F-0D9E-2409-019E-8BBEF07EE0EF.xml
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>
