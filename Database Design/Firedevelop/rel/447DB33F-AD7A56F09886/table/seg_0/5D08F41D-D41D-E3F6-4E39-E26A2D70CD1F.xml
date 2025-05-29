@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D08F41D-D41D-E3F6-4E39-E26A2D70CD1F" name="CHAT_SESSION">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sessões de chat entre usuário e sistema.]]></commentInRDBMS>
+<generatorID>A3F56F37-BB17-897B-E594-9BC7C7ECA566</generatorID>
+<notes><![CDATA[Sessão de chat (ex.: PsyHelp) iniciada por um usuário ou brigadista.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>CTS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CTS" id="9FFC152F-1E19-6328-3394-4965CD82ABA3">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador sequencial da sessão de chat.]]></commentInRDBMS>
+<generatorID>679AA230-95FD-A5D7-3E24-69A74BA09F38</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID_USR" id="1225B49A-44C6-23BB-E0D0-DC56CA1BEAD6">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para USUARIO, usuário que iniciou a sessão.]]></commentInRDBMS>
+<generatorID>9AFD06F4-81C8-6C05-1E7F-24C41AA9DC61</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="507E57B1-324C-B30D-AC64-85C1C1295842" referredColumn="0000948B-7E6F-4DCC-4B4D-0E6767F4E28E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3B6D775-FAC0-35D7-05FA-4CC5EEF9CB1B" name="CHAT_SESSION_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>BBA7A580-1A89-95AF-7558-8DE7DBE5CE78</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1225B49A-44C6-23BB-E0D0-DC56CA1BEAD6"/>
+<colUsage columnID="9FFC152F-1E19-6328-3394-4965CD82ABA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71849926-05B2-C570-BFF0-0554B3F6696E" name="CHAT_SESSION_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>FE1B0553-F206-F295-490C-A2C8E5702EE9</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1225B49A-44C6-23BB-E0D0-DC56CA1BEAD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

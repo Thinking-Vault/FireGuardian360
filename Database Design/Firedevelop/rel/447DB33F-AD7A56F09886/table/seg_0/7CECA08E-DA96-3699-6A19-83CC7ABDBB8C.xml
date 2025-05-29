@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CECA08E-DA96-3699-6A19-83CC7ABDBB8C" name="QUEIMADA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro dos focos de incêndio detectados.]]></commentInRDBMS>
+<generatorID>A4B85A0C-F48C-8215-9C62-20417E60FEFF</generatorID>
+<notes><![CDATA[Registro de cada foco de incêndio detectado.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>QMD</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_QMD" id="003BBFAB-7BED-8F6A-1160-CFB1C9B5A1DA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do foco de queimada
+]]></commentInRDBMS>
+<generatorID>48D7C792-D574-15D2-D4C7-06BC93E890DD</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCALIZAÇÃO_ID_LOC" id="BF4351F4-C137-36CE-31A3-706F2227E09A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relaciona cada foco de queimada à sua localização (LOCALIZACAO.ID_LOC).]]></commentInRDBMS>
+<generatorID>C6D74B47-735E-9D9D-76D8-0565D7ECB584</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DEA0603-ABFD-C4F7-DBCE-0A71CAECB3BD" referredColumn="95C11654-FF7C-DA6F-9738-62215179815D"/>
+</associations>
+</Column>
+<Column name="SENSOR_ID_SNS" id="847DB901-09EE-6A1B-06EF-89084273A28A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Associa o sensor responsável pela detecção do foco (SENSOR.ID_SNS).]]></commentInRDBMS>
+<generatorID>E89FF4CC-2CBB-B5D0-D7BA-D9365A3D4698</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9252BE3D-ED61-A7B4-6585-C5475F0271D3" referredColumn="1C15CC87-DB38-64CC-7376-230C677B318C"/>
+</associations>
+</Column>
+<Column name="VEGETATION_ID_VGT" id="578F41A2-D9A1-F7B2-7C29-3E93BAB90836">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica o tipo de vegetação onde o foco ocorreu (VEGETATION.ID_VGT).]]></commentInRDBMS>
+<generatorID>212222FC-C6D3-7947-43A2-B8AF2FD3B15A</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78BF074B-300D-1245-9163-053CBB3E6F1A" referredColumn="C6C81B1D-2663-06A3-1EFF-85DE56E61877"/>
+</associations>
+</Column>
+<Column name="DT_QMD_OCORRENCIA" id="A23728CF-D9F6-C1A1-4F2C-B9F3A5F84BF4">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da ocorrência do foco de queimada.]]></commentInRDBMS>
+<generatorID>00E2FFE8-76D2-68B6-9115-29D125C3E3E0</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_QMD_INTENSIDADE" id="17F6BB2B-2DD7-45C8-062D-8B63CC7EA615">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Intensidade do foco (baixa/média/alta)
+]]></commentInRDBMS>
+<generatorID>004452D6-5350-8680-CB6E-720B5BE212DE</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F805F0A-6146-3988-2529-F4CC62886A4B" name="QUEIMADA_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>67C10D8D-D0CB-E049-D680-9999D2CB869B</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="003BBFAB-7BED-8F6A-1160-CFB1C9B5A1DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D693DE8-D04B-B0CF-DD27-D3A3B85BDE31" name="QUEIMADA_LOCALIZAÇÃO_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>2470D16F-C147-7FF8-A5F7-1DE5A26B02E6</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF4351F4-C137-36CE-31A3-706F2227E09A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFB80B13-D554-41FF-06E7-C82174BE4045" name="QUEIMADA_SENSOR_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>06C4A32A-991F-E318-344C-523C6B65C787</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="847DB901-09EE-6A1B-06EF-89084273A28A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CE713F9-C1AA-23F5-C2A2-8EE5D8B65EB6" name="QUEIMADA_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>41DCCF90-90A1-6678-DF82-BDCAADF854EC</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="578F41A2-D9A1-F7B2-7C29-3E93BAB90836"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

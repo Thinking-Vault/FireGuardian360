@@ -2,11 +2,12 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B81DCD45-D706-C5E8-4438-79CA3F15FD90" name="VEGETATION">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:56:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipos de vegetação e probabilidade de propagação do fogo.]]></commentInRDBMS>
 <notes><![CDATA[Tipo de cobertura vegetal (cerrado, mata seca…) com inflamabilidade e taxa de propagação.
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -24,11 +25,11 @@
 <commentInRDBMS><![CDATA[Identificador único do tipo de vegetação]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NM_VGT_NAME" id="2D767128-BB4E-C20E-645A-5929E83B0BD6">
@@ -38,24 +39,28 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PC_VGT_FLAMMABILITY" id="B2358BAA-E9C6-50C8-B950-980E73E986FF">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:26:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Probabilidade de propagação de fogo (%) com duas casas decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DS_VGT_CARACTERISTICA" id="8A7E2424-F7F9-8011-A1F7-4405F63FDC72">
 <createdBy>Adm</createdBy>
@@ -65,12 +70,13 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -79,7 +85,7 @@
 <createdTime>2025-05-27 20:30:09 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

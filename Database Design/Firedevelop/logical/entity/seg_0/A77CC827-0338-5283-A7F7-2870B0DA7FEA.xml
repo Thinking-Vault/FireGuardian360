@@ -2,10 +2,13 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A77CC827-0338-5283-A7F7-2870B0DA7FEA" name="CHAT_MESSAGE">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:57:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Mensagens trocadas em cada sessão de chat.]]></commentInRDBMS>
 <notes><![CDATA[Mensagem trocada dentro de uma sessão de chat.]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -17,12 +20,15 @@
 <normalForm>Third</normalForm>
 <shortName>CTM</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_CTM_MESSAGE" id="F829F2E7-6310-11D6-CAB7-B12A1561EBD3">
+<Attribute name="ID_CTM" id="F829F2E7-6310-11D6-CAB7-B12A1561EBD3">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:27:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da mensagem.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -30,27 +36,48 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_CTS_SESSION" id="A5427A29-8983-8AA0-9B81-5A90732929D4">
+<Attribute name="TX_CTM_PREVIEW" id="E97C4910-B18E-AAA6-9EB7-495C6A199E2E">
 <createdBy>Adm</createdBy>
-<createdTime>2025-05-27 20:34:24 UTC</createdTime>
-<generatorID>5F2520A1-8CA8-D62C-2BDD-E72B26DE0188</generatorID>
+<createdTime>2025-05-29 00:13:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pré-visualização ou resumo da mensagem (até 4000 chars).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
-<referedAttribute>6A8247FC-4A37-2249-AA16-4C698096CE58</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TX_CTM_CONTENT" id="2E96AA50-B8B1-6CEF-D673-DBE1CF6E9A4E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:27:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Conteúdo completo da mensagem (CLOB).]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_USR" id="B31F0971-20F0-2B1C-BE01-BA17096E4689">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:50:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para usuário autor da mensagem naquele chat.]]></commentInRDBMS>
 <generatorID>5F2520A1-8CA8-D62C-2BDD-E72B26DE0188</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>9AFD06F4-81C8-6C05-1E7F-24C41AA9DC61</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -59,28 +86,22 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="TX_CTM_CONTENT_1" id="2F444EF8-B1E3-1E57-EAC7-C44736DC4803">
+<Attribute name="ID_CTS" id="F1A2BB96-CCD1-0487-3DFC-E19E9185D559">
 <createdBy>Adm</createdBy>
-<createdTime>2025-05-27 20:35:54 UTC</createdTime>
+<createdTime>2025-05-29 00:10:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para CHAT_SESSION, identifica a sessão de chat.]]></commentInRDBMS>
+<generatorID>5F2520A1-8CA8-D62C-2BDD-E72B26DE0188</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
+<referedAttribute>679AA230-95FD-A5D7-3E24-69A74BA09F38</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TX_CTM_CONTENT" id="2E96AA50-B8B1-6CEF-D673-DBE1CF6E9A4E">
-<createdBy>Adm</createdBy>
-<createdTime>2025-05-27 20:27:29 UTC</createdTime>
-<ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT028</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -90,7 +111,9 @@
 <createdTime>2025-05-27 21:25:34 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

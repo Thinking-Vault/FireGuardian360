@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5387379C-A8C7-44DB-798F-CD51B6381B2A" containerWithKeyObject="C173FE99-CB36-B0BE-CFD0-CDB3924D0F1E" localFKIndex="3B290FB6-8D75-2E24-F88A-5CB3A9AF3073" name="SHELTER_LOCALIZAÇÃO_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>B64C380F-0B10-AC24-B07F-15CDA3E65A82</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<referredTableLongName>LOCALIZAÇÃO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D117B991-15DA-8D3A-2548-81834B026550</referredTableID>
+<keyObject>C77DD3DB-0A6A-AE07-6720-0E763A8D56D6</keyObject>
+<referredKeyID>C77DD3DB-0A6A-AE07-6720-0E763A8D56D6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_LOC</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D87691E1-4240-E5B9-5D1E-EEB6FDBF637B" containerWithKeyObject="0E058267-F201-E438-C052-1CFF205EECE8" localFKIndex="68296444-9B59-ADF9-9726-3224BCE03F99" name="AÇÃO_COMBATE_QUEIMADA_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>4B2DE6EB-C4E0-15AD-FE04-950CFBA4516C</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<referredTableLongName>QUEIMADA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7CECA08E-DA96-3699-6A19-83CC7ABDBB8C</referredTableID>
+<keyObject>2F805F0A-6146-3988-2529-F4CC62886A4B</keyObject>
+<referredKeyID>2F805F0A-6146-3988-2529-F4CC62886A4B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_QMD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
