@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7CB0EB73-9438-248E-0F6C-6C22CAEF1A67" containerWithKeyObject="6BC5206E-9A93-69A1-6527-F87AD391A4F1" localFKIndex="EC357B76-DE22-A9B2-A129-4A87CA18D69C" name="FK_CTS_USR">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>0D348D26-81D2-C097-6B57-C2B1A5E10FEF</importedID>
+<referredTableLongName>USER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BCFCA4E1-D3E8-3102-B398-D45B20B35641</referredTableID>
+<keyObject>DFB14301-0ABC-A4AC-E9C8-A8C944092100</keyObject>
+<referredKeyID>DFB14301-0ABC-A4AC-E9C8-A8C944092100</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_USR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

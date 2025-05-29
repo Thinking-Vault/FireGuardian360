@@ -2,11 +2,14 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="470F33C5-E31F-AFDD-2CE4-545C9F619747" name="SENSOR_DATA">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:56:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Leituras individuais de cada sensor.]]></commentInRDBMS>
 <notes><![CDATA[Medição bruta (temp., umidade, fumaça, NDVI) vinda de um sensor.
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -23,7 +26,9 @@
 <createdTime>2025-05-27 20:25:53 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +40,9 @@
 <createdTime>2025-05-27 20:25:54 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,7 +54,9 @@
 <createdTime>2025-05-27 20:25:54 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +68,9 @@
 <createdTime>2025-05-27 20:25:54 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -71,7 +82,9 @@
 <createdTime>2025-05-27 20:25:55 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -84,12 +97,14 @@
 <generatorID>32CFC5F4-AB54-A4D1-190E-184547D59B9E</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>CB7462E7-87FE-0F92-26C6-F8F5F1E5C4F4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_SNS_SENSOR" id="EB35DEBD-6869-4BF9-572A-31535057F057">
@@ -98,14 +113,16 @@
 <generatorID>E6DEA1D2-D60A-A174-CB8E-152F3B2AE4BE</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>1FD8C081-40C5-B46A-A341-7A3BD7AAF54F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

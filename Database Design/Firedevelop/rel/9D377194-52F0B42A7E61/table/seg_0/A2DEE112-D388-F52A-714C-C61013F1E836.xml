@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2DEE112-D388-F52A-714C-C61013F1E836" name="ACAO_COMBATE">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>2EBDCA2B-A453-E789-8C64-0E1A5F68D828</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_QMD" id="DB269D96-C85E-556C-5DDA-7458AF49C60B">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>AD67B20A-458D-F137-691E-297D1184B4F7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09651D63-26A8-16F5-4A35-5368125EAD73" referredColumn="DE644A2F-2F7E-BCF1-3CE3-0CCB79847C37"/>
+</associations>
+</Column>
+<Column name="ID_ACB" id="25613BDB-EE12-A5F2-E03B-DC6880749E60">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>5F33D8D2-1C66-C037-0184-404BAE1CD521</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ACB_EXECUCAO" id="5D5E174A-44B7-E39C-6C60-E6104A53157B">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>58929992-394E-6F80-372B-45F49EDF6D1E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>E58DF6B4-0048-2808-328F-694ADDB9C1F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ACB_TIPO" id="C51E13AE-F162-1EB9-8AC6-315A5F005BF0">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>70987DB4-0A01-078B-3FF4-E6767AA839FC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>28B2E332-0C10-5306-B8D5-6AC6D58EFD48</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ACB_RESULTADO" id="6BA2B225-AC84-7F98-FCF0-B7F328DB9E15">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>5685D370-621C-2AE5-B073-91667E7748D6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A39C755A-35C2-0490-0B84-57C1A064D94B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54C15177-26AD-795B-7D7B-16A88A1C7663" name="PK_ACAO_COMBATE">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>91DC3979-E4EE-BC4C-F819-89E71A24576F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB269D96-C85E-556C-5DDA-7458AF49C60B"/>
+<colUsage columnID="25613BDB-EE12-A5F2-E03B-DC6880749E60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D60BFBE8-E858-2BF3-7136-32BAB87D56FD" name="FK_ACB_QMD">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB269D96-C85E-556C-5DDA-7458AF49C60B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

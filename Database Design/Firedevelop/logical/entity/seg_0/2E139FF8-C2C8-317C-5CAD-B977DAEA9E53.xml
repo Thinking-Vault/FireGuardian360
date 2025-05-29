@@ -2,11 +2,14 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E139FF8-C2C8-317C-5CAD-B977DAEA9E53" name="LOCALIZAÇÃO">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:55:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registros de regiões e sensores com coordenadas.]]></commentInRDBMS>
 <notes><![CDATA[Dados geográficos (latitude, longitude, região, UF).
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -25,7 +28,9 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -36,56 +41,72 @@
 <Attribute name="NM_LOC_REGIAO" id="0999D84A-FA00-6B19-7614-C9D6D979FAC3">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:43:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nome da região
-]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Nome da região ou localidade.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="SG_LOC_UF" id="35E03EBC-474D-0A2E-78BE-6851251C00CE">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:43:42 UTC</createdTime>
-<commentInRDBMS><![CDATA[Sigla do estado
-]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Sigla da Unidade Federativa (ex.: SP, MG).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NR_LOC_LATITUDE" id="FA3C2388-4543-89EA-B846-5E001E1485FF">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:43:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Latitude]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Latitude em graus decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NR_LOC_LONGITUDE" id="E9593BF8-AFDC-0B85-BD85-5BEE651DCB9C">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:43:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Longitude]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Longitude em graus decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -94,7 +115,9 @@
 <createdTime>2025-05-27 20:43:07 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

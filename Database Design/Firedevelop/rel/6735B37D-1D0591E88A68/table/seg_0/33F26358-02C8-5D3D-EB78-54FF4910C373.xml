@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33F26358-02C8-5D3D-EB78-54FF4910C373" name="CHAT_MESSAGE">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Mensagens trocadas em cada sessão de chat.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CHAT_SESSION_CTS_ID" id="46FBD032-8700-1B2C-D62E-C8BE126365A7">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para CHAT_SESSION, identifica a sessão de chat.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CTM_MESSAGE" id="567EB9FB-58D3-F1A6-8F62-1F19969DC05A">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da mensagem.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TX_CTM_CONTENT" id="DA36A479-56A7-08E1-71AC-111BE580C4DB">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Conteúdo completo da mensagem (CLOB).]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>B4A8C2E9-C4A2-49A8-187B-7CF7C21FF791</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CTS_SESSION" id="B4C40F83-1316-BD1D-FDCD-05625F0CFCF9">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID da sessão de chat para rastreamento externo.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>99966E2A-D603-3090-4B03-F23ADE58E42F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TX_CTM_CONTENT_1" id="61A9A165-A497-F53C-547C-E89A6E58B2E8">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pré-visualização ou resumo da mensagem (até 4000 chars).]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A39C755A-35C2-0490-0B84-57C1A064D94B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHAT_SESSION_ID_USR" id="14697EE4-B9CF-B90C-E7C2-5E03A19FDD85">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID do usuário autor da mensagem naquele chat.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="201987F1-55B2-52A4-0B55-A4A2E74B69A4" name="PK_CHAT_MESSAGE">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="567EB9FB-58D3-F1A6-8F62-1F19969DC05A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

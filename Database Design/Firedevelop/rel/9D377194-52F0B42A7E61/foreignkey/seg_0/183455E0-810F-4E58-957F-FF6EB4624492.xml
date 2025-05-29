@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="183455E0-810F-4E58-957F-FF6EB4624492" containerWithKeyObject="4FFB760C-746A-B78E-8A13-EEA802A5B6A1" localFKIndex="121D5330-F328-4B29-249A-440CE3ECC9D8" name="FK_SND_SNS">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>B8C92A94-FCF9-E9F9-243F-BA111AEAF5E0</importedID>
+<referredTableLongName>SENSOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4957092B-3C78-EAE5-E81E-9445ADF6E54A</referredTableID>
+<keyObject>BEB7173B-7B3E-6C51-AF9B-B02739D3CC0A</keyObject>
+<referredKeyID>BEB7173B-7B3E-6C51-AF9B-B02739D3CC0A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SNS</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

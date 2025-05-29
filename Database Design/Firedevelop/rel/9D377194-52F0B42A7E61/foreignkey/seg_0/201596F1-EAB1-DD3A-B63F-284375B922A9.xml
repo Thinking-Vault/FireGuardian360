@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="201596F1-EAB1-DD3A-B63F-284375B922A9" containerWithKeyObject="427D6385-F7BC-12C9-6ED7-0833611FC8FA" localFKIndex="E5872093-636A-763D-53E4-FEABC268DF4F" name="FK_CKI_ALT">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>DFCA73B1-0559-1AFE-8CA3-DE3622D183E4</importedID>
+<referredTableLongName>ALERT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6814899B-65C9-5305-F1F4-EB0E969657FD</referredTableID>
+<keyObject>4F10E87F-FEDC-0576-8A5D-3EB92DD9B838</keyObject>
+<referredKeyID>4F10E87F-FEDC-0576-8A5D-3EB92DD9B838</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ALT</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

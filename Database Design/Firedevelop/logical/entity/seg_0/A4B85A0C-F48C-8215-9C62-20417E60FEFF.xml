@@ -2,11 +2,14 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A4B85A0C-F48C-8215-9C62-20417E60FEFF" name="QUEIMADA">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:54:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro dos focos de incêndio detectados.]]></commentInRDBMS>
 <notes><![CDATA[Registro de cada foco de incêndio detectado.
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -18,19 +21,22 @@
 <normalForm>Third</normalForm>
 <shortName>QMD</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_VGT" id="212222FC-C6D3-7947-43A2-B8AF2FD3B15A">
+<Attribute name="ID_QMD" id="48D7C792-D574-15D2-D4C7-06BC93E890DD">
 <createdBy>Adm</createdBy>
-<createdTime>2025-05-27 20:30:28 UTC</createdTime>
-<generatorID>41DCCF90-90A1-6678-DF82-BDCAADF854EC</generatorID>
+<createdTime>2025-05-27 21:12:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do foco de queimada
+]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
-<referedAttribute>CB7462E7-87FE-0F92-26C6-F8F5F1E5C4F4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_LOC" id="C6D74B47-735E-9D9D-76D8-0565D7ECB584">
 <createdBy>Adm</createdBy>
@@ -38,7 +44,9 @@
 <generatorID>2470D16F-C147-7FF8-A5F7-1DE5A26B02E6</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>8084E6B6-241D-BC55-3708-9F6F61A27A37</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,13 +55,15 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_SNS_SENSOR" id="E89FF4CC-2CBB-B5D0-D7BA-D9365A3D4698">
+<Attribute name="ID_SNS" id="E89FF4CC-2CBB-B5D0-D7BA-D9365A3D4698">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:06:00 UTC</createdTime>
 <generatorID>06C4A32A-991F-E318-344C-523C6B65C787</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>1FD8C081-40C5-B46A-A341-7A3BD7AAF54F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -62,31 +72,32 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_QMD" id="48D7C792-D574-15D2-D4C7-06BC93E890DD">
+<Attribute name="ID_VGT" id="212222FC-C6D3-7947-43A2-B8AF2FD3B15A">
 <createdBy>Adm</createdBy>
-<createdTime>2025-05-27 21:12:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identificador único do foco de queimada
-]]></commentInRDBMS>
+<createdTime>2025-05-27 20:30:28 UTC</createdTime>
+<generatorID>41DCCF90-90A1-6678-DF82-BDCAADF854EC</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
+<referedAttribute>CB7462E7-87FE-0F92-26C6-F8F5F1E5C4F4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DT_QMD_OCORRENCIA" id="00E2FFE8-76D2-68B6-9115-29D125C3E3E0">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:13:11 UTC</createdTime>
-<commentInRDBMS><![CDATA[Data da ocorrência
-]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Data e hora da ocorrência do foco de queimada.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
@@ -99,11 +110,15 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -112,7 +127,9 @@
 <createdTime>2025-05-27 21:12:50 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

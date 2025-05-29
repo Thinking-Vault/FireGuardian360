@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1A53DF9-D7B5-7088-7669-37685BDCB519" name="METEOROLOGIA">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dados meteorológicos coletados por sensor.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCALIZACAO_LOC_ID" id="34A2D40A-C83C-3CF8-45B4-3C91FFF20E38">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_LOC" id="EBBF229F-AA63-FFCB-4A52-0A7D39A03628">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MTR" id="A77AB270-9FCB-16C4-894F-88028EC1B409">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_MTR_COLETA" id="25FE56E6-DFB2-109A-23FB-A6B5332D5783">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>E58DF6B4-0048-2808-328F-694ADDB9C1F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_MTR_TEMPERATURA" id="116A8CFC-57B5-2707-E4FE-D1B5A7AD0CF7">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperatura em °C com precisão de duas casas decimais.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>953FCE41-20B1-78B2-73A5-03416509B902</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_MTR_UMIDADE" id="816DA3A1-C408-198B-0ACE-6FFCBE1F0562">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Umidade relativa do ar em % com duas casas decimais.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>953FCE41-20B1-78B2-73A5-03416509B902</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_MTR_VENTO" id="44DE7501-B990-A179-77E8-6B4EA8492BF9">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Velocidade do vento em m/s com duas casas decimais.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>953FCE41-20B1-78B2-73A5-03416509B902</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="942C788F-38BB-578E-2CFB-B061C2CC8AD8" name="PK_METEOROLOGIA">
+<sourceDDLFile>tpart.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A77AB270-9FCB-16C4-894F-88028EC1B409"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

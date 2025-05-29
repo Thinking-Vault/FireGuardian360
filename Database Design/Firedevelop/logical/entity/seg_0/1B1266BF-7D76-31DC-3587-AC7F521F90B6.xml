@@ -2,12 +2,14 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B1266BF-7D76-31DC-3587-AC7F521F90B6" name="USER">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:55:08 UTC</createdTime>
-<commentInRDBMS><![CDATA[Entidade USER: armazena os usuários do sistema.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Cadastro de todos os usuários do sistema.]]></commentInRDBMS>
 <notes><![CDATA[Pessoa (morador, brigadista, inspetor) que interage com o sistema.
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,10 +24,12 @@
 <Attribute name="ID_USR" id="7655F53D-9DCF-CF9C-4022-260498E98498">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:13:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identificador único do usuário (PK)]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[PK e identificador único do usuário.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -39,7 +43,9 @@
 <commentInRDBMS><![CDATA[Nome completo do usuário]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,7 +59,9 @@
 <commentInRDBMS><![CDATA[E-mail do usuário (único, obrigatório).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -64,10 +72,12 @@
 <Attribute name="TP_USR_ROLE" id="30CDFE23-D26E-4974-F279-BF8D88553033">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:13:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Tipo do perfil/permissão do usuário]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Perfil (ADMIN, OPERADOR, VOLUNTARIO, COMUNIDADE).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -81,7 +91,9 @@
 <commentInRDBMS><![CDATA[Data e hora de criação do registro]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -95,7 +107,9 @@
 <commentInRDBMS><![CDATA[Telefone de contato]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -111,7 +125,9 @@
 <createdTime>2025-05-27 20:15:49 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

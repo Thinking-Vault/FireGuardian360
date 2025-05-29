@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E43206E2-59FB-E885-6A60-BE848D3D0F9E" name="FIRE_HISTORY">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>988DD7C7-6CA2-632E-7B4D-C04B73B264B1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_FIH" id="39728AB1-B09E-74BB-17AA-95041EED3908">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>0495D9FB-F3D3-D7CB-39AB-3BD378E6D9B0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>99966E2A-D603-3090-4B03-F23ADE58E42F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_QMD" id="6948434F-B75E-F3B2-BC60-199F85B8E1B5">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>B4C513E2-5F47-FA6A-87D4-465F67DF70D6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6146C0FB-1D7E-EF13-B73C-36700CCDC4C2" referredColumn="DE644A2F-2F7E-BCF1-3CE3-0CCB79847C37"/>
+</associations>
+</Column>
+<Column name="ID_VGT" id="C64A862F-FA12-D58A-E3BE-C12A9540F421">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>2E81CD64-E6D6-AED5-BB3C-ACA12713AA61</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>99966E2A-D603-3090-4B03-F23ADE58E42F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF802D39-6748-7FB8-94E2-08A7C52AE285" referredColumn="87CAD16D-E6EC-5287-C527-9482C0A9AB8E"/>
+</associations>
+</Column>
+<Column name="DT_FIH_START" id="22A4EE66-D369-17D5-100F-6EE85F36DC71">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>91CAFDDB-84B1-6FD7-E0D9-014CA34C3CD7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>76E082E8-AD27-7604-04AF-951A2CF3AEF1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FIH_END" id="D33C1E59-B560-0D6F-C81E-875F81F42DE6">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>F03DAD98-C72C-1959-CE00-6882C86919A7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>76E082E8-AD27-7604-04AF-951A2CF3AEF1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_FIH_AREA_BURNED" id="79504C18-2100-552D-FF56-AFDBE452117E">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>53A33F8F-6D53-FA15-25E7-E457AC50B2AA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AED472E9-E9DC-2683-415C-23F4F1185C18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_FIH_RECURSOS" id="CC5DB7AB-E5A2-FB43-1A26-9CE9770C4925">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>F11CF457-EC1A-E078-F279-75DA6461C304</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A39C755A-35C2-0490-0B84-57C1A064D94B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3076B901-DF62-6403-8721-A19D0BF19601" name="PK_FIH">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>EDD25EA5-9278-A419-F1A4-3B83488A6EDE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39728AB1-B09E-74BB-17AA-95041EED3908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="627609A7-7E8B-4BEC-5863-65E09692E436" name="FK_FIH_QMD">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6948434F-B75E-F3B2-BC60-199F85B8E1B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAC201B5-62F3-E9A3-F371-42975B533B07" name="FK_FIH_VGT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C64A862F-FA12-D58A-E3BE-C12A9540F421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="FIRE_HISTORY" directorySegmentName="seg_0" id="1526ECAF-489A-D82E-6597-4280968EE090">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="QUEIMADA_QMD_ID" id="06029986-09E7-CCA5-30AE-ADEEAE4A1FC3">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_FIH_START" id="07E4F2B9-3649-12C6-A95B-26EB9213C0A7">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_FIH_END" id="3DA3CA26-6082-4138-CF5F-32740E3482D2">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_FIH_RESOURCES" id="4BF92B73-F3D7-1B5E-56B0-63C87C4B3C37">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_FIH_FIRE" id="703362F3-1B81-7CD7-05A1-347CD299C1BE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VEGETATION_VGT_ID" id="718550A6-80AB-5B4C-E554-7009806FBE62">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VL_FIH_AREA_BURNED" id="7F1A1795-F598-77A2-E45A-08FA5A11DE75">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_VGT_VEGETATION" id="8518F4CB-197C-44A9-5ABA-D6A421554E16">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_QMD" id="F6CAE0F6-9D7D-2FB4-5028-CF4BA3BF1BB0">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_FIRE_HISTORY" id="BE478BF3-00C1-86E7-A3AD-28674C1D475A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:01:24 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

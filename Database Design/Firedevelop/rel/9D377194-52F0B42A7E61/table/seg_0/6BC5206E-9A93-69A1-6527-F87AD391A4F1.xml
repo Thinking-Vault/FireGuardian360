@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BC5206E-9A93-69A1-6527-F87AD391A4F1" name="CHAT_SESSION">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>1234D2B7-46C1-FB16-4332-7C2451C3E75D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CTS" id="DF4C1452-2ECC-2711-633E-A716468A93CB">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>14A91A03-CBFB-D71F-D72E-140AF8CF3C67</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>CTS_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_CTS_ID</autoIncrementTriggerName>
+</Column>
+<Column name="ID_USR" id="23BF5FB5-178C-A83E-0A25-63E2450159AD">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>721C8D84-3C74-E4E2-AE17-2ABE7CDECBC8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CB0EB73-9438-248E-0F6C-6C22CAEF1A67" referredColumn="014A0E8A-C9B3-0023-7738-3E06F2A05624"/>
+</associations>
+</Column>
+<Column name="ID_CTS_UUID" id="315CC97E-1E25-7659-AEC2-CCB6E56B62C0">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>E5A47F19-F027-7F97-A98B-597451CF3A33</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>99966E2A-D603-3090-4B03-F23ADE58E42F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ALT" id="58595B30-E782-0F0D-F328-2FEA61528AAB">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>E006E5F7-8852-B091-8097-CC3AA205782D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E258AA05-B079-C6CC-243E-932F715B3FD7" referredColumn="946E3669-53E9-7776-2020-5A3FDF5FB900"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA7490BB-9A3E-B1C5-7A51-C018EC48EB31" name="PK_CTS">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>81644786-0E33-D89C-DEE4-9D14A0E6B723</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF4C1452-2ECC-2711-633E-A716468A93CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C508C9BE-8B7B-BC7D-7F1C-9A33F5E0C85E" name="FK_CTS_ALT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58595B30-E782-0F0D-F328-2FEA61528AAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC357B76-DE22-A9B2-A129-4A87CA18D69C" name="FK_CTS_USR">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23BF5FB5-178C-A83E-0A25-63E2450159AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -5,7 +5,9 @@
 <notes><![CDATA[Abrigo/refúgio onde pessoas e brigadistas podem se reunir em segurança, com capacidade e vagas disponíveis.]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -23,7 +25,9 @@
 <generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>7655F53D-9DCF-CF9C-4022-260498E98498</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -37,25 +41,15 @@
 <createdTime>2025-05-27 20:26:37 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>150 CHAR</dataTypeSize>
 <ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="QT_SHL_CAPACITY" id="EFC84651-66D9-CFDB-5980-F89C83B9C248">
-<createdBy>Adm</createdBy>
-<createdTime>2025-05-27 20:26:42 UTC</createdTime>
-<ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="QT_SHL_AVAILABLE" id="8E51C4FA-411B-8603-2C2D-6B9A29B505EA">
 <createdBy>Adm</createdBy>
@@ -65,26 +59,28 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_SHL" id="1CDB8F3A-3063-AF53-37E3-7A93DF686C67">
+<Attribute name="QT_SHL_CAPACITY" id="EFC84651-66D9-CFDB-5980-F89C83B9C248">
 <createdBy>Adm</createdBy>
-<createdTime>2025-05-27 20:32:23 UTC</createdTime>
-<generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
+<createdTime>2025-05-27 20:26:42 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_LOC" id="DCAA49F5-6A8A-E5F6-516D-BD7D3646F9D3">
 <createdBy>Adm</createdBy>
@@ -92,7 +88,9 @@
 <generatorID>B64C380F-0B10-AC24-B07F-15CDA3E65A82</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>8084E6B6-241D-BC55-3708-9F6F61A27A37</referedAttribute>
@@ -102,15 +100,32 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_SHL" id="1CDB8F3A-3063-AF53-37E3-7A93DF686C67">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:32:23 UTC</createdTime>
+<generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="FEE95AF6-F112-5E0A-2ACC-4DC24DA90FFD" name="SHELTER PK">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:32:30 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="false"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

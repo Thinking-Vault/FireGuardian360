@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D93E3639-7839-5BC4-0692-74F491859DF9" name="SENSOR_DATA">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Leituras individuais de cada sensor.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>5C707705-9B46-361E-7BC2-3C9B96D08F2B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SND_ID" id="2B2715CC-63DC-BAAA-9746-A73BF2EA0ABF">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>27F2F94A-3493-0CF3-0FE9-EFE63667ED9C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SND_SND_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>SND_SND_ID_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="SENSOR_SNS_ID" id="E9117152-9860-BAAA-90A8-BA01DA5E7465">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>8D6EED38-DA2A-3ECD-5E9D-9870F913E5D8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEGETATION_VGT_ID" id="8D2E3B08-FCB6-B8A1-2E82-B74BCFE9138B">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>7C8C0B66-6FED-2DBE-D002-F20C5E0E61A8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ALT_ALERT" id="B4B0FC2A-EF71-64CF-78ED-13C89F19ED9B">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>680CC3DD-DD43-15A1-7283-4C22B7FD8946</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>99966E2A-D603-3090-4B03-F23ADE58E42F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_SND_COLLECTED_AT" id="ABEF04E2-1BAB-79FA-C62A-085E70DD4EFE">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>2DACD91A-5941-55C4-D78C-A2B6A90D0AD1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>E58DF6B4-0048-2808-328F-694ADDB9C1F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_SND_MEASURE" id="A4ED7EA2-9DA2-3C76-2EF7-9A416C51C3EA">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>6AD2F42E-FD75-60F5-1459-BFCAD8E176E9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E6B863B-B71D-53A2-B675-8B88E6B5C5C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_SND_VALUE" id="E98BFEA5-97E8-FE61-910D-FECB84D42FDB">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>C6F7082E-6BDB-7F7E-8194-C50321144D75</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>72B374B4-E333-5C17-2E14-1CE51C55BB9A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SND_LAT" id="9ABDF3CB-447A-79A1-8AF6-4AD2F93573B3">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>0CEAB3C4-2607-682D-23F4-ABED4BF2857C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D6A14E7B-702E-05CF-D6FA-AF96F753CE17</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SND_LNG" id="75315106-E4F8-5A01-6179-99E9B4E093F9">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>E19C317D-93E6-FA13-B524-E9C544C5D512</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D6A14E7B-702E-05CF-D6FA-AF96F753CE17</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_VGT_VEGETATION" id="C05A62C6-479A-F976-0C6D-A1A11471C51D">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>45C7A106-BC2C-C70C-CBF0-8E961674C725</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46660AA8-7EC2-4F63-9A5B-F7CAC489618E" referredColumn="4AEB0C44-CDF1-5981-7057-753C74750701"/>
+</associations>
+</Column>
+<Column name="ID_SNS_SENSOR" id="B33DA4FB-B02E-1762-CB80-7E8DA79324F0">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>4F06A58B-C630-6DD0-61B8-A2B707A36595</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5EFDB43-868D-95B8-775F-EC653DF2295D" referredColumn="3D6F9432-3898-3745-DAE9-E0E70BC75AE5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45D5A80A-709D-512F-049F-C6677EA3D01E" name="PK_SENSOR_DATA">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>796E47F7-1CFF-D1D7-26B4-2938D4B001E7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B2715CC-63DC-BAAA-9746-A73BF2EA0ABF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74EB4DD1-D90E-BF96-58C4-1B46EAC1AF74" name="SENSOR_DATA_SENSOR_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B33DA4FB-B02E-1762-CB80-7E8DA79324F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F01017E0-EAB4-1525-4E64-4CA7550A8EB9" name="SENSOR_DATA_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:07:04 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C05A62C6-479A-F976-0C6D-A1A11471C51D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

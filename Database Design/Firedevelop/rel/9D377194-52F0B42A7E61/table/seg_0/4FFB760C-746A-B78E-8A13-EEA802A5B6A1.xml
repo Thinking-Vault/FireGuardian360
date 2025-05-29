@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FFB760C-746A-B78E-8A13-EEA802A5B6A1" name="SENSOR_DATA">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>E2C79534-5B55-7507-13C4-38BAAC8BF1CE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SND" id="2C3EA100-FA9C-4923-7ED3-7018E525BE81">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>BB14B8B5-7FCA-5568-31E3-684885B99262</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SND_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SND_ID</autoIncrementTriggerName>
+</Column>
+<Column name="ID_SNS" id="BD0B7E02-7008-2917-1E24-968FB71F01FF">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>ACB658AA-E94D-5D2D-A865-D2CC5A01A423</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="183455E0-810F-4E58-957F-FF6EB4624492" referredColumn="84B87CA5-52CE-A91C-67AF-0DC95E8D1AD6"/>
+</associations>
+</Column>
+<Column name="ID_VGT" id="9CE96775-FD8B-614A-00DA-B56FA6E66AD8">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>6852A9A0-28B6-0B37-AFFE-FF031BCF018F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>99966E2A-D603-3090-4B03-F23ADE58E42F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDC23949-7C6A-6C8C-2D77-488EC8F65D60" referredColumn="87CAD16D-E6EC-5287-C527-9482C0A9AB8E"/>
+</associations>
+</Column>
+<Column name="DH_SND_COLETA" id="02BD4930-953F-8400-7F41-D0606E9444E7">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>BC271F00-9948-826F-962D-0D21C6A1872F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>E58DF6B4-0048-2808-328F-694ADDB9C1F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_SND_MEDIDA" id="534705A9-798E-2FD5-07E6-7E5D17BF53C6">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>6A7E47F6-ECFA-8D53-4140-CB7DC9120009</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E6B863B-B71D-53A2-B675-8B88E6B5C5C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_SND_VALOR" id="DE306822-67A1-5C86-FE03-A208BB93AD52">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>0C4651E0-C06B-9CC9-05A3-D55CE65DC198</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>72B374B4-E333-5C17-2E14-1CE51C55BB9A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SND_LAT" id="B29C5A97-3EEC-BA80-5BB1-A4A7877A7EF0">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>AD06CBBD-3EA1-616B-48B9-CCCC963D1903</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D6A14E7B-702E-05CF-D6FA-AF96F753CE17</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SND_LNG" id="423B04C8-8FF0-A778-4C6A-368E9E76372D">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>D5D2517F-6DC6-ED20-1C16-F09881841FDE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D6A14E7B-702E-05CF-D6FA-AF96F753CE17</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ALT" id="AAF9FB42-9381-E016-62AD-18929EF43818">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>7916E2B7-B25E-53E6-5FCC-41DA247C296D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9A5C618E-E9B8-E5A9-0837-D2486B0433E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DB9B8E0-5112-D2D1-C5F6-AF9FACC91EA8" referredColumn="946E3669-53E9-7776-2020-5A3FDF5FB900"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF7E65C9-F6B7-0B26-A52E-643FEA457B9F" name="PK_SENSOR_DATA">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>90AD061F-C556-F8A1-34F0-3D7F62D5F351</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C3EA100-FA9C-4923-7ED3-7018E525BE81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B2F6CAA-0829-EAB7-87AB-B3C7A9A0B935" name="FK_SND_ALT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAF9FB42-9381-E016-62AD-18929EF43818"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="121D5330-F328-4B29-249A-440CE3ECC9D8" name="FK_SND_SNS">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD0B7E02-7008-2917-1E24-968FB71F01FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B8BE738-E8F6-9CD1-AA20-5B96E6618950" name="FK_SND_VGT">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CE96775-FD8B-614A-00DA-B56FA6E66AD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

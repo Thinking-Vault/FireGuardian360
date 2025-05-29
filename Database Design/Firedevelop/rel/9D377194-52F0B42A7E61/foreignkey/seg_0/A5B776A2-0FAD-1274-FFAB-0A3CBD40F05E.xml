@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A5B776A2-0FAD-1274-FFAB-0A3CBD40F05E" containerWithKeyObject="25705D29-0C83-6DC6-23B1-B69CA9E1F12C" localFKIndex="7B993117-45B2-F4EA-3C19-C9112C4DA424" name="FK_QMD_VGT">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>DEBC3FFE-7530-B6AB-DA59-80FAE97E170F</importedID>
+<referredTableLongName>VEGETATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FA90B8F7-6C10-9888-B7E4-13ABF4137109</referredTableID>
+<keyObject>89FF6C90-454E-EB20-F1C7-C8118FE6B2E6</keyObject>
+<referredKeyID>89FF6C90-454E-EB20-F1C7-C8118FE6B2E6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_VGT</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

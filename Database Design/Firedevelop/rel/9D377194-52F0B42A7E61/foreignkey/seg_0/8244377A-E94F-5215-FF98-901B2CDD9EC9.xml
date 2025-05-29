@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8244377A-E94F-5215-FF98-901B2CDD9EC9" containerWithKeyObject="25705D29-0C83-6DC6-23B1-B69CA9E1F12C" localFKIndex="4D54F350-7C92-FA8E-6E75-EBD0530F46B7" name="FK_QMD_LOC">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>29914444-E299-48CF-7A54-B252EE905731</importedID>
+<referredTableLongName>LOCALIZACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A029DBF8-CB90-CA04-496B-47F768EAE28E</referredTableID>
+<keyObject>08D124E3-755C-7E64-2FA1-9BCD3AFEDB4C</keyObject>
+<referredKeyID>08D124E3-755C-7E64-2FA1-9BCD3AFEDB4C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LOC</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

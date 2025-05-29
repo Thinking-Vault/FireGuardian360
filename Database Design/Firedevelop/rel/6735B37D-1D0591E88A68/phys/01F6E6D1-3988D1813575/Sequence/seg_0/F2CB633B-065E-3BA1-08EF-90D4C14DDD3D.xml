@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SND_SND_ID_SEQ" directorySegmentName="seg_0" id="F2CB633B-065E-3BA1-08EF-90D4C14DDD3D">
+<sourceDDLFile>a se considerar.ddl</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:04:49 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<noCache>YES</noCache>
+<order>YES</order>
+<startWith>1</startWith>
+</SequenceOraclev10g>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AD0A6351-1DA7-1B45-ADA2-E5E1939B05EC" containerWithKeyObject="6814899B-65C9-5305-F1F4-EB0E969657FD" localFKIndex="5A9A2050-6F67-E706-5EBF-6B562318A11D" name="FK_ALT_QMD">
+<sourceDDLFile>n achuento mais.sql</sourceDDLFile>
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-28 23:35:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<importedID>2F3C298B-91A0-C644-2FE0-0772F5823661</importedID>
+<referredTableLongName>QUEIMADA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>25705D29-0C83-6DC6-23B1-B69CA9E1F12C</referredTableID>
+<keyObject>905B9B6E-1111-7247-0F2D-E7B0B55D9CF4</keyObject>
+<referredKeyID>905B9B6E-1111-7247-0F2D-E7B0B55D9CF4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_QMD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
