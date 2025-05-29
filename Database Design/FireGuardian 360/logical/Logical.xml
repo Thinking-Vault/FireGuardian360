@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="35F534AE-74F9-19CF-EF22-36B191865796" mainViewID="E034B463-E3F6-BA40-E79D-84CB8457FDAD">
-<createdBy>Adm</createdBy>
-<createdTime>2025-05-27 03:07:43 UTC</createdTime>
-<ownerDesignName>FireGuardian 360</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>

@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<StorageDesignOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g" name="Oracle Database 11g" id="8054D967-ED96-CBF1-00C6-E9095A671C6D" siteID="32076570-2523-435C-2E92-BF29817DFF70" siteName="Oracle Database 11g" siteType="9">
-<createdBy>Adm</createdBy>
-<createdTime>2025-05-27 03:19:59 UTC</createdTime>
-<ownerDesignName>FireGuardian 360</ownerDesignName>
-</StorageDesignOraclev11g>

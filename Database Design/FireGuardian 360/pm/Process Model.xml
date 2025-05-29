@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="C9E6BE9A-D628-62EC-3210-E9837813AA06">
-<createdBy>Adm</createdBy>
-<createdTime>2025-05-27 03:07:44 UTC</createdTime>
-<ownerDesignName>FireGuardian 360</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</ProcessModel>

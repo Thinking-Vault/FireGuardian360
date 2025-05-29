@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="B301772F-8BB9-8267-3FFB-55CFF9902E43">
-<createdBy>Adm</createdBy>
-<createdTime>2025-05-27 03:07:44 UTC</createdTime>
-<ownerDesignName>FireGuardian 360</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</BusinessInfoDesign>

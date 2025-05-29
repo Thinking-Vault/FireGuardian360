@@ -1,4 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="main_view" objectID="EF6897B4-15C1-200B-28A1-DFD159C4DBE2" name="comentarios" visible="true"/>
-</oracle.dbtools.crest.model.design.relational.RelationalDesign>
