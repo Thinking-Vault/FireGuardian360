@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="26E52B05-784D-391C-992A-8624B5E7AF08" containerWithKeyObject="8DC85329-F008-1171-DCC0-23DE77B3048B" localFKIndex="3D48BF70-435E-5D1B-B678-8D27E2EDDCF3" name="QUEIMADA_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<generatorID>41DCCF90-90A1-6678-DF82-BDCAADF854EC</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<referredTableLongName>VEGETATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>475F29B8-8DB5-41E1-E40F-C0D38E7CB573</referredTableID>
+<keyObject>3EA6DFCC-44D5-C424-306B-48B5E64DAE68</keyObject>
+<referredKeyID>3EA6DFCC-44D5-C424-306B-48B5E64DAE68</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_VGT</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

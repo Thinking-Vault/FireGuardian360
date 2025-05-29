@@ -2,14 +2,9 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F366C6C9-9F0F-49D3-EC85-74BA80650D86" name="SHELTER">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:57:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abrigos comunitários para evacuação.]]></commentInRDBMS>
 <notes><![CDATA[Abrigo/refúgio onde pessoas e brigadistas podem se reunir em segurança, com capacidade e vagas disponíveis.]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -26,12 +21,6 @@
 <commentInRDBMS><![CDATA[ID interno do usuário responsável pelo abrigo.]]></commentInRDBMS>
 <generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <referedAttribute>7655F53D-9DCF-CF9C-4022-260498E98498</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,12 +33,6 @@
 <createdTime>2025-05-27 20:26:37 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nome do abrigo comunitário.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -63,12 +46,6 @@
 
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -79,12 +56,6 @@
 <createdTime>2025-05-27 20:26:42 UTC</createdTime>
 <commentInRDBMS><![CDATA[Capacidade total de pessoas do abrigo.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -96,19 +67,13 @@
 <commentInRDBMS><![CDATA[FK para LOCALIZACAO, indica a localização do abrigo.]]></commentInRDBMS>
 <generatorID>B64C380F-0B10-AC24-B07F-15CDA3E65A82</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>8084E6B6-241D-BC55-3708-9F6F61A27A37</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_SHL" id="1CDB8F3A-3063-AF53-37E3-7A93DF686C67">
 <createdBy>Adm</createdBy>
@@ -116,12 +81,6 @@
 <commentInRDBMS><![CDATA[Identificador único do abrigo.]]></commentInRDBMS>
 <generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -134,12 +93,6 @@
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:32:30 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="false"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1CDB8F3A-3063-AF53-37E3-7A93DF686C67</attributeRef>

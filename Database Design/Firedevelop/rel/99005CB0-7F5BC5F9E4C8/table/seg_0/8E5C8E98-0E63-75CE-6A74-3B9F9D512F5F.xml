@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E5C8E98-0E63-75CE-6A74-3B9F9D512F5F" name="METEOROLOGIA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dados meteorológicos coletados por sensor.]]></commentInRDBMS>
+<generatorID>9CD32797-EB2C-20DD-5134-541C794E8F3A</generatorID>
+<notes><![CDATA[Medições climáticas (temp., umidade, vento) associadas a uma localização e timestamp.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>MTR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCALIZAÇÃO_ID_LOC" id="5A799F4E-4C69-C332-7A30-7B7742D34456">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para LOCALIZACAO, indica onde os dados meteorológicos foram coletados.]]></commentInRDBMS>
+<generatorID>5ED8F41A-C64C-5888-A2BB-34F3C0957F04</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24E4F8B4-356E-9860-BEC4-EB34D264CC35" referredColumn="06343C14-B436-39FA-5FD7-CC63A04FBF48"/>
+</associations>
+</Column>
+<Column name="ID_MTR" id="BB3A560A-4331-0336-09AB-893E2307D599">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do registro meteorológico.]]></commentInRDBMS>
+<generatorID>DE31AF60-62F2-3AA6-7894-9A11B06601DB</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_MTR_COLETA" id="8E0063EE-83A1-E475-28D1-075B6814E4F8">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da coleta dos dados meteorológicos.]]></commentInRDBMS>
+<generatorID>7E242249-82AA-38F1-02B9-7C79E773A8C1</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_MTR_TEMPERATURA" id="90D0A708-0944-8FDB-D938-3878EE472E08">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperatura em °C com precisão de duas casas decimais.]]></commentInRDBMS>
+<generatorID>0B0B39A2-BC05-6D3F-98D0-78591E6AA459</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_MTR_UMIDADE" id="391E888F-191E-CF53-0858-BE47AD1B5030">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Umidade relativa do ar em % com duas casas decimais.]]></commentInRDBMS>
+<generatorID>80F9E3D1-37E4-E21B-7B24-F9D5B407B924</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MD_MTR_VENTO" id="9A9B27F5-2D83-0F7B-6035-4AC9C484A0FA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Velocidade do vento em m/s com duas casas decimais.]]></commentInRDBMS>
+<generatorID>AFAE0004-9AA9-38FC-5EFC-CCFA27BED626</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC08354E-4BBE-6094-158E-3E1BF2FA9CEE" name="METEOROLOGIA_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<generatorID>1B8872FE-2CC5-56E9-3026-2D67DDACFA7B</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB3A560A-4331-0336-09AB-893E2307D599"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17422D82-9E03-1E54-0345-D961AD22CD3C" name="METEOROLOGIA_LOCALIZAÇÃO_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 21:59:00 UTC</createdTime>
+<generatorID>CF407805-A8E2-3186-AF5E-A4502DF136C6</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A799F4E-4C69-C332-7A30-7B7742D34456"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

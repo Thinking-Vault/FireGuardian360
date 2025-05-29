@@ -2,14 +2,9 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="23E2BABC-53D2-6ACA-039C-CD5FA370640D" name="CHECKLIST_ITEM">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 19:57:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item de preparo (máscara, água, ferramenta) que o usuário marca como “pronto” para ação emergencial.]]></commentInRDBMS>
 <notes><![CDATA[Item de preparo (máscara, água, ferramenta) que o usuário marca como “pronto” para ação emergencial.]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -26,30 +21,18 @@
 <commentInRDBMS><![CDATA[FK para USUARIO, dono do item de checklist.]]></commentInRDBMS>
 <generatorID>84C958C2-331D-3A59-8670-A3C2A644724B</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <referedAttribute>7655F53D-9DCF-CF9C-4022-260498E98498</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_CKI_ITEM" id="E13F9731-4BF4-7AF7-C83C-8813A6FF423A">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:26:51 UTC</createdTime>
 <commentInRDBMS><![CDATA[ID único do item de checklist.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -60,12 +43,6 @@
 <createdTime>2025-05-27 20:26:51 UTC</createdTime>
 <commentInRDBMS><![CDATA[Texto descritivo do item de checklist.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -76,12 +53,6 @@
 <createdTime>2025-05-27 20:26:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Status do item (ex.: PENDENTE, CONCLUÍDO).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -93,12 +64,6 @@
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:32:56 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="false"/>
-<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>E13F9731-4BF4-7AF7-C83C-8813A6FF423A</attributeRef>
