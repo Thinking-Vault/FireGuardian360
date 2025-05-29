@@ -9,6 +9,7 @@
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -24,11 +25,13 @@
 <Attribute name="ID_LOC" id="5ED8F41A-C64C-5888-A2BB-34F3C0957F04">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para LOCALIZACAO, indica onde os dados meteorológicos foram coletados.]]></commentInRDBMS>
 <generatorID>CF407805-A8E2-3186-AF5E-A4502DF136C6</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>8084E6B6-241D-BC55-3708-9F6F61A27A37</referedAttribute>
@@ -41,10 +44,12 @@
 <Attribute name="ID_MTR" id="DE31AF60-62F2-3AA6-7894-9A11B06601DB">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:06:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do registro meteorológico.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -56,10 +61,12 @@
 <Attribute name="DT_MTR_COLETA" id="7E242249-82AA-38F1-02B9-7C79E773A8C1">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:06:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da coleta dos dados meteorológicos.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -71,10 +78,12 @@
 <Attribute name="MD_MTR_TEMPERATURA" id="0B0B39A2-BC05-6D3F-98D0-78591E6AA459">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:06:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperatura em °C com precisão de duas casas decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -88,10 +97,12 @@
 <Attribute name="PC_MTR_UMIDADE" id="80F9E3D1-37E4-E21B-7B24-F9D5B407B924">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:07:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Umidade relativa do ar em % com duas casas decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -105,10 +116,12 @@
 <Attribute name="MD_MTR_VENTO" id="AFAE0004-9AA9-38FC-5EFC-CCFA27BED626">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:07:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Velocidade do vento em m/s com duas casas decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -128,6 +141,7 @@
 <engineerTo>
 <item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="false"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
 <item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <pk>true</pk>

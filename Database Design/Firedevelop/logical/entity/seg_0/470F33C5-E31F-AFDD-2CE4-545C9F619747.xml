@@ -7,9 +7,7 @@
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,14 +19,13 @@
 <normalForm>Third</normalForm>
 <shortName>SND</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_ALT_ALERT" id="D1C97DA9-A55F-FAD1-C414-0D126DDCAB84">
+<Attribute name="ID_ALT" id="D1C97DA9-A55F-FAD1-C414-0D126DDCAB84">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:25:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relaciona a leitura a um alerta gerado (ALERT.ID_ALT).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,11 +35,10 @@
 <Attribute name="DH_SND_COLLECTED_AT" id="2E051D70-D34C-C371-D19D-92C949EC5350">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:25:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que a leitura foi coletada.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -52,11 +48,10 @@
 <Attribute name="TP_SND_MEASURE" id="7A4A71A9-AA66-4CCE-443E-861B3DE99733">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:25:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de medição (ex.: TEMPERATURA, UMIDADE, FUMAÇA).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -66,11 +61,10 @@
 <Attribute name="VL_SND_VALUE" id="9D73DF75-7661-534D-7910-ED670B543B0D">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:25:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor numérico da medição.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -80,11 +74,10 @@
 <Attribute name="NR_SND_LAT" id="9E8FD9AF-F0BC-029B-8660-399673EA6529">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:25:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude onde o sensor coletou o dado.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -94,12 +87,11 @@
 <Attribute name="ID_VGT" id="EDCC4BD5-B102-2228-367B-F49247A8EF7F">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:30:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica o tipo de vegetação no local da coleta (VEGETATION.ID_VGT).]]></commentInRDBMS>
 <generatorID>32CFC5F4-AB54-A4D1-190E-184547D59B9E</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <referedAttribute>CB7462E7-87FE-0F92-26C6-F8F5F1E5C4F4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -107,15 +99,14 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_SNS_SENSOR" id="EB35DEBD-6869-4BF9-572A-31535057F057">
+<Attribute name="ID_SNS" id="EB35DEBD-6869-4BF9-572A-31535057F057">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:06:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Conecta a leitura ao sensor que a originou (SENSOR.ID_SNS).]]></commentInRDBMS>
 <generatorID>E6DEA1D2-D60A-A174-CB8E-152F3B2AE4BE</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <referedAttribute>1FD8C081-40C5-B46A-A341-7A3BD7AAF54F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -124,5 +115,33 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_SND" id="DB3F561D-7ED9-C024-82DE-C80DB6A0E0F5">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:19:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único dos registros coletados pelo sensor]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="066FACEF-AAD3-2706-E671-0E73EB42FA21" name="SENSOR_DATA PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:19:45 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB3F561D-7ED9-C024-82DE-C80DB6A0E0F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

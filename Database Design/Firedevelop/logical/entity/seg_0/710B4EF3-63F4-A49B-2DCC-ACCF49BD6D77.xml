@@ -7,9 +7,7 @@
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,15 +19,13 @@
 <normalForm>Third</normalForm>
 <shortName>SNS</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_SNS_SENSOR" id="1FD8C081-40C5-B46A-A341-7A3BD7AAF54F">
+<Attribute name="ID_SNS" id="1FD8C081-40C5-B46A-A341-7A3BD7AAF54F">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 21:04:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador único do sensor]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,9 +40,7 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,9 +55,7 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -77,9 +69,7 @@
 <commentInRDBMS><![CDATA[Status (ativo/inativo)]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -94,9 +84,7 @@
 <createdTime>2025-05-27 21:04:37 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

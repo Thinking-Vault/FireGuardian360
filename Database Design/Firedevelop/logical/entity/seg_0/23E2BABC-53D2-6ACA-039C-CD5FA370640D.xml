@@ -5,7 +5,10 @@
 <notes><![CDATA[Item de preparo (máscara, água, ferramenta) que o usuário marca como “pronto” para ação emergencial.]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,24 +23,32 @@
 <Attribute name="ID_USR" id="15680A33-8126-91AB-53C2-9F850DAC241C">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:23:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para USUARIO, dono do item de checklist.]]></commentInRDBMS>
 <generatorID>84C958C2-331D-3A59-8670-A3C2A644724B</generatorID>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <referedAttribute>7655F53D-9DCF-CF9C-4022-260498E98498</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_CKI_ITEM" id="E13F9731-4BF4-7AF7-C83C-8813A6FF423A">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:26:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID único do item de checklist.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,9 +58,13 @@
 <Attribute name="NM_CKI_LABEL" id="9369B96D-E9A3-F479-32BB-FEE468F3B485">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:26:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Texto descritivo do item de checklist.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,21 +74,13 @@
 <Attribute name="TP_CKI_STATUS" id="C9D8278D-9438-EC83-2B8A-A9ED7716E757">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:26:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do item (ex.: PENDENTE, CONCLUÍDO).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_ALT_ALERT_3" id="3C4EA615-4854-FF91-C91F-957E4BC2512D">
-<createdBy>Adm</createdBy>
-<createdTime>2025-05-27 20:26:52 UTC</createdTime>
-<ownerDesignName>Firedevelop</ownerDesignName>
-<engineerTo>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -86,9 +93,11 @@
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:32:56 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
 <item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="false"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

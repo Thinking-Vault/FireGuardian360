@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0EA00B1-8911-A675-4E08-461F0644B0E2" name="SENSOR_DATA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Leituras individuais de cada sensor.]]></commentInRDBMS>
+<generatorID>470F33C5-E31F-AFDD-2CE4-545C9F619747</generatorID>
+<notes><![CDATA[Medição bruta (temp., umidade, fumaça, NDVI) vinda de um sensor.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>SND</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ALT" id="B72161BB-13E8-6E5F-6FE2-58837A6CB75E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relaciona a leitura a um alerta gerado (ALERT.ID_ALT).]]></commentInRDBMS>
+<generatorID>D1C97DA9-A55F-FAD1-C414-0D126DDCAB84</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_SND_COLLECTED_AT" id="646A0629-715C-EA10-9655-137CD7341363">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que a leitura foi coletada.]]></commentInRDBMS>
+<generatorID>2E051D70-D34C-C371-D19D-92C949EC5350</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_SND_MEASURE" id="DF3910CD-D61A-BB4D-3BAE-D4D497881ECC">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de medição (ex.: TEMPERATURA, UMIDADE, FUMAÇA).]]></commentInRDBMS>
+<generatorID>7A4A71A9-AA66-4CCE-443E-861B3DE99733</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_SND_VALUE" id="7A52BE47-822F-5A89-234C-58560F7C9EB0">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor numérico da medição.]]></commentInRDBMS>
+<generatorID>9D73DF75-7661-534D-7910-ED670B543B0D</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SND_LAT" id="A73120E3-7554-937D-98BA-490276951922">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude onde o sensor coletou o dado.]]></commentInRDBMS>
+<generatorID>9E8FD9AF-F0BC-029B-8660-399673EA6529</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEGETATION_ID_VGT" id="284161A3-98BA-D340-2F90-C1354EDFFB0B">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica o tipo de vegetação no local da coleta (VEGETATION.ID_VGT).]]></commentInRDBMS>
+<generatorID>EDCC4BD5-B102-2228-367B-F49247A8EF7F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA0500B5-8B10-11ED-8760-41E2C2E31A20" referredColumn="C6C81B1D-2663-06A3-1EFF-85DE56E61877"/>
+</associations>
+</Column>
+<Column name="SENSOR_ID_SNS" id="7DF8F07B-D0F4-F98A-DFB2-AF48FE681AE1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Conecta a leitura ao sensor que a originou (SENSOR.ID_SNS).]]></commentInRDBMS>
+<generatorID>EB35DEBD-6869-4BF9-572A-31535057F057</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CAE60D0-B59E-D8F1-CEF7-51617B5BB239" referredColumn="1C15CC87-DB38-64CC-7376-230C677B318C"/>
+</associations>
+</Column>
+<Column name="SND_ID" id="DB7A7B64-E421-79EA-93B8-47BC8B2391CA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D74CD834-1FDA-B42B-886D-B22179F90F6D" name="SND_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="DB7A7B64-E421-79EA-93B8-47BC8B2391CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7300764A-DD87-C339-17C9-57D62B63FFC7" name="SENSOR_DATA_SENSOR_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>E6DEA1D2-D60A-A174-CB8E-152F3B2AE4BE</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DF8F07B-D0F4-F98A-DFB2-AF48FE681AE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59608164-AC57-C7F0-0019-57FD8C1231E4" name="SENSOR_DATA_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>32CFC5F4-AB54-A4D1-190E-184547D59B9E</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="284161A3-98BA-D340-2F90-C1354EDFFB0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

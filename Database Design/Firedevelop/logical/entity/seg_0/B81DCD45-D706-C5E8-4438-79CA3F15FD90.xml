@@ -7,9 +7,7 @@
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -27,9 +25,7 @@
 <commentInRDBMS><![CDATA[Identificador único do tipo de vegetação]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,9 +39,7 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,11 +50,10 @@
 <Attribute name="PC_VGT_FLAMMABILITY" id="B2358BAA-E9C6-50C8-B950-980E73E986FF">
 <createdBy>Adm</createdBy>
 <createdTime>2025-05-27 20:26:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Probabilidade de propagação de fogo (%) com duas casas decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -77,9 +70,7 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -94,9 +85,7 @@
 <createdTime>2025-05-27 20:30:09 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

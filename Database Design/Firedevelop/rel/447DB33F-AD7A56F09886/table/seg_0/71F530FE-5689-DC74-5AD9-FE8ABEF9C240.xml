@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71F530FE-5689-DC74-5AD9-FE8ABEF9C240" name="VEGETATION">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipos de vegetação e probabilidade de propagação do fogo.]]></commentInRDBMS>
+<generatorID>B81DCD45-D706-C5E8-4438-79CA3F15FD90</generatorID>
+<notes><![CDATA[Tipo de cobertura vegetal (cerrado, mata seca…) com inflamabilidade e taxa de propagação.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>VGT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_VGT" id="C6C81B1D-2663-06A3-1EFF-85DE56E61877">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do tipo de vegetação]]></commentInRDBMS>
+<generatorID>CB7462E7-87FE-0F92-26C6-F8F5F1E5C4F4</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_VGT_NAME" id="A7A4674A-FBC2-1AC7-F613-AA640A6BA1EE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo (cerrado, floresta etc.)
+]]></commentInRDBMS>
+<generatorID>2D767128-BB4E-C20E-645A-5929E83B0BD6</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_VGT_FLAMMABILITY" id="C37E860B-B2AA-EA51-3FBC-7010B1284504">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Probabilidade de propagação de fogo (%) com duas casas decimais.]]></commentInRDBMS>
+<generatorID>B2358BAA-E9C6-50C8-B950-980E73E986FF</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_VGT_CARACTERISTICA" id="700B509B-3C67-B325-E411-55501C7E960A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição geral do tipo de vegetação
+
+]]></commentInRDBMS>
+<generatorID>8A7E2424-F7F9-8011-A1F7-4405F63FDC72</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="066B48C7-07B7-C140-8243-FBF9B3496EB1" name="VEGETATION_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>C0EC3842-050F-DC62-083E-93C33C5FCE56</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6C81B1D-2663-06A3-1EFF-85DE56E61877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

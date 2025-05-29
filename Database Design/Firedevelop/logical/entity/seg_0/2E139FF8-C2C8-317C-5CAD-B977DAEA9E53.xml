@@ -7,9 +7,7 @@
 ]]></notes>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -28,9 +26,7 @@
 ]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,9 +40,7 @@
 <commentInRDBMS><![CDATA[Nome da região ou localidade.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -61,9 +55,7 @@
 <commentInRDBMS><![CDATA[Sigla da Unidade Federativa (ex.: SP, MG).]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -78,9 +70,7 @@
 <commentInRDBMS><![CDATA[Latitude em graus decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -96,9 +86,7 @@
 <commentInRDBMS><![CDATA[Longitude em graus decimais.]]></commentInRDBMS>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -108,6 +96,21 @@
 <dataTypeScale>6</dataTypeScale>
 <ownDataTypeParameters>,9,6</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_SND" id="437C662A-8F98-0D7D-0F93-84E6E9A52D2C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:20:17 UTC</createdTime>
+<generatorID>EB4A4C70-75BD-9521-DA23-D97E1EC68EBF</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
+</engineerTo>
+<referedAttribute>DB3F561D-7ED9-C024-82DE-C80DB6A0E0F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2D1FBA97-8B41-F69A-0132-7FF7F4C3216E" name="LOCALIZAÇÃO PK">
@@ -115,9 +118,7 @@
 <createdTime>2025-05-27 20:43:07 UTC</createdTime>
 <ownerDesignName>Firedevelop</ownerDesignName>
 <engineerTo>
-<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
-<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
-<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+<item key="447DB33F-FF80-8BA3-9010-AD7A56F09886" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

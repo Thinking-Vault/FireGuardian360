@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E96715A-5674-5481-49F4-521178C45358" name="CHECKLIST_ITEM">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>23E2BABC-53D2-6ACA-039C-CD5FA370640D</generatorID>
+<notes><![CDATA[Item de preparo (máscara, água, ferramenta) que o usuário marca como “pronto” para ação emergencial.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>CKI</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID_USR" id="874974F9-11AF-8051-BF1D-6C48B412F641">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para USUARIO, dono do item de checklist.]]></commentInRDBMS>
+<generatorID>15680A33-8126-91AB-53C2-9F850DAC241C</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="221CA391-19DE-6CFF-88EC-4B1793B4D384" referredColumn="0000948B-7E6F-4DCC-4B4D-0E6767F4E28E"/>
+</associations>
+</Column>
+<Column name="ID_CKI_ITEM" id="2A0727E6-8F32-FCB0-AB31-4BD08FF74F0F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID único do item de checklist.]]></commentInRDBMS>
+<generatorID>E13F9731-4BF4-7AF7-C83C-8813A6FF423A</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CKI_LABEL" id="3FC97224-8E75-A4AC-F37C-4FCE3A1DEA64">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Texto descritivo do item de checklist.]]></commentInRDBMS>
+<generatorID>9369B96D-E9A3-F479-32BB-FEE468F3B485</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_CKI_STATUS" id="54B08EB5-8195-BA23-EFFE-7E78F1316770">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do item (ex.: PENDENTE, CONCLUÍDO).]]></commentInRDBMS>
+<generatorID>C9D8278D-9438-EC83-2B8A-A9ED7716E757</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2994A016-DA5B-FA71-D897-F3D14390974C" name="CHECKLIST_ITEM_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>0E1867AE-685C-A937-E557-30EE34FD46BC</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A0727E6-8F32-FCB0-AB31-4BD08FF74F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7924AB24-807A-396D-8A06-21AEA003266D" name="CHECKLIST_ITEM_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>84C958C2-331D-3A59-8670-A3C2A644724B</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="874974F9-11AF-8051-BF1D-6C48B412F641"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
