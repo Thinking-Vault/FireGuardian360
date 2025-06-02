@@ -1,0 +1,868 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="2394" height="671">
+<defs id="dmw_defs" >
+<svg id="fk_sym" viewBox="0 0 48.665 48.665" style="enable-background:new 0 0 48.665 48.665;" >
+<g>
+<path d="M40.332,31.592c-2.377,0-4.515,1-6.033,2.598l-17.737-8.686c0.061-0.406,0.103-0.82,0.103-1.246    c0-0.414-0.04-0.818-0.098-1.215l17.711-8.589c1.519,1.609,3.666,2.619,6.054,2.619c4.603,0,8.333-3.731,8.333-8.333    c0-4.603-3.73-8.333-8.333-8.333s-8.333,3.73-8.333,8.333c0,0.414,0.04,0.817,0.098,1.215l-17.709,8.589    c-1.519-1.609-3.666-2.619-6.054-2.619C3.73,15.925,0,19.656,0,24.258c0,4.603,3.73,8.333,8.333,8.333    c2.377,0,4.515-1,6.033-2.596l17.736,8.685c-0.062,0.406-0.104,0.82-0.104,1.245c0,4.604,3.73,8.333,8.333,8.333    s8.333-3.729,8.333-8.333C48.665,35.322,44.935,31.592,40.332,31.592z" fill="#13bf3b"/>
+</g>
+</svg>
+<svg id="pk_sym" viewBox="0 0 480.509 480.509" style="enable-background:new 0 0 480.509 480.509;" >
+<g>
+<path d="M418.119,331.046c4.094,4.374,7.766,8.186,10.996,11.416c3.237,3.238,6.714,6.376,10.427,9.422   c3.71,3.042,6.427,4.568,8.135,4.568c3.241,0,9.517-4.661,18.843-13.99c9.328-9.321,13.989-15.604,13.989-18.842   c0-1.523-2.714-5.421-8.138-11.704c-5.421-6.276-12.364-13.702-20.838-22.271c-8.473-8.565-16.703-16.744-24.694-24.55   c-8.001-7.81-15.8-15.373-23.417-22.703c-7.611-7.327-11.992-11.56-13.135-12.703c-1.902-1.902-4.093-2.853-6.563-2.853   c-3.237,0-9.521,4.661-18.843,13.988c-9.328,9.322-13.989,15.605-13.989,18.843c0,1.711,1.522,4.421,4.568,8.138   c3.046,3.71,6.188,7.187,9.421,10.424c3.23,3.23,7.047,6.899,11.42,10.992c4.377,4.093,6.848,6.423,7.423,6.995l-27.408,27.404   L254.954,222.268c24.94-33.498,37.408-68.236,37.408-104.211c0-31.024-9.761-56.293-29.263-75.801   c-19.512-19.511-44.778-29.265-75.805-29.265c-30.454,0-60.244,9.042-89.363,27.119c-29.121,18.083-52.727,41.686-70.808,70.808   C9.042,140.038,0,169.828,0,200.28c0,31.029,9.753,56.286,29.265,75.803c19.511,19.517,44.777,29.27,75.801,29.27   c35.976,0,70.71-12.467,104.212-37.407l191.574,191.579c5.332,5.328,11.796,7.994,19.417,7.994c7.991,0,15.704-3.72,23.12-11.14   c7.426-7.426,11.143-15.129,11.143-23.127c0-7.617-2.666-14.092-7.994-19.417l-62.811-62.811l27.405-27.404   C411.699,324.195,414.033,326.666,418.119,331.046z M221.556,161.458c-10.656,10.657-23.601,15.987-38.828,15.987   c-7.996,0-15.896-1.812-23.7-5.43c3.617,7.808,5.426,15.706,5.426,23.7c0,15.229-5.327,28.171-15.987,38.828   c-10.66,10.655-23.606,15.986-38.831,15.986c-15.227,0-28.168-5.325-38.828-15.986c-10.657-10.657-15.987-23.599-15.987-38.828   c0-15.227,5.327-28.171,15.987-38.828C81.464,146.23,94.409,140.9,109.636,140.9c7.992,0,15.893,1.809,23.695,5.424   c-3.616-7.804-5.424-15.706-5.424-23.699c0-15.227,5.327-28.171,15.987-38.828c10.66-10.657,23.604-15.987,38.831-15.987   c15.227,0,28.171,5.327,38.828,15.987c10.657,10.66,15.987,23.601,15.987,38.828C237.539,137.852,232.209,150.797,221.556,161.458z   " fill="#ff8345"/>
+</g>
+</svg>
+<svg id="uk_sym" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" >
+<g>
+	<polygon points="236.99,11.41 0,246.348 236.99,478.678 236.99,350.609 129.864,245 236.99,139.391  " fill="#0064fb"/>
+<polygon points="253.01,478.59 490,243.651 253.01,11.322 253.01,139.391 360.136,245 253.01,350.609  " fill="#0064fb"/>
+</g>
+</svg>
+<svg id="link_sym" viewBox="0 0 1000 900" style="enable-background:new 0 0 1000 900;" >
+<g>
+<path fill="black" d="M660.224 422.656c6.976 16.192-0.512 35.008-16.768 42.048-16.128 6.976-34.944-0.448-41.984-16.768-8.448-19.776-20.736-37.696-36.224-53.248-64.64-64.64-177.344-64.64-241.92 0l-145.216 145.28c-66.688 66.688-66.688 175.232 0 241.984 66.688 66.688 175.104 66.752 241.92 0l92.8-92.864c12.48-12.48 32.768-12.48 45.248 0s12.48 32.768 0 45.248l-92.8 92.864c-91.648 91.648-240.832 91.52-332.416 0-91.712-91.648-91.712-240.832 0-332.48l145.216-145.28c44.352-44.416 103.424-68.864 166.272-68.864s121.792 24.448 166.208 68.864c21.248 21.312 38.016 45.952 49.664 73.216zM891.136 401.344l-145.216 145.216c-88.768 88.832-243.712 88.832-332.416 0-21.312-21.312-38.080-45.952-49.728-73.216-7.040-16.256 0.448-35.072 16.704-42.048 16.064-6.784 35.008 0.512 41.984 16.768 8.512 19.776 20.8 37.696 36.288 53.248 64.64 64.64 177.344 64.64 241.92 0l145.216-145.216c66.688-66.688 66.688-175.232 0-241.984-66.752-66.624-175.168-66.688-241.92 0l-92.8 92.864c-12.48 12.48-32.768 12.48-45.248 0s-12.48-32.768 0-45.248l92.8-92.864c45.824-45.824 105.984-68.736 166.208-68.736s120.448 22.912 166.272 68.736c91.584 91.648 91.584 240.768-0.064 332.48z" />
+</g>
+</svg>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath13_0_">
+<rect x="0" y="0" width="470" height="146" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath2_0_">
+<rect x="0" y="0" width="717" height="146" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath5_0_">
+<rect x="0" y="0" width="379" height="118" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath7_0_">
+<rect x="0" y="0" width="384" height="132" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath11_0_">
+<rect x="0" y="0" width="496" height="146" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath10_0_">
+<rect x="0" y="0" width="332" height="118" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath8_0_">
+<rect x="0" y="0" width="480" height="132" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath4_0_">
+<rect x="0" y="0" width="314" height="76" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath9_0_">
+<rect x="0" y="0" width="423" height="104" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath3_0_">
+<rect x="0" y="0" width="453" height="104" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath14_0_">
+<rect x="0" y="0" width="536" height="118" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath1_0_">
+<rect x="0" y="0" width="526" height="118" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath6_0_">
+<rect x="0" y="0" width="457" height="132" />
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath12_0_">
+<rect x="0" y="0" width="363" height="104" />
+</clipPath>
+</defs>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1580 381 L1469 358" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1359 336 L1469 358" />
+<path stroke-dasharray="none" d="M1360.0 331.0 L1369.0 338.0 L1358.0 341.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1858 77 L1783 77" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1708 77 L1783 77" />
+<path stroke-dasharray="none" d="M1708.0 71.0 L1720.0 77.0 L1708.0 83.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M480 404 L480 475" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M480 546 L480 475" />
+<path stroke-dasharray="none" d="M474.0 546.0 L480.0 534.0 L486.0 546.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M975 500 L975 422" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M975 345 L975 422" />
+<path stroke-dasharray="none" d="M981.0 345.0 L975.0 357.0 L969.0 345.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M2038 136 L2038 330" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M2038 525 L2038 330" />
+<path stroke-dasharray="none" d="M2032.0 525.0 L2038.0 513.0 L2044.0 525.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1858 136 L1608 191" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1359 246 L1608 191" />
+<path stroke-dasharray="none" d="M1358.0 241.0 L1369.0 244.0 L1360.0 251.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1359 293 L1430 293" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1502 293 L1430 293" />
+<path stroke-dasharray="none" d="M1502.0 299.0 L1490.0 293.0 L1502.0 287.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M183 359 L183 386" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M183 414 L183 386" />
+<path stroke-dasharray="none" d="M177.0 414.0 L183.0 402.0 L189.0 414.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M717 258 L717 207" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M717 156 L717 207" />
+<path stroke-dasharray="none" d="M723.0 156.0 L717.0 168.0 L711.0 156.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1305 241 L1305 191" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1305 141 L1305 191" />
+<path stroke-dasharray="none" d="M1311.0 141.0 L1305.0 153.0 L1299.0 141.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1084 241 L1084 198" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1084 156 L1084 198" />
+<path stroke-dasharray="none" d="M1090.0 156.0 L1084.0 168.0 L1078.0 156.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M548 258 L447 203" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M346 148 L447 203" />
+<path stroke-dasharray="none" d="M348.0 143.0 L356.0 152.0 L344.0 153.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M512 589 L571 589" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M631 589 L571 589" />
+<path stroke-dasharray="none" d="M512.0 583.0 L524.0 589.0 L512.0 595.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1015 518 L1049 518" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1084 518 L1049 518" />
+<path stroke-dasharray="none" d="M1084.0 524.0 L1072.0 518.0 L1084.0 512.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1817 475 L1817 500" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1817 525 L1817 500" />
+<path stroke-dasharray="none" d="M1811.0 525.0 L1817.0 513.0 L1823.0 525.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M1722 578 L1368 578" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M1015 578 L1368 578" />
+<path stroke-dasharray="none" d="M1015.0 572.0 L1027.0 578.0 L1015.0 584.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g stroke-linecap="butt" >
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-dasharray="8,8" stroke-width="1" d="M448 321 L394 321" />
+<path stroke="rgb(0,0,0)" fill="none" stroke-opacity="1.0"  stroke-width="1" d="M340 321 L394 321" />
+<path stroke-dasharray="none" d="M340.0 315.0 L352.0 321.0 L340.0 327.0" fill="white" stroke-width="1" stroke-opacity="1.0" stroke="rgb(0,0,0)" />
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath13_0_)" transform="translate(448,258)" >
+<rect x="0" y="0" width="469" height="145" rx="20" ry="20" />
+<text id="1B1266BF-AC7F521F90B6" x="221" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+USER
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_USR
+</text>
+<text x="162" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+PK e identificador único do usuário.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NM_USR_NAME
+</text>
+<text x="162" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Nome completo do usuário
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+EM_USR_EMAIL
+</text>
+<text x="162" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+E-mail do usuário (único, obrigatório).
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TP_USR_ROLE
+</text>
+<text x="162" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Perfil (ADMIN, OPERADOR, VOLUNTARIO, COMUNIDADE).
+</text>
+<text x="16" y="88" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="88" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DH_USR_CREATED_AT
+</text>
+<text x="162" y="88" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data e hora de criação do registro
+</text>
+<text x="16" y="102" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="102" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NR_USR_TELEFONE
+</text>
+<text x="162" y="102" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Telefone de contato
+</text>
+<line x1="0" y1="108" x2="468" y2="108" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="122" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Cadastro de todos os usuários do sistema.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath2_0_)" transform="translate(516,10)" >
+<rect x="0" y="0" width="716" height="145" rx="20" ry="20" />
+<text id="22719D40-CB45C87966F0" x="342" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+ALERT
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_ALT
+</text>
+<text x="161" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador interno do alerta.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TP_ALT_TYPE
+</text>
+<text x="161" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Tipo de alerta (ex.: Fumaça, Chama, Nível Crítico).
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NR_ALT_LEVEL
+</text>
+<text x="161" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Nível de severidade do alerta (0-9).
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DH_ALT_CREATED_AT
+</text>
+<text x="161" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data e hora de criação do alerta.
+</text>
+<text x="16" y="88" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="88" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NR_ALT_LNG
+</text>
+<text x="161" y="88" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Longitude do ponto de alerta (graus decimais).
+</text>
+<text x="16" y="102" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="102" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_ALT_EXT
+</text>
+<text x="161" y="102" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+UUID externo usado para integrar o alerta com sistemas de terceiros, permitindo rastreabilidade e sincronização.
+</text>
+<line x1="0" y1="108" x2="715" y2="108" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="122" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Registra alertas gerados por sensores ou usuários.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath5_0_)" transform="translate(49,30)" >
+<rect x="0" y="0" width="378" height="117" rx="20" ry="20" />
+<text id="23E2BABC-CD5FA370640D" x="146" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+CHECKLIST_ITEM
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_CKI_ITEM
+</text>
+<text x="131" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+ID único do item de checklist.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NM_CKI_LABEL
+</text>
+<text x="131" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Texto descritivo do item de checklist.
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TP_CKI_STATUS
+</text>
+<text x="131" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Status do item (ex.: PENDENTE, CONCLUÍDO).
+</text>
+<line x1="0" y1="66" x2="377" y2="66" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="80" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Item de preparo (máscara, água, ferramenta) que o usuário marca como 
+</text>
+<text x="5" y="94" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+“pronto” para ação emergencial.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath7_0_)" transform="translate(631,500)" >
+<rect x="0" y="0" width="383" height="131" rx="20" ry="20" />
+<text id="2E139FF8-B977DAEA9E53" x="156" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+LOCALIZAÇÃO
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_LOC
+</text>
+<text x="153" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único da localização
+
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NM_LOC_REGIAO
+</text>
+<text x="153" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Nome da região ou localidade.
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+SG_LOC_UF
+</text>
+<text x="153" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Sigla da Unidade Federativa (ex.: SP, MG).
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NR_LOC_LATITUDE
+</text>
+<text x="153" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Latitude em graus decimais.
+</text>
+<text x="16" y="88" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="88" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NR_LOC_LONGITUDE
+</text>
+<text x="153" y="88" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Longitude em graus decimais.
+</text>
+<line x1="0" y1="94" x2="382" y2="94" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="108" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Registros de regiões e sensores com coordenadas.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath11_0_)" transform="translate(1722,525)" >
+<rect x="0" y="0" width="495" height="145" rx="20" ry="20" />
+<text id="470F33C5-545C9F619747" x="210" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+SENSOR_DATA
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_ALT
+</text>
+<text x="175" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Relaciona a leitura a um alerta gerado (ALERT.ID_ALT).
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DH_SND_COLLECTED_AT
+</text>
+<text x="175" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data e hora em que a leitura foi coletada.
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TP_SND_MEASURE
+</text>
+<text x="175" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Tipo de medição (ex.: TEMPERATURA, UMIDADE, FUMAÇA).
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+VL_SND_VALUE
+</text>
+<text x="175" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Valor numérico da medição.
+</text>
+<text x="16" y="88" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="88" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NR_SND_LAT
+</text>
+<text x="175" y="88" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Latitude onde o sensor coletou o dado.
+</text>
+<text x="16" y="102" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="102" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="102" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_SND
+</text>
+<text x="175" y="102" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único dos registros coletados pelo sensor
+</text>
+<line x1="0" y1="108" x2="494" y2="108" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="122" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Leituras individuais de cada sensor.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath10_0_)" transform="translate(1580,357)" >
+<rect x="0" y="0" width="331" height="117" rx="20" ry="20" />
+<text id="710B4EF3-ACCF49BD6D77" x="144" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+SENSOR
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_SNS
+</text>
+<text x="135" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único do sensor
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NM_SNS_MODEL
+</text>
+<text x="135" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Modelo do sensor
+
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TP_SNS_TYPE
+</text>
+<text x="135" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Tipo de sensor (térmico, óptico etc.)
+
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ST_SNS_STATUS
+</text>
+<text x="135" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Status (ativo/inativo)
+</text>
+<line x1="0" y1="80" x2="330" y2="80" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="94" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Cadastro dos sensores físicos.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath8_0_)" transform="translate(1084,404)" >
+<rect x="0" y="0" width="479" height="131" rx="20" ry="20" />
+<text id="9CD32797-541C794E8F3A" x="198" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+METEOROLOGIA
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_MTR
+</text>
+<text x="176" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único do registro meteorológico.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DT_MTR_COLETA
+</text>
+<text x="176" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data e hora da coleta dos dados meteorológicos.
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+MD_MTR_TEMPERATURA
+</text>
+<text x="176" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Temperatura em °C com precisão de duas casas decimais.
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+PC_MTR_UMIDADE
+</text>
+<text x="176" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Umidade relativa do ar em % com duas casas decimais.
+</text>
+<text x="16" y="88" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="88" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+MD_MTR_VENTO
+</text>
+<text x="176" y="88" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Velocidade do vento em m/s com duas casas decimais.
+</text>
+<line x1="0" y1="94" x2="478" y2="94" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="108" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Dados meteorológicos coletados por sensor.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath4_0_)" transform="translate(26,283)" >
+<rect x="0" y="0" width="313" height="75" rx="20" ry="20" />
+<text id="A3F56F37-9BC7C7ECA566" x="118" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+CHAT_SESSION
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_CTS
+</text>
+<text x="83" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador sequencial da sessão de chat.
+</text>
+<line x1="0" y1="38" x2="312" y2="38" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="52" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Sessões de chat entre usuário e sistema.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath9_0_)" transform="translate(936,241)" >
+<rect x="0" y="0" width="422" height="103" rx="20" ry="20" />
+<text id="A4B85A0C-20417E60FEFF" x="184" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+QUEIMADA
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_QMD
+</text>
+<text x="165" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único do foco de queimada
+
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DT_QMD_OCORRENCIA
+</text>
+<text x="165" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data e hora da ocorrência do foco de queimada.
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TP_QMD_INTENSIDADE
+</text>
+<text x="165" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Intensidade do foco (baixa/média/alta)
+
+</text>
+<line x1="0" y1="66" x2="421" y2="66" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="80" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Registro dos focos de incêndio detectados.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath3_0_)" transform="translate(0,414)" >
+<rect x="0" y="0" width="452" height="103" rx="20" ry="20" />
+<text id="A77CC827-2870B0DA7FEA" x="184" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+CHAT_MESSAGE
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_CTM
+</text>
+<text x="142" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único da mensagem.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TX_CTM_PREVIEW
+</text>
+<text x="142" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Pré-visualização ou resumo da mensagem (até 4000 chars).
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TX_CTM_CONTENT
+</text>
+<text x="142" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Conteúdo completo da mensagem (CLOB).
+</text>
+<line x1="0" y1="66" x2="451" y2="66" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="80" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Mensagens trocadas em cada sessão de chat.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath14_0_)" transform="translate(1858,18)" >
+<rect x="0" y="0" width="535" height="117" rx="20" ry="20" />
+<text id="B81DCD45-79CA3F15FD90" x="236" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+VEGETATION
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_VGT
+</text>
+<text x="184" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único do tipo de vegetação
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NM_VGT_NAME
+</text>
+<text x="184" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Nome do tipo (cerrado, floresta etc.)
+
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+PC_VGT_FLAMMABILITY
+</text>
+<text x="184" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Probabilidade de propagação de fogo (%) com duas casas decimais.
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DS_VGT_CARACTERISTICA
+</text>
+<text x="184" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Descrição geral do tipo de vegetação
+
+
+</text>
+<line x1="0" y1="80" x2="534" y2="80" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="94" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Tipos de vegetação e probabilidade de propagação do fogo.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath1_0_)" transform="translate(1502,229)" >
+<rect x="0" y="0" width="525" height="117" rx="20" ry="20" />
+<text id="C9731008-A4B9742D4BD3" x="220" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+AÇÃO_COMBATE
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_ACB
+</text>
+<text x="156" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Identificador único da ação de combate.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DT_ACB_EXECUCAO
+</text>
+<text x="156" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data e hora em que a ação de combate foi realizada.
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+TP_ACB_TIPO
+</text>
+<text x="156" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Tipo de ação de combate (ex.: Pulverização, Resfriamento, Contenção).
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+o
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DS_ACB_RESULTADO
+</text>
+<text x="156" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Descrição do resultado observado após a ação de combate.
+</text>
+<line x1="0" y1="80" x2="524" y2="80" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="94" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Registra as ações de combate em focos de queimada.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath6_0_)" transform="translate(1251,9)" >
+<rect x="0" y="0" width="456" height="131" rx="20" ry="20" />
+<text id="DDB2D712-2F6E525FB2D6" x="192" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+FIRE_HISTORY
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="2" y="32" fill="rgb(0,0,255)" fill-opacity="1.0" font-size="10" stroke="none">
+P
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+ID_FIH
+</text>
+<text x="163" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+ID único do registro histórico da queimada.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DT_FIH_START
+</text>
+<text x="163" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data de início da queimada.
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DT_FIH_END
+</text>
+<text x="163" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Data de extinção ou controle da queimada.
+</text>
+<text x="16" y="74" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="74" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+VL_FIH_AREA_BURNED
+</text>
+<text x="163" y="74" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Área afetada pela queimada em hectares.
+</text>
+<text x="16" y="88" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="88" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+DS_FIH_RESOURCES
+</text>
+<text x="163" y="88" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Recursos utilizados no combate (e.g., água, retardantes).
+</text>
+<line x1="0" y1="94" x2="455" y2="94" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="108" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Armazena o histórico detalhado de cada evento de queimada.
+</text>
+</g>
+<g  fill="rgb(164,225,255)" stroke="rgb(0,0,255)" fill-opacity="1.0" stroke-opacity="1.0" clip-path="url(#clipPath12_0_)" transform="translate(149,546)" >
+<rect x="0" y="0" width="362" height="103" rx="20" ry="20" />
+<text id="F366C6C9-74BA80650D86" x="158" y="14" fill="rgb(0,0,255)" font-weight="bold"  fill-opacity="1.0" font-size="10" stroke="none">
+SHELTER
+</text>
+<text x="16" y="32" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="32" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+NM_SHL_NAME
+</text>
+<text x="150" y="32" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Nome do abrigo comunitário.
+</text>
+<text x="16" y="46" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="46" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+QT_SHL_AVAILABLE
+</text>
+<text x="150" y="46" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Número de vagas livres.
+
+
+</text>
+<text x="16" y="60" fill="rgb(255,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+*
+</text>
+<text x="26" y="60" fill="rgb(0,0,0)" fill-opacity="1.0" font-size="10" stroke="none">
+QT_SHL_CAPACITY
+</text>
+<text x="150" y="60" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Capacidade total de pessoas do abrigo.
+</text>
+<line x1="0" y1="66" x2="361" y2="66" fill="none" stroke="rgb(64,64,64)"/>
+<text x="5" y="80" fill="rgb(64,64,64)" fill-opacity="1.0" font-size="10" stroke="none">
+Abrigos comunitários para evacuação.
+</text>
+</g>
+
+</svg>
