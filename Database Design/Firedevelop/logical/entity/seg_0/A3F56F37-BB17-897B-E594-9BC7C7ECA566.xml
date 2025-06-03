@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A3F56F37-BB17-897B-E594-9BC7C7ECA566" name="CHAT_SESSION">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:57:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sessões de chat entre usuário e sistema.]]></commentInRDBMS>
+<notes><![CDATA[Sessão de chat (ex.: PsyHelp) iniciada por um usuário ou brigadista.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CTS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CTS" id="679AA230-95FD-A5D7-3E24-69A74BA09F38">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 00:09:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador sequencial da sessão de chat.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USR" id="9AFD06F4-81C8-6C05-1E7F-24C41AA9DC61">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:23:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para USUARIO, usuário que iniciou a sessão.]]></commentInRDBMS>
+<generatorID>FE1B0553-F206-F295-490C-A2C8E5702EE9</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<referedAttribute>7655F53D-9DCF-CF9C-4022-260498E98498</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BBA7A580-1A89-95AF-7558-8DE7DBE5CE78" name="CHAT_SESSION PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:34:07 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9AFD06F4-81C8-6C05-1E7F-24C41AA9DC61</attributeRef>
+<attributeRef>679AA230-95FD-A5D7-3E24-69A74BA09F38</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A4B85A0C-F48C-8215-9C62-20417E60FEFF" name="QUEIMADA">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:54:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro dos focos de incêndio detectados.]]></commentInRDBMS>
+<notes><![CDATA[Registro de cada foco de incêndio detectado.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>QMD</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_QMD" id="48D7C792-D574-15D2-D4C7-06BC93E890DD">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:12:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do foco de queimada
+]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_LOC" id="C6D74B47-735E-9D9D-76D8-0565D7ECB584">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relaciona cada foco de queimada à sua localização (LOCALIZACAO.ID_LOC).]]></commentInRDBMS>
+<generatorID>2470D16F-C147-7FF8-A5F7-1DE5A26B02E6</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<referedAttribute>8084E6B6-241D-BC55-3708-9F6F61A27A37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_SNS" id="E89FF4CC-2CBB-B5D0-D7BA-D9365A3D4698">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:06:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Associa o sensor responsável pela detecção do foco (SENSOR.ID_SNS).]]></commentInRDBMS>
+<generatorID>06C4A32A-991F-E318-344C-523C6B65C787</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<referedAttribute>1FD8C081-40C5-B46A-A341-7A3BD7AAF54F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_VGT" id="212222FC-C6D3-7947-43A2-B8AF2FD3B15A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:30:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica o tipo de vegetação onde o foco ocorreu (VEGETATION.ID_VGT).]]></commentInRDBMS>
+<generatorID>41DCCF90-90A1-6678-DF82-BDCAADF854EC</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<referedAttribute>CB7462E7-87FE-0F92-26C6-F8F5F1E5C4F4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_QMD_OCORRENCIA" id="00E2FFE8-76D2-68B6-9115-29D125C3E3E0">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:13:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da ocorrência do foco de queimada.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_QMD_INTENSIDADE" id="004452D6-5350-8680-CB6E-720B5BE212DE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:13:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Intensidade do foco (baixa/média/alta)
+]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67C10D8D-D0CB-E049-D680-9999D2CB869B" name="QUEIMADA PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:12:50 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="9D20A118-0650-0B25-E9A6-60616FA60748" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>48D7C792-D574-15D2-D4C7-06BC93E890DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,115 @@
+-- Atualizado em 2025-05-27  
+-- Projeto de Monitoramento e Combate às Queimadas: DDL Corrigida e Completa
+
+-- Tabela USR (Usuários)
+CREATE TABLE USR (
+    ID_USR_USR        NUMBER        NOT NULL,
+    DS_USR_EMAIL      VARCHAR2(255) NOT NULL,
+    TX_USR_PSW_HASH   VARCHAR2(255) NOT NULL,
+    DH_USR_CREATED_AT TIMESTAMP WITH TIME ZONE DEFAULT SYSTIMESTAMP,
+    NM_USR_NAME       VARCHAR2(150) NOT NULL,
+    SG_USR_ROLE       VARCHAR2(20)  DEFAULT 'USER' -- exemplo: USER, ADMIN
+) LOGGING;
+
+ALTER TABLE USR
+    ADD CONSTRAINT PK_USR PRIMARY KEY (ID_USR_USR);
+ALTER TABLE USR
+    ADD CONSTRAINT UK_USR_EMAIL UNIQUE (DS_USR_EMAIL);
+
+COMMENT ON TABLE USR IS 'Entidade USR: armazena os usuários do sistema.';
+COMMENT ON COLUMN USR.ID_USR_USR IS 'PK: identificador único do usuário.';
+COMMENT ON COLUMN USR.DS_USR_EMAIL IS 'E-mail do usuário (único, obrigatório).';
+COMMENT ON COLUMN USR.TX_USR_PSW_HASH IS 'Hash da senha do usuário.';
+COMMENT ON COLUMN USR.DH_USR_CREATED_AT IS 'Data e hora de criação do registro.';
+COMMENT ON COLUMN USR.NM_USR_NAME IS 'Nome completo do usuário.';
+COMMENT ON COLUMN USR.SG_USR_ROLE IS 'Sigla do perfil/permissão do usuário.';
+
+
+-- Tabela VEGETATION (Tipos de Vegetação)
+CREATE TABLE VGT (
+    ID_VGT_VGT         NUMBER        NOT NULL,
+    NM_VGT_TIPO        VARCHAR2(100) NOT NULL,
+    DS_VGT_DESC        VARCHAR2(500),
+    PC_VGT_RISCO       NUMBER(3,2)   DEFAULT 0.00 -- percentual de risco de queimada
+) LOGGING;
+
+ALTER TABLE VGT
+    ADD CONSTRAINT PK_VGT PRIMARY KEY (ID_VGT_VGT);
+
+COMMENT ON TABLE VGT IS 'Entidade VGT: tipos de vegetação cadastrados no sistema.';
+COMMENT ON COLUMN VGT.ID_VGT_VGT IS 'PK: identificador único do tipo de vegetação.';
+COMMENT ON COLUMN VGT.NM_VGT_TIPO IS 'Nome do tipo de vegetação (cerrado, floresta etc.).';
+COMMENT ON COLUMN VGT.DS_VGT_DESC IS 'Descrição geral do tipo de vegetação.';
+COMMENT ON COLUMN VGT.PC_VGT_RISCO IS 'Probabilidade média de risco de queimada.';
+
+-- Sequence e Trigger para VGT
+CREATE SEQUENCE SQ_VGT START WITH 1 NOCACHE ORDER;
+CREATE OR REPLACE TRIGGER TR_VGT_ID
+BEFORE INSERT ON VGT
+FOR EACH ROW
+WHEN (NEW.ID_VGT_VGT IS NULL)
+BEGIN
+    SELECT SQ_VGT.NEXTVAL INTO :NEW.ID_VGT_VGT FROM DUAL;
+END;
+/
+
+
+-- Tabela SENSOR_DATA (Dados dos Sensores)
+CREATE TABLE SNS_DATA (
+    ID_SNS_ID          INTEGER       NOT NULL,
+    DH_SNS_COLETED    TIMESTAMP WITH LOCAL TIME ZONE NOT NULL,
+    TP_SNS_MT          VARCHAR2(50)  NOT NULL,
+    VL_SNS_VAL         NUMBER        NOT NULL,
+    MD_SNS_LAT         NUMBER(9,6)   NOT NULL,
+    MD_SNS_LNG         NUMBER(9,6)   NOT NULL,
+    ID_VGT_VGT         NUMBER        NOT NULL
+) LOGGING;
+
+ALTER TABLE SNS_DATA
+    ADD CONSTRAINT PK_SNS_DATA PRIMARY KEY (ID_SNS_ID, DH_SNS_COLETED);
+
+ALTER TABLE SNS_DATA
+    ADD CONSTRAINT FK_SNS_DATA_VGT FOREIGN KEY (ID_VGT_VGT)
+        REFERENCES VGT (ID_VGT_VGT);
+
+COMMENT ON TABLE SNS_DATA IS 'Entidade SNS_DATA: dados coletados por sensores ambientais.';
+COMMENT ON COLUMN SNS_DATA.ID_SNS_ID IS 'PK: identificador do sensor.';
+COMMENT ON COLUMN SNS_DATA.DH_SNS_COLETED IS 'PK: data e hora da coleta.';
+COMMENT ON COLUMN SNS_DATA.TP_SNS_MT IS 'Tipo de medida (temperatura, umidade etc.).';
+COMMENT ON COLUMN SNS_DATA.VL_SNS_VAL IS 'Valor da medição.';
+COMMENT ON COLUMN SNS_DATA.MD_SNS_LAT IS 'Latitude da coleta.';
+COMMENT ON COLUMN SNS_DATA.MD_SNS_LNG IS 'Longitude da coleta.';
+COMMENT ON COLUMN SNS_DATA.ID_VGT_VGT IS 'FK → VGT.ID_VGT_VGT: tipo de vegetação no local.';
+
+
+-- Tabela ALERT (Alertas de Usuários)
+CREATE TABLE ALT (
+    ID_ALT_ALT         NUMBER        NOT NULL,
+    ID_USR_USR         NUMBER        NOT NULL,
+    TP_ALT_TYPE        VARCHAR2(50)  NOT NULL,
+    NR_ALT_LEVEL       NUMBER(2)     DEFAULT 1,
+    DH_ALT_CREATED     TIMESTAMP WITH TIME ZONE DEFAULT SYSTIMESTAMP,
+    MD_ALT_LAT         NUMBER(9,6)   NOT NULL,
+    MD_ALT_LNG         NUMBER(9,6)   NOT NULL,
+    ID_SNS_ID          INTEGER       NOT NULL,
+    DH_SNS_COLETED    TIMESTAMP WITH LOCAL TIME ZONE NOT NULL
+) LOGGING;
+
+ALTER TABLE ALT
+    ADD CONSTRAINT PK_ALT PRIMARY KEY (ID_ALT_ALT);
+ALTER TABLE ALT
+    ADD CONSTRAINT FK_ALT_USR FOREIGN KEY (ID_USR_USR) REFERENCES USR (ID_USR_USR);
+ALTER TABLE ALT
+    ADD CONSTRAINT FK_ALT_SNS FOREIGN KEY (ID_SNS_ID, DH_SNS_COLETED)
+        REFERENCES SNS_DATA (ID_SNS_ID, DH_SNS_COLETED);
+
+COMMENT ON TABLE ALT IS 'Entidade ALT: registra alertas gerados pelos usuários.';
+COMMENT ON COLUMN ALT.ID_ALT_ALT IS 'PK: identificador único do alerta.';
+COMMENT ON COLUMN ALT.ID_USR_USR IS 'FK → USR.ID_USR_USR: usuário que gerou o alerta.';
+COMMENT ON COLUMN ALT.TP_ALT_TYPE IS 'Tipo do alerta (ex.: CHUVA, FOGO).';
+COMMENT ON COLUMN ALT.NR_ALT_LEVEL IS 'Nível de gravidade do alerta.';
+COMMENT ON COLUMN ALT.DH_ALT_CREATED IS 'Data e hora em que o alerta foi criado.';
+COMMENT ON COLUMN ALT.MD_ALT_LAT IS 'Latitude do ponto do alerta.';
+COMMENT ON COLUMN ALT.MD_ALT_LNG IS 'Longitude do ponto do alerta.';
+COMMENT ON COLUMN ALT.ID_SNS_ID IS 'FK → SNS_DATA.ID_SNS_ID: sensor que detectou.';
+COMMENT ON COLUMN ALT.DH_SNS_COLETED IS 'FK → SNS_DATA.DH_SNS_COLETED: timestamp da coleta do sensor.';

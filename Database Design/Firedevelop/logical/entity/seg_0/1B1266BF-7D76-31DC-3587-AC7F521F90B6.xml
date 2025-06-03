@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B1266BF-7D76-31DC-3587-AC7F521F90B6" name="USER">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 19:55:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cadastro de todos os usuários do sistema.]]></commentInRDBMS>
+<notes><![CDATA[Pessoa (morador, brigadista, inspetor) que interage com o sistema.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>USR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_USR" id="7655F53D-9DCF-CF9C-4022-260498E98498">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[PK e identificador único do usuário.]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_USR_NAME" id="6662E9ED-6B3F-7C69-0C14-27D349749462">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:13:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do usuário]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EM_USR_EMAIL" id="87286F29-CE0F-DB0D-E196-5217453F7BE0">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:13:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail do usuário (único, obrigatório).]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_USR_ROLE" id="30CDFE23-D26E-4974-F279-BF8D88553033">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Perfil (ADMIN, OPERADOR, VOLUNTARIO, COMUNIDADE).]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DH_USR_CREATED_AT" id="60DCA254-0C7B-8ECE-580D-583FAA22BF0B">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de criação do registro]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_USR_TELEFONE" id="3F9EEAF8-52BD-D297-2DDA-94391A19B108">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone de contato]]></commentInRDBMS>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="69046019-6602-1CEC-BAAE-E6FB856477B6" name="USER PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:15:49 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="9D377194-5C86-D97A-41B8-52F0B42A7E61" value="true"/>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+<item key="6735B37D-4B9B-5331-FCD2-1D0591E88A68" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7655F53D-9DCF-CF9C-4022-260498E98498</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0BE81F8-3A83-6576-33B3-2D990E63F6BE" name="FIRE_HISTORY">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Armazena o histórico detalhado de cada evento de queimada.]]></commentInRDBMS>
+<generatorID>DDB2D712-0112-D555-A3BB-2F6E525FB2D6</generatorID>
+<notes><![CDATA[Histórico de incêndios passados: datas, extensão, vegetação predominante e recursos mobilizados.
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>FIH</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_FIH" id="0A70F8CC-6E31-3423-D3B6-02182BAC0611">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID único do registro histórico da queimada.]]></commentInRDBMS>
+<generatorID>84B2577D-8036-2E20-248E-7CC741FCACE7</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUEIMADA_ID_QMD" id="3091CFD4-D64B-C670-124D-5A74F27A87D2">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para QUEIMADA, identifica o foco de queimada relacionado.]]></commentInRDBMS>
+<generatorID>62034CAA-A3F8-5962-4CA8-D83DD9C549D7</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DBD4A56-6568-9C01-C4AE-7C84C840ECB8" referredColumn="003BBFAB-7BED-8F6A-1160-CFB1C9B5A1DA"/>
+</associations>
+</Column>
+<Column name="VEGETATION_ID_VGT" id="3FB9AB1F-BB52-3293-5294-ED878FD85346">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para VEGETATION, tipo de vegetação atingida na queimada.]]></commentInRDBMS>
+<generatorID>C68D8FD1-253B-B9CA-DE88-E0D7886208EC</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0EEC149-1A2A-7AAF-769E-7FA0DB558996" referredColumn="C6C81B1D-2663-06A3-1EFF-85DE56E61877"/>
+</associations>
+</Column>
+<Column name="DT_FIH_START" id="E89277AB-A0D1-7949-BC5E-E9A0FCB71C3D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de início da queimada.]]></commentInRDBMS>
+<generatorID>71114E5C-7C73-4736-0A97-F57266EBC3C7</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FIH_END" id="E74FD582-87D4-579C-7DA4-40AD9952CD25">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de extinção ou controle da queimada.]]></commentInRDBMS>
+<generatorID>2DBDF078-9A39-720C-B6BA-C3DC4FBD49CF</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_FIH_AREA_BURNED" id="A410280E-C497-9DCB-F6A7-0A0BAAA0176C">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Área afetada pela queimada em hectares.]]></commentInRDBMS>
+<generatorID>CDAAA2CB-CA49-0B55-5918-27D05680E2E0</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_FIH_RESOURCES" id="4D226229-EB8A-2AA8-C8FD-8FEB94319AA1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Recursos utilizados no combate (e.g., água, retardantes).]]></commentInRDBMS>
+<generatorID>8E3BEE95-7804-4C3F-C535-C7E5D23C3C8F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F11DDB3-A67B-AF65-634B-B4501173F97E" name="FIRE_HISTORY_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>29162CBE-AFF2-F627-402D-EA64B7C5F825</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A70F8CC-6E31-3423-D3B6-02182BAC0611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE2DE3BB-FAD6-B703-BF5F-FDDFBA19D726" name="FIRE_HISTORY_QUEIMADA_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>60D4315C-1B53-B051-2B42-96DE8A6EEA9B</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3091CFD4-D64B-C670-124D-5A74F27A87D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF82F75D-8BA7-0C88-5B55-B6B746E3DF5D" name="FIRE_HISTORY_VEGETATION_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>1755E81F-0D9E-2409-019E-8BBEF07EE0EF</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FB9AB1F-BB52-3293-5294-ED878FD85346"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

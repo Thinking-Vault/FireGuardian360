@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C173FE99-CB36-B0BE-CFD0-CDB3924D0F1E" name="SHELTER">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>F366C6C9-9F0F-49D3-EC85-74BA80650D86</generatorID>
+<notes><![CDATA[Abrigo/refúgio onde pessoas e brigadistas podem se reunir em segurança, com capacidade e vagas disponíveis.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>SHL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID_USR" id="FC03CEA8-3095-691D-1303-3DB2ABBB587A">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID interno do usuário responsável pelo abrigo.]]></commentInRDBMS>
+<generatorID>D3498385-D499-6CE1-0046-828C95BD745D</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="940DC39D-F937-2F1E-F319-E42AE8D0F15B" referredColumn="0000948B-7E6F-4DCC-4B4D-0E6767F4E28E"/>
+</associations>
+</Column>
+<Column name="NM_SHL_NAME" id="E71DDE04-4DF0-2FBD-179D-47889C098288">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do abrigo comunitário.]]></commentInRDBMS>
+<generatorID>6FC1F985-6D6C-3715-45FA-ADB4CEFCB540</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_SHL_AVAILABLE" id="8AC243F0-5B67-97B2-CDF8-D4BD5983D342">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de vagas livres.
+
+]]></commentInRDBMS>
+<generatorID>8E51C4FA-411B-8603-2C2D-6B9A29B505EA</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_SHL_CAPACITY" id="286F46B5-25BD-7007-70B5-E31B1FD08F75">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Capacidade total de pessoas do abrigo.]]></commentInRDBMS>
+<generatorID>EFC84651-66D9-CFDB-5980-F89C83B9C248</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCALIZAÇÃO_ID_LOC" id="10DD7872-0BB6-2933-6EF9-45001BD81ADF">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para LOCALIZACAO, indica a localização do abrigo.]]></commentInRDBMS>
+<generatorID>DCAA49F5-6A8A-E5F6-516D-BD7D3646F9D3</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5387379C-A8C7-44DB-798F-CD51B6381B2A" referredColumn="95C11654-FF7C-DA6F-9738-62215179815D"/>
+</associations>
+</Column>
+<Column name="ID_SHL" id="B09263C7-E363-2F77-530A-2D030C68DAC6">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do abrigo.]]></commentInRDBMS>
+<generatorID>1CDB8F3A-3063-AF53-37E3-7A93DF686C67</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0DA819E-3F78-91E6-0E9C-CAB276707A71" name="SHELTER_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>FEE95AF6-F112-5E0A-2ACC-4DC24DA90FFD</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B09263C7-E363-2F77-530A-2D030C68DAC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A226068-AB6E-9466-6A54-D09DA26989E7" name="SHELTER_USER_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>1E3342DB-D287-0925-49F9-48284533120F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC03CEA8-3095-691D-1303-3DB2ABBB587A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B290FB6-8D75-2E24-F88A-5CB3A9AF3073" name="SHELTER_LOCALIZAÇÃO_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>B64C380F-0B10-AC24-B07F-15CDA3E65A82</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10DD7872-0BB6-2933-6EF9-45001BD81ADF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

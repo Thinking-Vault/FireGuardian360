@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45D31C28-5C90-57C8-36C5-90B0CA6D8983" name="LOCALIZAÇÃO">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<generatorID>2E139FF8-C2C8-317C-5CAD-B977DAEA9E53</generatorID>
+<notes><![CDATA[Dados geográficos (latitude, longitude, região, UF).
+]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>LOC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOC_ID" id="A2296B2D-7A78-403F-0982-A869724370AE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="ID_LOC" id="AD4AD863-411E-51FA-8EBD-41C3C8A071E1">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da localização
+]]></commentInRDBMS>
+<generatorID>8084E6B6-241D-BC55-3708-9F6F61A27A37</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_LOC_REGIAO" id="8947F7B7-5BB8-C00A-707D-2288FCCC6436">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da região
+]]></commentInRDBMS>
+<generatorID>0999D84A-FA00-6B19-7614-C9D6D979FAC3</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_LOC_UF" id="A835C62E-090C-4DD7-0566-EEC4ADEEA54D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do estado
+]]></commentInRDBMS>
+<generatorID>35E03EBC-474D-0A2E-78BE-6851251C00CE</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOC_LATITUDE" id="25C018F9-BF3B-5D38-9D59-9713F269188D">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitude]]></commentInRDBMS>
+<generatorID>FA3C2388-4543-89EA-B846-5E001E1485FF</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOC_LONGITUDE" id="DE3107A4-5081-CBAD-70F3-B050925198D0">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude]]></commentInRDBMS>
+<generatorID>E9593BF8-AFDC-0B85-BD85-5BEE651DCB9C</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SENSOR_DATA_SND_ID" id="9E6304F6-A02B-798A-2310-45737FCAD6E3">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CF35D00-8032-7D34-7184-A2028F2E8829" referredColumn="3F2FD532-D9A4-4C77-E7E2-BF89FEEA2AB7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="479C66EC-F45F-5DBC-E35F-1CCD63B7133E" name="LOCALIZAÇÃO_ID_LOC_UN">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<generatorID>2D1FBA97-8B41-F69A-0132-7FF7F4C3216E</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4AD863-411E-51FA-8EBD-41C3C8A071E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9202DDE3-F076-28DA-8151-FC3286E44395" name="LOC_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:10:19 UTC</createdTime>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A2296B2D-7A78-403F-0982-A869724370AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="677AA262-109F-D7EE-BC83-7FA6D2647D09" name="LOCALIZAÇÃO_SENSOR_DATA_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 21:22:02 UTC</createdTime>
+<generatorID>EB4A4C70-75BD-9521-DA23-D97E1EC68EBF</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E6304F6-A02B-798A-2310-45737FCAD6E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

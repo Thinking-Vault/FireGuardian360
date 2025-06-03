@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<<<<<<<< HEAD:Database Design/Firedevelop/logical/relation/seg_0/32CFC5F4-AB54-A4D1-190E-184547D59B9E.xml
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_6" directorySegmentName="seg_0" id="32CFC5F4-AB54-A4D1-190E-184547D59B9E">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:01:16 UTC</createdTime>
+========
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="41DCCF90-90A1-6678-DF82-BDCAADF854EC">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:00:51 UTC</createdTime>
+>>>>>>>> feature/Database-Design:Database Design/Firedevelop/logical/relation/seg_0/41DCCF90-90A1-6678-DF82-BDCAADF854EC.xml
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<sourcePk>C0EC3842-050F-DC62-083E-93C33C5FCE56</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B81DCD45-D706-C5E8-4438-79CA3F15FD90</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<<<<<<<< HEAD:Database Design/Firedevelop/logical/relation/seg_0/32CFC5F4-AB54-A4D1-190E-184547D59B9E.xml
+<targetEntity>470F33C5-E31F-AFDD-2CE4-545C9F619747</targetEntity>
+========
+<targetEntity>A4B85A0C-F48C-8215-9C62-20417E60FEFF</targetEntity>
+>>>>>>>> feature/Database-Design:Database Design/Firedevelop/logical/relation/seg_0/41DCCF90-90A1-6678-DF82-BDCAADF854EC.xml
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

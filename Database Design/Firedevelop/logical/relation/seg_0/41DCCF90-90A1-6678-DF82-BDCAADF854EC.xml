@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<<<<<<<< HEAD:Database Design/Firedevelop/logical/relation/seg_0/41DCCF90-90A1-6678-DF82-BDCAADF854EC.xml
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="41DCCF90-90A1-6678-DF82-BDCAADF854EC">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:00:51 UTC</createdTime>
+========
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_8" directorySegmentName="seg_0" id="6001E860-4191-B8A5-97BE-63DB96F1D55F">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-27 20:01:48 UTC</createdTime>
+>>>>>>>> feature/Database-Design:Database Design/Firedevelop/logical/relation/seg_0/6001E860-4191-B8A5-97BE-63DB96F1D55F.xml
+<ownerDesignName>Firedevelop</ownerDesignName>
+<engineerTo>
+<item key="BE2DCE9F-9713-E315-14FD-A626AECB6035" value="true"/>
+</engineerTo>
+<<<<<<<< HEAD:Database Design/Firedevelop/logical/relation/seg_0/41DCCF90-90A1-6678-DF82-BDCAADF854EC.xml
+<sourcePk>C0EC3842-050F-DC62-083E-93C33C5FCE56</sourcePk>
+========
+<sourcePk>69046019-6602-1CEC-BAAE-E6FB856477B6</sourcePk>
+>>>>>>>> feature/Database-Design:Database Design/Firedevelop/logical/relation/seg_0/6001E860-4191-B8A5-97BE-63DB96F1D55F.xml
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<<<<<<<< HEAD:Database Design/Firedevelop/logical/relation/seg_0/41DCCF90-90A1-6678-DF82-BDCAADF854EC.xml
+<sourceEntity>B81DCD45-D706-C5E8-4438-79CA3F15FD90</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A4B85A0C-F48C-8215-9C62-20417E60FEFF</targetEntity>
+========
+<sourceEntity>1B1266BF-7D76-31DC-3587-AC7F521F90B6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>22719D40-7F71-314D-67A0-CB45C87966F0</targetEntity>
+>>>>>>>> feature/Database-Design:Database Design/Firedevelop/logical/relation/seg_0/6001E860-4191-B8A5-97BE-63DB96F1D55F.xml
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

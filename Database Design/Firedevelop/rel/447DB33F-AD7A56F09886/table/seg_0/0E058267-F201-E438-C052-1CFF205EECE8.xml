@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E058267-F201-E438-C052-1CFF205EECE8" name="AÇÃO_COMBATE">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registra as ações de combate em focos de queimada.]]></commentInRDBMS>
+<generatorID>C9731008-5B6A-AD06-586E-A4B9742D4BD3</generatorID>
+<notes><![CDATA[Ação executada pelas autoridades num foco de queimada (aérea, terrestre, etc.), com data e resultado.]]></notes>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<abbreviation>ACB</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ACB" id="2C0C2F6D-980A-B771-5857-5ACAEBC10D24">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da ação de combate.]]></commentInRDBMS>
+<generatorID>71E23D57-55DD-B9A2-7661-8A612B38A28F</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUEIMADA_ID_QMD" id="91150AD2-6EF6-71F6-247F-880BD7D03444">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para a tabela QUEIMADA, identifica o foco de queimada.]]></commentInRDBMS>
+<generatorID>8158F649-F31E-CACB-B6DD-68D8D764A8C1</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D87691E1-4240-E5B9-5D1E-EEB6FDBF637B" referredColumn="003BBFAB-7BED-8F6A-1160-CFB1C9B5A1DA"/>
+</associations>
+</Column>
+<Column name="DT_ACB_EXECUCAO" id="5A6EC6D6-8C0B-B347-6436-2B2EA236D194">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que a ação de combate foi realizada.]]></commentInRDBMS>
+<generatorID>8095C9C4-6C4C-98A4-8CB0-1885CD6B8B5A</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ACB_TIPO" id="0A48C1A6-726E-1125-B1D2-B12854564D98">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de ação de combate (ex.: Pulverização, Resfriamento, Contenção).]]></commentInRDBMS>
+<generatorID>6678E545-1478-5009-AE25-FECE5F12B858</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ACB_RESULTADO" id="F1738F47-A763-21EF-AF94-9EBB628E09A2">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do resultado observado após a ação de combate.]]></commentInRDBMS>
+<generatorID>29C91253-3DA2-BC72-263C-6EC4D2E8AFF1</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E2EC4C1-B74A-E786-FC79-1DD29F1EBAE5" name="AÇÃO_COMBATE_PK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>9F3F843E-6C59-12F5-739F-294FF02D1D77</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C0C2F6D-980A-B771-5857-5ACAEBC10D24"/>
+<colUsage columnID="91150AD2-6EF6-71F6-247F-880BD7D03444"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68296444-9B59-ADF9-9726-3224BCE03F99" name="AÇÃO_COMBATE_QUEIMADA_FK">
+<createdBy>Adm</createdBy>
+<createdTime>2025-05-29 20:11:54 UTC</createdTime>
+<generatorID>4B2DE6EB-C4E0-15AD-FE04-950CFBA4516C</generatorID>
+<ownerDesignName>Firedevelop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91150AD2-6EF6-71F6-247F-880BD7D03444"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
