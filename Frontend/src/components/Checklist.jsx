@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchChecklist, createChecklist, updateChecklist, deleteChecklist } from '../api/checklist';
+import { fetchChecklist, createChecklist } from '../api/checklist';
 export function Checklist({ userId }) {
     const [items, setItems] = useState([]);
     useEffect(() => { fetchChecklist(userId).then(setItems); }, [userId]);
