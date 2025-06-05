@@ -1,0 +1,19 @@
+/* PsyHelp.css */
+.psy-bg {
+    background: linear-gradient(to bottom right, #2563eb, #1e3a8a);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.psy-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.psy-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}

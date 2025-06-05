@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Alert.css';
+import './App.css';
 
 export default function EmergencyAlert() {
     const [isPlaying, setIsPlaying] = useState(false);
