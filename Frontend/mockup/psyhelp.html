@@ -1,0 +1,407 @@
+<html>
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes heartPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes typing {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 0.5s ease-out;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 0.5s ease-out;
+        }
+
+        .heart-pulse {
+            animation: heartPulse 2s infinite;
+        }
+
+        .typing-indicator {
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;amp;display=swap">
+    <style>
+        .highlighted-section {
+            outline: 2px solid #3F20FB;
+            background-color: rgba(63, 32, 251, 0.1);
+        }
+
+        .edit-button {
+            position: absolute;
+            z-index: 1000;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html,
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header id="header" class="bg-gray-800 shadow-lg border-b border-gray-700">
+        <div class="flex items-center px-4 py-4">
+            <button id="back-btn" class="text-gray-300 hover:text-white mr-4">
+                <i class="fas fa-arrow-left text-xl"></i>
+            </button>
+            <div class="flex items-center flex-1">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-heart text-white text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-semibold text-white">PsyHelp Assistant</h1>
+                    <p class="text-sm text-green-400 flex items-center">
+                        <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                        Online
+                    </p>
+                </div>
+            </div>
+            <button id="menu-btn" class="text-gray-300 hover:text-white">
+                <i class="fas fa-ellipsis-v text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Chat Messages -->
+    <main id="chat-main" class="flex-1 px-4 py-6 space-y-4 pb-24 overflow-y-auto">
+
+        <!-- Bot Message 1 -->
+        <div id="bot-message-1" class="flex items-start space-x-3 slide-in-left">
+            <div
+                class="w-8 h-8 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-heart text-white text-xs"></i>
+            </div>
+            <div class="max-w-xs">
+                <div class="bg-gray-700 rounded-2xl rounded-tl-md px-4 py-3 shadow-lg">
+                    <p class="text-gray-100 text-sm leading-relaxed">Oi, como você está se sentindo?
+                    </p>
+                </div>
+                <p class="text-gray-500 text-xs mt-1 ml-2">14:32</p>
+            </div>
+        </div>
+
+        <!-- User Message -->
+        <div id="user-message-1" class="flex items-start space-x-3 justify-end slide-in-right">
+            <div class="max-w-xs">
+                <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl rounded-tr-md px-4 py-3 shadow-lg">
+                    <p class="text-white text-sm leading-relaxed">Estou nervosa, não sei o que fazer
+                    </p>
+                </div>
+                <p class="text-gray-500 text-xs mt-1 mr-2 text-right">14:33</p>
+            </div>
+            <div
+                class="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-user text-white text-xs"></i>
+            </div>
+        </div>
+
+        <!-- Bot Message 2 -->
+        <div id="bot-message-2" class="flex items-start space-x-3 slide-in-left">
+            <div
+                class="w-8 h-8 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-heart text-white text-xs"></i>
+            </div>
+            <div class="max-w-xs">
+                <div class="bg-gray-700 rounded-2xl rounded-tl-md px-4 py-3 shadow-lg">
+                    <p class="text-gray-100 text-sm leading-relaxed">Vamos respirar juntos? Inspire
+                        por 3 segundos...</p>
+                    <div class="mt-3 flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <div class="flex-1 h-1 bg-gray-600 rounded-full">
+                            <div class="h-1 bg-blue-400 rounded-full w-1/3"></div>
+                        </div>
+                        <span class="text-blue-400 text-xs">3s</span>
+                    </div>
+                </div>
+                <p class="text-gray-500 text-xs mt-1 ml-2">14:34</p>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div id="typing-indicator" class="flex items-start space-x-3 slide-in-left">
+            <div
+                class="w-8 h-8 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-heart text-white text-xs"></i>
+            </div>
+            <div class="bg-gray-700 rounded-2xl rounded-tl-md px-4 py-3 shadow-lg">
+                <div class="flex space-x-1">
+                    <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot typing-indicator"></div>
+                    <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot typing-indicator"></div>
+                    <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot typing-indicator"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Floating Heart -->
+    <div id="floating-heart"
+        class="fixed bottom-20 right-6 w-12 h-12 bg-gradient-to-br from-pink-500 to-red-500 rounded-full flex items-center justify-center shadow-lg heart-pulse">
+        <i class="fas fa-heart text-white text-xl"></i>
+    </div>
+
+    <!-- Message Input -->
+    <div id="message-input" class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 px-4 py-3">
+        <div class="flex items-center space-x-3">
+            <button id="attach-btn" class="text-gray-400 hover:text-white">
+                <i class="fas fa-plus text-xl"></i>
+            </button>
+            <div class="flex-1 relative">
+                <input type="text" id="message-text" placeholder="Digite sua mensagem..."
+                    class="w-full bg-gray-700 text-white rounded-full px-4 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-pink-500 placeholder-gray-400">
+                <button id="emoji-btn"
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white">
+                    <i class="fas fa-smile text-lg"></i>
+                </button>
+            </div>
+            <button id="send-btn"
+                class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all">
+                <i class="fas fa-paper-plane text-lg"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Quick Responses -->
+    <div id="quick-responses"
+        class="fixed bottom-16 left-4 right-4 bg-gray-800 rounded-xl p-3 shadow-xl border border-gray-700"
+        style="display: none;">
+        <div class="flex flex-wrap gap-2">
+            <button
+                class="quick-response-btn bg-gray-700 hover:bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm transition-colors">
+                Preciso de ajuda
+            </button>
+            <button
+                class="quick-response-btn bg-gray-700 hover:bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm transition-colors">
+                Estou com medo
+            </button>
+            <button
+                class="quick-response-btn bg-gray-700 hover:bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm transition-colors">
+                Obrigada
+            </button>
+            <button
+                class="quick-response-btn bg-gray-700 hover:bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm transition-colors">
+                Vamos tentar
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Send message
+        document.getElementById('send-btn').addEventListener('click', sendMessage);
+        document.getElementById('message-text').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        function sendMessage() {
+            const input = document.getElementById('message-text');
+            const message = input.value.trim();
+
+            if (message) {
+                addUserMessage(message);
+                input.value = '';
+
+                setTimeout(() => {
+                    addBotResponse();
+                }, 1500);
+            }
+        }
+
+        function addUserMessage(message) {
+            const chatMain = document.getElementById('chat-main');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'flex items-start space-x-3 justify-end slide-in-right';
+
+            const currentTime = new Date().toLocaleTimeString('pt-BR', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            messageDiv.innerHTML = `
+                <div class="max-w-xs">
+                    <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl rounded-tr-md px-4 py-3 shadow-lg">
+                        <p class="text-white text-sm leading-relaxed">${message}</p>
+                    </div>
+                    <p class="text-gray-500 text-xs mt-1 mr-2 text-right">${currentTime}</p>
+                </div>
+                <div class="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-user text-white text-xs"></i>
+                </div>
+            `;
+
+            chatMain.appendChild(messageDiv);
+            chatMain.scrollTop = chatMain.scrollHeight;
+        }
+
+        function addBotResponse() {
+            const responses = [
+                "Entendo como você se sente. Vamos fazer isso juntos, passo a passo.",
+                "Você está sendo muito corajosa. Vamos continuar com a respiração.",
+                "Está indo muito bem! Sinta-se segura, estou aqui com você.",
+                "Que bom! Continue respirando devagar e profundamente."
+            ];
+
+            const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+            const chatMain = document.getElementById('chat-main');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'flex items-start space-x-3 slide-in-left';
+
+            const currentTime = new Date().toLocaleTimeString('pt-BR', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            messageDiv.innerHTML = `
+                <div class="w-8 h-8 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-heart text-white text-xs"></i>
+                </div>
+                <div class="max-w-xs">
+                    <div class="bg-gray-700 rounded-2xl rounded-tl-md px-4 py-3 shadow-lg">
+                        <p class="text-gray-100 text-sm leading-relaxed">${randomResponse}</p>
+                    </div>
+                    <p class="text-gray-500 text-xs mt-1 ml-2">${currentTime}</p>
+                </div>
+            `;
+
+            chatMain.appendChild(messageDiv);
+            chatMain.scrollTop = chatMain.scrollHeight;
+        }
+
+        // Quick responses toggle
+        document.getElementById('attach-btn').addEventListener('click', function () {
+            const quickResponses = document.getElementById('quick-responses');
+            quickResponses.style.display = quickResponses.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Quick response buttons
+        document.querySelectorAll('.quick-response-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.getElementById('message-text').value = this.textContent;
+                document.getElementById('quick-responses').style.display = 'none';
+            });
+        });
+
+        // Floating heart click
+        document.getElementById('floating-heart').addEventListener('click', function () {
+            this.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 200);
+
+            addBotResponse();
+        });
+
+        // Back button
+        document.getElementById('back-btn').addEventListener('click', function () {
+            window.history.back();
+        });
+
+        // Hide typing indicator after 3 seconds
+        setTimeout(() => {
+            document.getElementById('typing-indicator').style.display = 'none';
+        }, 3000);
+    </script>
+
+</body>
+
+</html>

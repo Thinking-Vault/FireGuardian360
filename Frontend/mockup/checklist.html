@@ -1,0 +1,421 @@
+<html>
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes checkmark {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .toast {
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .toast.fade-out {
+            animation: fadeOut 0.3s ease-out;
+        }
+
+        .check-animation {
+            animation: checkmark 0.3s ease-out;
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;amp;display=swap">
+    <style>
+        .highlighted-section {
+            outline: 2px solid #3F20FB;
+            background-color: rgba(63, 32, 251, 0.1);
+        }
+
+        .edit-button {
+            position: absolute;
+            z-index: 1000;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html,
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Toast Notification -->
+    <div id="toast"
+        class="fixed top-16 left-4 right-4 z-50 bg-green-500 text-white px-4 py-3 rounded-lg shadow-lg hidden toast">
+        <div class="flex items-center">
+            <i class="fas fa-check-circle text-xl mr-3"></i>
+            <span class="font-medium">Bom trabalho! Item concluído ✨</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-sm border-b border-gray-200">
+        <div class="flex items-center justify-between px-4 py-4">
+            <button id="back-btn" class="text-gray-600 hover:text-gray-800">
+                <i class="fas fa-arrow-left text-xl"></i>
+            </button>
+            <h1 class="text-lg font-bold text-gray-800">Checklist de Emergência</h1>
+            <button id="menu-btn" class="text-gray-600 hover:text-gray-800">
+                <i class="fas fa-ellipsis-v text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div id="progress-section" class="bg-white px-4 py-3 border-b border-gray-100">
+        <div class="flex items-center justify-between mb-2">
+            <span class="text-sm text-gray-600">Progresso</span>
+            <span id="progress-text" class="text-sm font-medium text-orange-600">3 de 12 itens</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="progress-bar" class="bg-orange-500 h-2 rounded-full transition-all duration-300"
+                style="width: 25%"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="checklist-main" class="pb-24">
+
+        <!-- Offline Indicator -->
+        <div id="offline-indicator" class="bg-blue-50 border-l-4 border-blue-400 p-3 mx-4 mt-4 rounded-r-lg">
+            <div class="flex items-center">
+                <i class="fas fa-wifi-slash text-blue-600 mr-2"></i>
+                <span class="text-sm text-blue-700">Modo offline ativo - suas alterações serão salvas</span>
+            </div>
+        </div>
+
+        <!-- Checklist Items -->
+        <div id="checklist-container" class="px-4 py-4 space-y-3">
+
+            <!-- Essential Items Category -->
+            <div id="essential-category" class="mb-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i>
+                    Itens Essenciais
+                </h2>
+
+                <div class="space-y-3">
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="mascara">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4">
+                            <span class="text-gray-800 font-medium flex-1">Máscara 😷</span>
+                            <span class="text-sm text-gray-500">Proteção respiratória</span>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="agua">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4"
+                                checked="">
+                            <span class="text-gray-800 font-medium flex-1 strikethrough">Água 💧</span>
+                            <span class="text-sm text-gray-500">1L por pessoa</span>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="documentos">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4"
+                                checked="">
+                            <span class="text-gray-800 font-medium flex-1 strikethrough">Documentos 📄</span>
+                            <span class="text-sm text-gray-500">RG, CPF, carteira</span>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="lanterna">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4"
+                                checked="">
+                            <span class="text-gray-800 font-medium flex-1 strikethrough">Lanterna 🔦</span>
+                            <span class="text-sm text-gray-500">Com pilhas extras</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical Items Category -->
+            <div id="medical-category" class="mb-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-first-aid text-red-500 mr-2"></i>
+                    Primeiros Socorros
+                </h2>
+
+                <div class="space-y-3">
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="kit-primeiros-socorros">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4">
+                            <span class="text-gray-800 font-medium flex-1">Kit Primeiros Socorros 🩹</span>
+                            <span class="text-sm text-gray-500">Básico</span>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="medicamentos">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4">
+                            <span class="text-gray-800 font-medium flex-1">Medicamentos 💊</span>
+                            <span class="text-sm text-gray-500">Uso contínuo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Items -->
+            <div id="communication-category" class="mb-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-phone text-blue-500 mr-2"></i>
+                    Comunicação
+                </h2>
+
+                <div class="space-y-3">
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="celular">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4">
+                            <span class="text-gray-800 font-medium flex-1">Celular carregado 📱</span>
+                            <span class="text-sm text-gray-500">+ carregador</span>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+                        data-item="radio">
+                        <div class="flex items-center">
+                            <input type="checkbox"
+                                class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4">
+                            <span class="text-gray-800 font-medium flex-1">Rádio portátil 📻</span>
+                            <span class="text-sm text-gray-500">Para emergências</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Floating Add Button -->
+    <button id="add-item-btn"
+        class="fixed bottom-20 right-4 w-14 h-14 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+        <i class="fas fa-plus text-xl"></i>
+    </button>
+
+    <!-- Bottom Navigation -->
+    <nav id="bottom-nav" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+        <div class="flex justify-around items-center py-2">
+
+            <div id="nav-alerts" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-bell text-gray-400 text-xl mb-1"></i>
+                <span class="text-gray-400 text-xs font-medium">Alertas</span>
+            </div>
+
+            <div id="nav-shelters" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-home text-gray-400 text-xl mb-1"></i>
+                <span class="text-gray-400 text-xs font-medium">Abrigos</span>
+            </div>
+
+            <div id="nav-checklist" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-check-square text-orange-500 text-xl mb-1"></i>
+                <span class="text-orange-500 text-xs font-medium">Checklist</span>
+            </div>
+
+            <div id="nav-psyhelp" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-comments text-gray-400 text-xl mb-1"></i>
+                <span class="text-gray-400 text-xs font-medium">PsyHelp</span>
+            </div>
+
+        </div>
+    </nav>
+
+    <script>
+        let checkedCount = 3;
+        const totalItems = 9;
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('hidden');
+
+            setTimeout(() => {
+                toast.classList.add('fade-out');
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                    toast.classList.remove('fade-out');
+                }, 300);
+            }, 2000);
+        }
+
+        function updateProgress() {
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            const percentage = (checkedCount / totalItems) * 100;
+
+            progressBar.style.width = percentage + '%';
+            progressText.textContent = `${checkedCount} de ${totalItems} itens`;
+        }
+
+        // Handle checkbox changes
+        document.querySelectorAll('.checklist-item input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const item = this.closest('.checklist-item');
+                const label = item.querySelector('span.flex-1');
+
+                if (this.checked) {
+                    label.classList.add('strikethrough');
+                    this.classList.add('check-animation');
+                    checkedCount++;
+                    showToast();
+                } else {
+                    label.classList.remove('strikethrough');
+                    checkedCount--;
+                }
+
+                updateProgress();
+
+                setTimeout(() => {
+                    this.classList.remove('check-animation');
+                }, 300);
+            });
+        });
+
+        // Add item button
+        document.getElementById('add-item-btn').addEventListener('click', function () {
+            const newItem = prompt('Digite o nome do novo item:');
+            if (newItem) {
+                const container = document.querySelector('#essential-category .space-y-3');
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'checklist-item bg-white rounded-lg p-4 shadow-sm border border-gray-100';
+                itemDiv.innerHTML = `
+                    <div class="flex items-center">
+                        <input type="checkbox" class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500 mr-4">
+                        <span class="text-gray-800 font-medium flex-1">${newItem}</span>
+                        <span class="text-sm text-gray-500">Personalizado</span>
+                    </div>
+                `;
+                container.appendChild(itemDiv);
+
+                // Add event listener to new checkbox
+                const newCheckbox = itemDiv.querySelector('input[type="checkbox"]');
+                newCheckbox.addEventListener('change', function () {
+                    const label = itemDiv.querySelector('span.flex-1');
+
+                    if (this.checked) {
+                        label.classList.add('strikethrough');
+                        this.classList.add('check-animation');
+                        checkedCount++;
+                        showToast();
+                    } else {
+                        label.classList.remove('strikethrough');
+                        checkedCount--;
+                    }
+
+                    updateProgress();
+
+                    setTimeout(() => {
+                        this.classList.remove('check-animation');
+                    }, 300);
+                });
+            }
+        });
+
+        // Navigation handlers
+        document.querySelectorAll('[id^="nav-"]').forEach(item => {
+            item.addEventListener('click', function () {
+                document.querySelectorAll('[id^="nav-"]').forEach(nav => {
+                    nav.querySelector('i').className = nav.querySelector('i').className.replace('text-orange-500', 'text-gray-400');
+                    nav.querySelector('span').className = nav.querySelector('span').className.replace('text-orange-500', 'text-gray-400');
+                });
+
+                this.querySelector('i').className = this.querySelector('i').className.replace('text-gray-400', 'text-orange-500');
+                this.querySelector('span').className = this.querySelector('span').className.replace('text-gray-400', 'text-orange-500');
+            });
+        });
+
+        // Back button
+        document.getElementById('back-btn').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+<html>
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes routeBlink {
+
+            0%,
+            100% {
+                stroke-dashoffset: 0;
+            }
+
+            50% {
+                stroke-dashoffset: 20;
+            }
+        }
+
+        @keyframes locationPulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        .route-line {
+            animation: routeBlink 1.5s infinite;
+        }
+
+        .location-dot {
+            animation: locationPulse 2s infinite;
+        }
+
+        .map-3d {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .building-shadow {
+            filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;amp;display=swap">
+    <style>
+        .highlighted-section {
+            outline: 2px solid #3F20FB;
+            background-color: rgba(63, 32, 251, 0.1);
+        }
+
+        .edit-button {
+            position: absolute;
+            z-index: 1000;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html,
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-sm border-b border-gray-200">
+        <div class="flex items-center justify-between px-4 py-4">
+            <button id="back-btn" class="text-gray-600 hover:text-gray-800">
+                <i class="fas fa-arrow-left text-xl"></i>
+            </button>
+            <h1 class="text-lg font-bold text-gray-800">Abrigos Próximos</h1>
+            <button id="menu-btn" class="text-gray-600 hover:text-gray-800">
+                <i class="fas fa-ellipsis-v text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Emergency Status Bar -->
+    <div id="emergency-status" class="bg-orange-100 border-l-4 border-orange-500 p-3">
+        <div class="flex items-center">
+            <i class="fas fa-exclamation-triangle text-orange-600 mr-2"></i>
+            <span class="text-sm text-orange-700 font-medium">Situação de emergência ativa - Procure abrigo
+                seguro</span>
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <main id="map-main" class="relative h-[500px] map-3d">
+
+        <!-- 3D Map SVG -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 500">
+            <!-- Grid Background -->
+            <defs>
+                <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e0e7ff" stroke-width="0.5"></path>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" opacity="0.3"></rect>
+
+            <!-- Buildings (3D Isometric) -->
+            <g class="building-shadow">
+                <!-- Building 1 -->
+                <polygon points="50,200 80,200 90,190 60,190" fill="#94a3b8" stroke="#64748b" stroke-width="1">
+                </polygon>
+                <polygon points="80,200 90,190 90,160 80,170" fill="#64748b"></polygon>
+                <polygon points="60,190 90,190 90,160 60,160" fill="#cbd5e1"></polygon>
+
+                <!-- Building 2 -->
+                <polygon points="120,250 160,250 175,235 135,235" fill="#94a3b8" stroke="#64748b" stroke-width="1">
+                </polygon>
+                <polygon points="160,250 175,235 175,200 160,215" fill="#64748b"></polygon>
+                <polygon points="135,235 175,235 175,200 135,200" fill="#cbd5e1"></polygon>
+
+                <!-- Building 3 -->
+                <polygon points="250,180 290,180 305,165 265,165" fill="#94a3b8" stroke="#64748b" stroke-width="1">
+                </polygon>
+                <polygon points="290,180 305,165 305,130 290,145" fill="#64748b"></polygon>
+                <polygon points="265,165 305,165 305,130 265,130" fill="#cbd5e1"></polygon>
+
+                <!-- Building 4 -->
+                <polygon points="300,300 340,300 355,285 315,285" fill="#94a3b8" stroke="#64748b" stroke-width="1">
+                </polygon>
+                <polygon points="340,300 355,285 355,250 340,265" fill="#64748b"></polygon>
+                <polygon points="315,285 355,285 355,250 315,250" fill="#cbd5e1"></polygon>
+            </g>
+
+            <!-- Roads -->
+            <path d="M 0,220 L 400,220" stroke="#9ca3af" stroke-width="8" fill="none"></path>
+            <path d="M 180,0 L 180,500" stroke="#9ca3af" stroke-width="8" fill="none"></path>
+            <path d="M 0,350 L 400,350" stroke="#9ca3af" stroke-width="6" fill="none"></path>
+
+            <!-- Route Line (Blinking Red) -->
+            <path id="route-path" d="M 200,400 Q 220,350 240,300 Q 260,250 280,200 Q 300,150 320,100" stroke="#ef4444"
+                stroke-width="4" fill="none" stroke-dasharray="10,5" class="route-line"></path>
+
+            <!-- Shelter Pins -->
+            <!-- Shelter 1 - Destination -->
+            <g id="shelter-1" transform="translate(315,95)">
+                <circle cx="0" cy="0" r="12" fill="#22c55e" stroke="#ffffff" stroke-width="2"></circle>
+            </g>
+        </svg><i class="fas fa-home text-white text-xs"></i>
+        <text x="0" y="-18" text-anchor="middle" class="text-xs font-medium" fill="#1f2937">Centro
+            Comunitário</text>
+        <circle cx="0" cy="0" r="18" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.3"
+            class="pulse-animation">
+
+
+            <!-- Shelter 2 -->
+            <g id="shelter-2" transform="translate(150,160)">
+                <circle cx="0" cy="0" r="10" fill="#f59e0b" stroke="#ffffff" stroke-width="2">
+                    <text x="0" y="-16" text-anchor="middle" class="text-xs font-medium" fill="#1f2937">Escola
+                        Municipal</text>
+                </circle>
+            </g>
+
+            <!-- Shelter 3 -->
+            <g id="shelter-3" transform="translate(280,280)">
+                <circle cx="0" cy="0" r="10" fill="#f59e0b" stroke="#ffffff" stroke-width="2">
+                    <text x="0" y="-16" text-anchor="middle" class="text-xs font-medium" fill="#1f2937">Igreja São
+                        José</text>
+                </circle>
+            </g>
+
+            <!-- User Location -->
+            <g id="user-location" transform="translate(200,400)">
+                <circle cx="0" cy="0" r="8" fill="#3b82f6" class="location-dot">
+                    <circle cx="0" cy="0" r="3" fill="#ffffff">
+                    </circle>
+                </circle>
+            </g>
+
+
+            <!-- Map Controls -->
+            <div id="map-controls" class="absolute top-4 right-4 space-y-2">
+                <button id="zoom-in" class="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center">
+                    <i class="fas fa-plus text-gray-600"></i>
+                </button>
+                <button id="zoom-out" class="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center">
+                    <i class="fas fa-minus text-gray-600"></i>
+                </button>
+                <button id="center-location"
+                    class="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center">
+                    <i class="fas fa-crosshairs text-gray-600"></i>
+                </button>
+            </div>
+
+            <!-- Offline Mode Toggle -->
+            <button id="offline-toggle"
+                class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-2 rounded-lg shadow-md flex items-center">
+                <i class="fas fa-wifi-slash mr-2"></i>
+                <span class="text-sm font-medium">Modo Offline</span>
+            </button>
+
+        </circle>
+    </main>
+
+    <!-- Route Information Card -->
+    <div id="route-info" class="bg-white mx-4 my-4 rounded-xl shadow-lg border border-gray-100">
+        <div class="p-4">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="text-lg font-bold text-gray-800">Centro Comunitário São João</h3>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">87
+                    vagas</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="flex items-center">
+                    <i class="fas fa-route text-blue-500 mr-2"></i>
+                    <div>
+                        <p class="text-sm text-gray-500">Distância</p>
+                        <p class="font-semibold text-gray-800">1.2 km</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-clock text-orange-500 mr-2"></i>
+                    <div>
+                        <p class="text-sm text-gray-500">Tempo estimado</p>
+                        <p class="font-semibold text-gray-800">8 min a pé</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center mb-4">
+                <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                <span class="text-sm text-gray-600">Abrigo seguro com estrutura para emergências</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <button id="start-route"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center transition-colors">
+                    <i class="fas fa-play mr-2"></i>
+                    Iniciar Rota
+                </button>
+                <button id="call-shelter"
+                    class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-4 rounded-lg flex items-center justify-center transition-colors">
+                    <i class="fas fa-phone mr-2"></i>
+                    Ligar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shelter List -->
+    <div id="shelter-list" class="mx-4 mb-20">
+        <h3 class="text-lg font-bold text-gray-800 mb-3">Outros Abrigos Próximos</h3>
+
+        <div class="space-y-3">
+            <div id="shelter-card-1" class="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                <div class="flex items-center justify-between">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-gray-800">Escola Municipal Santos</h4>
+                        <p class="text-sm text-gray-500">2.1 km • 12 min a pé</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded-full">23
+                            vagas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shelter-card-2" class="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                <div class="flex items-center justify-between">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-gray-800">Igreja São José</h4>
+                        <p class="text-sm text-gray-500">1.8 km • 10 min a pé</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="bg-red-100 text-red-800 text-xs font-semibold px-2 py-1 rounded-full">5
+                            vagas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav id="bottom-nav" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+        <div class="flex justify-around items-center py-2">
+            <div id="nav-alerts" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-bell text-gray-400 text-xl mb-1"></i>
+                <span class="text-gray-400 text-xs font-medium">Alertas</span>
+            </div>
+            <div id="nav-shelters" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-home text-orange-500 text-xl mb-1"></i>
+                <span class="text-orange-500 text-xs font-medium">Abrigos</span>
+            </div>
+            <div id="nav-checklist" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-check-square text-gray-400 text-xl mb-1"></i>
+                <span class="text-gray-400 text-xs font-medium">Checklist</span>
+            </div>
+            <div id="nav-psyhelp" class="flex flex-col items-center py-2 px-4">
+                <i class="fas fa-comments text-gray-400 text-xl mb-1"></i>
+                <span class="text-gray-400 text-xs font-medium">PsyHelp</span>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Start route button
+        document.getElementById('start-route').addEventListener('click', function () {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Iniciando...';
+            this.disabled = true;
+
+            setTimeout(() => {
+                alert('Rota iniciada! Siga as instruções de navegação.');
+                this.innerHTML = '<i class="fas fa-navigation mr-2"></i>Navegando';
+                this.className = 'bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center transition-colors';
+            }, 2000);
+        });
+
+        // Offline toggle
+        document.getElementById('offline-toggle').addEventListener('click', function () {
+            const isOffline = this.classList.contains('bg-blue-500');
+
+            if (isOffline) {
+                this.className = 'absolute top-4 left-4 bg-green-500 text-white px-3 py-2 rounded-lg shadow-md flex items-center';
+                this.innerHTML = '<i class="fas fa-wifi mr-2"></i><span class="text-sm font-medium">Online</span>';
+            } else {
+                this.className = 'absolute top-4 left-4 bg-blue-500 text-white px-3 py-2 rounded-lg shadow-md flex items-center';
+                this.innerHTML = '<i class="fas fa-wifi-slash mr-2"></i><span class="text-sm font-medium">Modo Offline</span>';
+            }
+        });
+
+        // Map controls
+        document.getElementById('zoom-in').addEventListener('click', function () {
+            console.log('Zoom in');
+        });
+
+        document.getElementById('zoom-out').addEventListener('click', function () {
+            console.log('Zoom out');
+        });
+
+        document.getElementById('center-location').addEventListener('click', function () {
+            console.log('Center on user location');
+        });
+
+        // Call shelter
+        document.getElementById('call-shelter').addEventListener('click', function () {
+            if (confirm('Ligar para Centro Comunitário São João?')) {
+                window.location.href = 'tel:+551133334444';
+            }
+        });
+
+        // Navigation handlers
+        document.querySelectorAll('[id^="nav-"]').forEach(item => {
+            item.addEventListener('click', function () {
+                document.querySelectorAll('[id^="nav-"]').forEach(nav => {
+                    nav.querySelector('i').className = nav.querySelector('i').className.replace('text-orange-500', 'text-gray-400');
+                    nav.querySelector('span').className = nav.querySelector('span').className.replace('text-orange-500', 'text-gray-400');
+                });
+
+                this.querySelector('i').className = this.querySelector('i').className.replace('text-gray-400', 'text-orange-500');
+                this.querySelector('span').className = this.querySelector('span').className.replace('text-gray-400', 'text-orange-500');
+            });
+        });
+
+        // Back button
+        document.getElementById('back-btn').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+
+</body>
+
+</html>
